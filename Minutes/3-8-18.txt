@@ -1,0 +1,31 @@
+Group Meeting:
+3/8/18
+
+Research Results:
+  - Steve set up AWS server
+      - ssh cmsc447-user@18.216.29.25
+  - Steve set up JS bootstrap website with Google Maps API (based on Google maps tutorial/template)
+  - Kaitlyn researched apartments.com
+
+Areas of Focus:
+  - Steve: Front End
+  - Jay: Front End
+  - Daniel: Back End
+  - Patrick: Back End
+  - Kaitlyn: Documentation, Design
+  - Elizabeth: POC, Design, Testing 
+
+Preliminary Back End Design: 
+  - Search object (with lots of fields) -> populate member fields with html form or something similar
+  - member variables are objects with functions 
+
+Action Points:
+  - Elizabeth will look at data.gov and see which queries are low hanging fruit
+  - Kaitlyn will finish SRS by Tuesday
+  - Kaitlyn and Elizabeth will design front end by Wednesday
+  - Elizabeth will set up another meeting with the customer next week (Will get approval for Requirements and Front End Design) 
+  - Steve will figure out how data will be sent to the back end
+  - Everyone will finish their Research (from Google sheets)
+
+We will meet again next Tuesday after class (3/13) to finalize Requirements and Design
+We will meet 3/22 13:00-20:00 for a long sprint/work together during Spring Break  
