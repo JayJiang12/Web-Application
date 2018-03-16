@@ -108,9 +108,9 @@
                     function handleSubmit() {
                       var testData = document.getElementById("testQuery").value;
                       $.ajax({
+                        url: "/getPoints",
                         //make an AJAX request to the py script
                         type: "POST",
-                        url: "/app.py",
                         //pass query params below
                         data: { param: testData },
                         success: callbackFunc
