@@ -9,7 +9,7 @@ def index():
 
 @app.route('/getPoints', methods=["POST"])
 def getPoints():
-    return json.dumps({"status" : "OK"})
+    return json.dumps([[39.260261, -76.711508], [38.9307318,-77.0080818,15]])
 
 if __name__ == "__main__":
 	app.run()
