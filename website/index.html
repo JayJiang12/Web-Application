@@ -86,10 +86,7 @@
                 center: umbc,
                 zoom: 8
             });
-            var testMarker = new google.maps.Marker({
-              position: umbc,
-              map: map
-            });
+
           }
           </script>
           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOR2E6G3t8nrOqDF6WkgKEueL8YykS0c&callback=initMap"
@@ -108,9 +105,9 @@
                     function handleSubmit() {
                       var testData = document.getElementById("testQuery").value;
                       $.ajax({
+                        url: "/getPoints",
                         //make an AJAX request to the py script
                         type: "POST",
-                        url: "/app.py",
                         //pass query params below
                         data: { param: testData },
                         success: callbackFunc
@@ -120,6 +117,16 @@
                     function callbackFunc(response) {
                       //handle response here
                       console.log(response);
+                      /**
+		      var positions = JSON.parse(response);
+                      positions.forEach(function(element) {
+                          console.log(element);
+                          var marker = new google.maps.Marker({
+                            position: {lat: element[0], lng: element[1]},
+                            map: map
+                          });
+                      });
+		      **/
                     }
                 </script>
             </form>
