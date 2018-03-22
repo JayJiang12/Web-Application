@@ -1,0 +1,18 @@
+Customer Meeting
+3-14-18
+
+Dr. Nicholas approved the Design and Requirements.
+
+Main Goals:
+  - Pick a few inputs and do them well. Doing so desmonstrates that we can do all the other inputs with more resources and time. 
+  - A well designed, simple UI that works well is better than a sophisticated UI. 
+  - Focus on size, cost, climate, and red/blue. 
+
+Notes:
+  - Images of cities is not required, but is a nice touch. 
+  - We don't need to focus on crime. Crime is often correlated with property values/real estate prices, so we just need to do property values to capture that data.
+  - He liked the google maps arrows/points. 
+  - He liked the idea of a simple input page first, with more advanced features added later. 
+  - He suggested we roleplay the UI to figure out how it would work best. 
+  - We will send him the finished requirements document to sign/approve as soon as Cain lets us know what to do.
+      - He prefers attachments to be pdfs. 
