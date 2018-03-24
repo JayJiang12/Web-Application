@@ -23,15 +23,8 @@
           padding-top: 56px;
         }
       }
-      #map {
-        height: 100%;
-        width: 75%;
-        position: absolute;
-        
-      }
       #query {
-        position: absolute;
-        right: 0%
+        margin: auto;
 
       }
       /* Optional: Makes the sample page fill the window. */
@@ -71,30 +64,10 @@
 
     <!-- Page Content -->
  
-        <table width=100% height=100%>
-        <tbody>
-        <tr>
-          <td width=75% height=100%>
-            
-            <div id="map"></div>      
-            
-        <script>
-          var map;
-          var umbc = {lat: 39.260261, lng: -76.711508};
-          function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: umbc,
-                zoom: 8
-            });
 
-          }
-          </script>
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOR2E6G3t8nrOqDF6WkgKEueL8YykS0c&callback=initMap"
-          async defer></script>
-          </td>
-
-          <td width=25% height=100%>
-            <div id="query" align="right">
+            <div id="query" align="center">
+            <h1> Find your ideal place to live! </h1>
+            <br>
             <form align="middle" width=100% height=100%>
                 Test Query: 
                 <input type="text" name="testQuery" id="testQuery"><br>
@@ -133,12 +106,7 @@
 
             </div>
       
-          </td>
-          </tr>
-        </tbody>
-        </table>
-        <!-- DivTable.com -->
-
+        
 
 
     <!-- Bootstrap core JavaScript -->
