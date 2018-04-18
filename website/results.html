@@ -23,8 +23,16 @@
           padding-top: 56px;
         }
       }
+      #map {
+        height: 100%;
+        width: 75%;
+        position: absolute;
+        
+      }
       #query {
         margin: auto;
+        position: absolute;
+        width: 25%;
 
       }
       /* Optional: Makes the sample page fill the window. */
@@ -64,12 +72,58 @@
 
     <!-- Page Content -->
  
+        <table width=100% height=100%>
+        <tbody>
+        <tr>
+          <td width=75% height=100%>
+            
+            <div id="map"></div>      
+            
+        <script>
+          var map;
+          var umbc = {lat: 39.260261, lng: -76.711508};
+          function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: umbc,
+                zoom: 8
+            });
 
-            <div id="query" align="center">
-            <h1> Find your ideal place to live! </h1>
-            <br>
+          }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOR2E6G3t8nrOqDF6WkgKEueL8YykS0c&callback=initMap"
+          async defer></script>
+          </td>
+
+          <td width=25% height=100%>
+            <div id="query" align="right">
             <form align="middle" width=100% height=100%>
-                Test Query: 
+                
+                Average cost of living:  <br>
+                <div class="slidecontainer">
+                <input type="range" min="1" max="1000" value="500" class="slider" id="query_col">
+                </div>
+                
+                Cost of Living: $<span id="display_col"></span>
+                <script>
+                var slider = document.getElementById("query_col");
+                var output = document.getElementById("display_col");
+                output.innerHTML = slider.value;
+
+                slider.oninput = function() {
+                  output.innerHTML = this.value;
+                }
+                </script>
+                <br>
+                <br>
+                Average temperature range:
+                <br>
+                Min: <input type="text" name="query_temp_min" id="testQuery" size=4>                
+                Max: <input type="text" name="query_temp_max" id="testQuery" size=4>
+                <br>
+                <br>
+
+
+                <br><br>
                 <input type="text" name="testQuery" id="testQuery"><br>
                 <br>
                 <button type="button" onclick="handleSubmit()">Submit</button>
@@ -91,7 +145,7 @@
                       //handle response here
                       console.log(response);
                       /**
-		      var positions = JSON.parse(response);
+          var positions = JSON.parse(response);
                       positions.forEach(function(element) {
                           console.log(element);
                           var marker = new google.maps.Marker({
@@ -99,14 +153,19 @@
                             map: map
                           });
                       });
-		      **/
+          **/
                     }
                 </script>
             </form>
 
             </div>
       
-        
+          </td>
+          </tr>
+        </tbody>
+        </table>
+        <!-- DivTable.com -->
+
 
 
     <!-- Bootstrap core JavaScript -->
