@@ -117,8 +117,8 @@
                 <br>
                 Average temperature range:
                 <br>
-                Min: <input type="text" name="query_temp_min" id="testQuery" size=4>                
-                Max: <input type="text" name="query_temp_max" id="testQuery" size=4>
+                Min: <input type="text" name="query_temp_min" id="query_temp_min" size=4>                
+                Max: <input type="text" name="query_temp_max" id="query_temp_max" size=4>
                 <br>
                 <br>
 
@@ -130,13 +130,15 @@
               
                 <script type="text/javascript">
                     function handleSubmit() {
-                      var testData = document.getElementById("testQuery").value;
+                      
                       $.ajax({
                         url: "/getPoints",
                         //make an AJAX request to the py script
                         type: "POST",
                         //pass query params below
-                        data: { param: testData },
+                        data: { param_col_slider : document.getElementById("query_col").value,
+                                param_temp_min : document.getElementById("query_temp_min").value, 
+                                param_temp_max : document.getElementById("query_temp_max").value },
                         success: callbackFunc
                       });
                     }
