@@ -123,6 +123,21 @@
                 <br>
 
 
+                City Population (+/- 5%):  <br>
+                <div class="slidecontainer">
+                <input type="range" min="1" max="8000000" value="500" class="slider" id="query_pop">
+                </div>
+                Population: <span id="display_pop"></span>
+                <script>
+                var slider = document.getElementById("query_pop");
+                var output = document.getElementById("display_pop");
+                output.innerHTML = slider.value;
+
+                slider.oninput = function() {
+                  output.innerHTML = this.value;
+                }
+                </script>
+
                 <br><br>
                 <input type="text" name="testQuery" id="testQuery"><br>
                 <br>
@@ -138,7 +153,8 @@
                         //pass query params below
                         data: { param_col_slider : document.getElementById("query_col").value,
                                 param_temp_min : document.getElementById("query_temp_min").value, 
-                                param_temp_max : document.getElementById("query_temp_max").value },
+                                param_temp_max : document.getElementById("query_temp_max").value,
+                                param_pop : document.getElementById("query_pop").value},
                         success: callbackFunc
                       });
                     }

@@ -13,8 +13,9 @@ def getPoints():
     col_slider = request.form['param_col_slider']
     temp_min = request.form['param_temp_min']
     temp_max = request.form['param_temp_max']
-    
-    searcher = vesta.UserSearch(temp_min, temp_max)    
+    pop = request.form['param_pop']
+
+    searcher = vesta.UserSearch(temp_min, temp_max, pop)    
     #databases = {"cDB" : CensusDB(user), "ncdcDB" : NcdcDB(user), "eGDB" : ElectionGitDB(user), "blsDB" : BlsDB(user)}
     results = vesta.NcdcDB(searcher).askDB(searcher)
 
