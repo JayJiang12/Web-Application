@@ -11,11 +11,11 @@ class GeoLoc:
 class UserSearch():
     #COORDINATE WITH FRONT END TEAM
     #We need to figure out how data will be sent and recieved before we progress further.
-    def __init__(self, tempMin, tempMax):
+    def __init__(self, tempMin, tempMax, pop):
         self.tempMin = tempMin  # Room temp
         self.tempMax = tempMax  # Room temp
-        # self.costOfLiving = 100.
-        # self.pop = (0, 1)   #(min, max) tuple specifying range
+        self.pop = pop  # (min, max) tuple specifying range
+        # self.costOfLiving = 100
         # self.propValue = 0
         # self.temp = 73.4    #Room temp
         # self.rainFall = 0   #desert
@@ -33,9 +33,21 @@ class Database:
 
 
 class CensusDB(Database):
-    def buildQuery(self):
-        queryString = "https://api.census.gov/data/2016/pep/population?"
-        print("censusDB")
+    def __init__(self, userSearch):
+        super().__init__(userSearch)
+    def buildQuery(self, userSearch):
+        popCenter = (int(userSearch.pop))
+        popMin = popCenter - (popCenter * .05)
+        popMax = popCenter + (popCenter * .05)
+        url = "https://api.census.gov/data/2016/pep/population?get=GEONAME&for=place:*&DATE=9&POP=" + str(int(popMin)) + ":" + str(int(popMax)) + "&key=ec8369606ce877227f10a83d24e5d398a5a8ac5b"
+
+        response = urllib.request.urlopen(url)
+        assert response.code == 200
+        # Use the json module to load response into a list.
+        response_list = json.loads(response.read())
+        # Check the contents of the response.
+        return(response_list)
+
     def askDB(self):
         self.buildQuery()
         #execute API request
