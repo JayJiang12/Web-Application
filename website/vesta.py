@@ -45,12 +45,12 @@ class CensusDB(Database):
 class NcdcDB(Database):
     def __init__(self, userSearch):
         super().__init__(userSearch)
-    def buildQuery(self):
+    def buildQuery(self, userSearch):
         now = datetime.datetime.now()
-        start = now.date + datetime.timedelta(-30)
-        temp = (userSearch.tempMin() + userSearch.tempMax)/2
-        url = "https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GSOM&datatypeid=TEMP:" + temp + "&startdate=" + start + "&enddate=" + now
-
+        start = now.date() + datetime.timedelta(-30)
+        temp = (int(userSearch.tempMin) + int(userSearch.tempMax))/2
+        url = "https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GSOM&datatypeid=TEMP:" + str(int(temp)) + "&startdate=" + str(start) + "&enddate=" + str(now)
+        
         url = urllib.request.Request(url)
         # this adds the token to the header of the URL, this API does not all the key to be added at the end
         url.add_header("token", "qxfmNuMcWnQcARsCvMDpdLNDmvNpFFug")
@@ -63,10 +63,10 @@ class NcdcDB(Database):
         response_list = json.loads(response.read())
 
         # Check the contents of the response.
-        pprint.pprint(response_list)
+        return response_list
 
-    def askDB(self):
-        self.buildQuery()
+    def askDB(self, userSearch):
+        return self.buildQuery(userSearch)
         #execute API request
         # results = bullshitFromAPI  # data will probably need massaging
 
@@ -85,6 +85,7 @@ class BlsDB(Database):
         self.buildQuery()
         print("blsDB")
     def askDB(self):
+        pass
         #execute API request
         # results = bullshitFromAPI  # data will probably need massaging
 

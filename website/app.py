@@ -14,10 +14,11 @@ def getPoints():
     temp_min = request.form['param_temp_min']
     temp_max = request.form['param_temp_max']
     
-    searcher = UserSearch(temp_min, temp_max)    
-    databases = {"cDB" : CensusDB(user), "ncdcDB" : NcdcDB(user), "eGDB" : ElectionGitDB(user), "blsDB" : BlsDB(user)}
+    searcher = vesta.UserSearch(temp_min, temp_max)    
+    #databases = {"cDB" : CensusDB(user), "ncdcDB" : NcdcDB(user), "eGDB" : ElectionGitDB(user), "blsDB" : BlsDB(user)}
+    results = vesta.NcdcDB(searcher).askDB(searcher)
 
-    databases['ncdcDB'].askDB()
+    #results = databases['ncdcDB'].askDB()
     # finalResult = Set()
     # for key, db in databases.items():
     #     db.buildQuery()
@@ -25,8 +26,8 @@ def getPoints():
     #     finalResult.intersection_update(db.results)
     # print("Final Result: ", finalResult, "\n")
     
-
-    return json.dumps(col_slider);
+    return results
+    #return json.dumps(col_slider);
 #    return json.dumps([[39.260261, -76.711508], [38.9307318,-77.0080818,15]])
 
 if __name__ == "__main__":
