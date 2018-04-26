@@ -1,21 +1,28 @@
-from sets import Set
+import urllib.request
+import json
+import pprint
+import datetime
+
 
 class GeoLoc:
     def __init__(self, location):
         self.location = location
 
-class UserSearch:
+class UserSearch():
     #COORDINATE WITH FRONT END TEAM
     #We need to figure out how data will be sent and recieved before we progress further.
-    def __init__(self):
-        self.pop = (0, 1)   #(min, max) tuple specifying range
-        self.propValue = 0
-        self.temp = 73.4    #Room temp
-        self.rainFall = 0   #desert
-        self.snowFall = 0
-        self.hazards = ["some", "hazards", "here"]
-        self.voters = 50    #percentage
-        self.radius = 10    #meters? who knows
+    def __init__(self, tempMin, tempMax):
+        self.tempMin = tempMin  # Room temp
+        self.tempMax = tempMax  # Room temp
+        # self.costOfLiving = 100.
+        # self.pop = (0, 1)   #(min, max) tuple specifying range
+        # self.propValue = 0
+        # self.temp = 73.4    #Room temp
+        # self.rainFall = 0   #desert
+        # self.snowFall = 0
+        # self.hazards = ["some", "hazards", "here"]
+        # self.voters = 50    #percentage
+        # self.radius = 10    #meters? who knows
 
 
     #setters and getters here if necessary (Daniel doesn't think they are necessary for the record.
@@ -36,12 +43,32 @@ class CensusDB(Database):
 
 
 class NcdcDB(Database):
+    def __init__(self, userSearch):
+        super().__init__(userSearch)
     def buildQuery(self):
-        print("ncdcDB")
+        now = datetime.datetime.now()
+        start = now.date + datetime.timedelta(-30)
+        temp = (userSearch.tempMin() + userSearch.tempMax)/2
+        url = "https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GSOM&datatypeid=TEMP:" + temp + "&startdate=" + start + "&enddate=" + now
+
+        url = urllib.request.Request(url)
+        # this adds the token to the header of the URL, this API does not all the key to be added at the end
+        url.add_header("token", "qxfmNuMcWnQcARsCvMDpdLNDmvNpFFug")
+
+        # Make a get request with the parameters.
+        response = urllib.request.urlopen(url)
+        assert response.code == 200
+
+        # Use the json module to load response into a list.
+        response_list = json.loads(response.read())
+
+        # Check the contents of the response.
+        pprint.pprint(response_list)
+
     def askDB(self):
         self.buildQuery()
         #execute API request
-        results = bullshitFromAPI  # data will probably need massaging
+        # results = bullshitFromAPI  # data will probably need massaging
 
 
 class ElectionGitDB(Database):
@@ -50,7 +77,7 @@ class ElectionGitDB(Database):
     def askDB(self):
         self.buildQuery()
         #execute API request
-        results = bullshitFromAPI  # data will probably need massaging
+        # results = bullshitFromAPI  # data will probably need massaging
 
 
 class BlsDB(Database):
@@ -59,7 +86,7 @@ class BlsDB(Database):
         print("blsDB")
     def askDB(self):
         #execute API request
-        results = bullshitFromAPI  # data will probably need massaging
+        # results = bullshitFromAPI  # data will probably need massaging
 
 
 def driver():
@@ -75,7 +102,7 @@ def driver():
 
     databases = {"cDB" : CensusDB(user), "ncdcDB" : NcdcDB(user), "eGDB" : ElectionGitDB(user), "blsDB" : BlsDB(user)}
 #TODO final result needs to be initialized with some data because the intersection between nothing and something is nothing
-    finalResult = Set()
+    finalResult = set()
     for key, db in databases.items():
         db.buildQuery()
         db.askDB()
