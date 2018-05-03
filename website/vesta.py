@@ -37,21 +37,20 @@ class CensusDB(Database):
         super().__init__(userSearch)
     def buildQuery(self, userSearch):
         popCenter = (int(userSearch.pop))
-        popMin = popCenter - (popCenter * .05)
-        popMax = popCenter + (popCenter * .05)
+        popMin = popCenter - (popCenter * .20)
+        popMax = popCenter + (popCenter * .20)
         url = "https://api.census.gov/data/2016/pep/population?get=GEONAME&for=place:*&DATE=9&POP=" + str(int(popMin)) + ":" + str(int(popMax)) + "&key=ec8369606ce877227f10a83d24e5d398a5a8ac5b"
-
+        
         response = urllib.request.urlopen(url)
-        assert response.code == 200
+        #assert response.code == 200
         # Use the json module to load response into a list.
         response_list = json.loads(response.read())
         # Check the contents of the response.
-        return(response_list)
+        return response_list
 
-    def askDB(self):
-        self.buildQuery()
+    def askDB(self, userSearch):
+        return self.buildQuery(userSearch)
         #execute API request
-        results = bullshitFromAPI #data will probably need massaging
 
 
 class NcdcDB(Database):

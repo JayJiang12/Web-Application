@@ -17,8 +17,8 @@ def getPoints():
 
     searcher = vesta.UserSearch(temp_min, temp_max, pop)    
     #databases = {"cDB" : CensusDB(user), "ncdcDB" : NcdcDB(user), "eGDB" : ElectionGitDB(user), "blsDB" : BlsDB(user)}
-    results = vesta.NcdcDB(searcher).askDB(searcher)
-
+    #results = vesta.NcdcDB(searcher).askDB(searcher)
+    results = vesta.CensusDB(searcher).askDB(searcher)
     #results = databases['ncdcDB'].askDB()
     # finalResult = Set()
     # for key, db in databases.items():
