@@ -81,11 +81,11 @@
             
         <script>
           var map;
-          var umbc = {lat: 39.260261, lng: -76.711508};
+          var usa = {lat: 37.0979817, lng: -98.9600287};
           function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
-                center: umbc,
-                zoom: 8
+                center: usa,
+                zoom: 4
             });
 
           }
@@ -159,19 +159,40 @@
                       });
                     }
 
+
+                    // the smooth zoom function
+                    function smoothZoom (map, max, cnt) {
+                        if (cnt >= max) {
+                            return;
+                        }
+                        else {
+                            z = google.maps.event.addListener(map, 'zoom_changed', function(event){
+                                google.maps.event.removeListener(z);
+                                smoothZoom(map, max, cnt + 1);
+                            });
+                            setTimeout(function(){map.setZoom(cnt)}, 80); // 80ms is what I found to work well on my system -- it might not work well on all systems
+                        }
+                    }  
+
                     function callbackFunc(response) {
                       //handle response here
-                      console.log(response);
-                      /**
-          var positions = JSON.parse(response);
+                      //console.log(response);
+                      var positions = JSON.parse(response);
+
                       positions.forEach(function(element) {
-                          console.log(element);
+                          console.log(element[0]);
+                          console.log(element[1]);
                           var marker = new google.maps.Marker({
-                            position: {lat: element[0], lng: element[1]},
+                            position: {lat: element[1][0], lng: element[1][1]},
                             map: map
                           });
                       });
-          **/
+                      var firstPos = {lat: positions[0][1][0], lng: positions[0][1][1]};
+                      //var newOptions = {'zoom':13, 'center':firstPos};
+                      //map.setOptions(newOptions);
+                      map.panTo(firstPos);
+                      smoothZoom(map, 9, map.getZoom());
+                      
                     }
                 </script>
             </form>

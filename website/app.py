@@ -27,9 +27,10 @@ def getPoints():
     #     finalResult.intersection_update(db.results)
     # print("Final Result: ", finalResult, "\n")
     
-    return results
+    #return results
     #return json.dumps(col_slider);
-#    return json.dumps([[39.260261, -76.711508], [38.9307318,-77.0080818,15]])
+    results = [['Baltimore', [39.260261, -76.711508]], ['Detroit', [42.3180632,-83.32022]]]
+    return json.dumps(results)
 
 if __name__ == "__main__":
     app.run()
