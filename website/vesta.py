@@ -2,6 +2,8 @@ import urllib.request
 import json
 import pprint
 import datetime
+import csv
+
 
 
 class GeoLoc:
@@ -100,25 +102,49 @@ class BlsDB(Database):
         #execute API request
         # results = bullshitFromAPI  # data will probably need massaging
 
+# Okay, Here's what this does. We have 2 search cases: 1 var and 2 var. The classes must pass in the appopriate strings
+# for the column headers. DictReader allows us to refer to them by that name instead of messing with irritating column
+# numbers. However that means the strings need to be perfect. if it's 1 var, it'll look in that labeled column. If it is 2 var, it
+# will look for a range in that labeled column. If the algo needs to be modified, The reading of the csv into the dict can
+# be separated into it's own function. Or, possibly, even into the db classes themselves. Should return a list of the
+# results. These should return from the class and go right into the intersecting set algo in the driver. Hit me up if you
+# have questions. Cheers --5/5/2018 19:14;  Patrick T:-{D)>
+
+def parseCSV(file, label, x, y, cityCol, stateCol):          #x = min, y = max
+    queryResults = []
+    with open(file, newline='') as csvfile:
+        database = csv.DictReader(csvfile)
+        if not y:
+            for row in database:
+                if row[label] == x:
+                    queryResults.append(row[cityCol] + ", " + row[stateCol])
+                else:
+                    pass
+        elif y:
+            for row in database:
+                if x <= row[label] and row[label] <= y:
+                    queryResults.append(row[cityCol] + ", " + row[stateCol])
+                else:
+                    pass
+    return queryResults
 
 def driver():
     user = UserSearch
-    #build query
-        #object builds query, doesn't bother storing it
-    #send query
-        #object sends query, doesn't bother storing it
-    #recieve results
-        #query results return and stored in LIST member variable in object
-    #once results are populated in member variables, can be cased with blankDB.results. Will hold List
-    #store those in dictionary so that lambda function can execute on all simulataneously.
-
     databases = {"cDB" : CensusDB(user), "ncdcDB" : NcdcDB(user), "eGDB" : ElectionGitDB(user), "blsDB" : BlsDB(user)}
-#TODO final result needs to be initialized with some data because the intersection between nothing and something is nothing
+    startIntersecting = False
     finalResult = set()
     for key, db in databases.items():
         db.buildQuery()
-        db.askDB()
-        finalResult.intersection_update(db.results)
+        if not startIntersecting:
+            finalResult = db.askDB()
+            startIntersecting = True
+        else:
+            finalResult.intersection_update(db.askDB())
+
+        #and that's it. The return to the website needs to be handled, but the logic for getting the cities that meet all requirements is done
+        #FYI we need some use cases that will yiled more than one city. Because of what this does, it will likely easily
+        #return a valid "no results" often. Just looking out for the end.   --5/5/2018 19:09;  Patrick T:-{D)>
+
     print("Final Result: ", finalResult, "\n")
     return 0;
 
