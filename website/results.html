@@ -98,21 +98,12 @@
             <div id="query" align="right">
             <form align="middle" width=100% height=100%>
                 
-                Average cost of living:  <br>
-                <div class="slidecontainer">
-                <input type="range" min="1" max="1000" value="500" class="slider" id="query_col">
-                </div>
-                
-                Cost of Living: $<span id="display_col"></span>
-                <script>
-                var slider = document.getElementById("query_col");
-                var output = document.getElementById("display_col");
-                output.innerHTML = slider.value;
+                <br>
+                Average Property Value: $<span id="display_property"></span>
+                <br>
+                Min: <input type="text" name="query_prop_min" id="query_prop_min" size=4>                
+                Max: <input type="text" name="query_prop_max" id="query_prop_max" size=4>
 
-                slider.oninput = function() {
-                  output.innerHTML = this.value;
-                }
-                </script>
                 <br>
                 <br>
                 Average temperature range:
@@ -123,23 +114,12 @@
                 <br>
 
 
-                City Population (+/- 5%):  <br>
-                <div class="slidecontainer">
-                <input type="range" min="1" max="8000000" value="500" class="slider" id="query_pop">
-                </div>
-                Population: <span id="display_pop"></span>
-                <script>
-                var slider = document.getElementById("query_pop");
-                var output = document.getElementById("display_pop");
-                output.innerHTML = slider.value;
+                City Population:  <br>
+                Min: <input type="text" name="query_pop_min" id="query_pop_min" size=4>                
+                Max: <input type="text" name="query_pop_max" id="query_pop_max" size=4>
+                <br>
+                <br>
 
-                slider.oninput = function() {
-                  output.innerHTML = this.value;
-                }
-                </script>
-
-                <br><br>
-                <input type="text" name="testQuery" id="testQuery"><br>
                 <br>
                 <button type="button" onclick="handleSubmit()">Submit</button>
               
@@ -151,10 +131,14 @@
                         //make an AJAX request to the py script
                         type: "POST",
                         //pass query params below
-                        data: { param_col_slider : document.getElementById("query_col").value,
+                        data: { 
+                                param_prop_min : document.getElementById("query_prop_min").value,
+                                param_prop_max : document.getElementById("query_prop_max").value,
                                 param_temp_min : document.getElementById("query_temp_min").value, 
                                 param_temp_max : document.getElementById("query_temp_max").value,
-                                param_pop : document.getElementById("query_pop").value},
+                                param_pop_min : document.getElementById("query_pop_min").value,
+                                param_pop_max : document.getElementById("query_pop_max").value
+                              },
                         success: callbackFunc
                       });
                     }
