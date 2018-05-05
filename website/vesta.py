@@ -8,16 +8,15 @@ class GeoLoc:
     def __init__(self, location):
         self.location = location
 
-class UserSearch():
-    #COORDINATE WITH FRONT END TEAM
-    #We need to figure out how data will be sent and recieved before we progress further.
-    def __init__(self, tempMin, tempMax, pop):
-        self.tempMin = tempMin  # Room temp
-        self.tempMax = tempMax  # Room temp
-        self.pop = pop  # (min, max) tuple specifying range
-        # self.costOfLiving = 100
-        # self.propValue = 0
-        # self.temp = 73.4    #Room temp
+class UserSearch:
+    # initialized to nothing; set values manually
+    def __init__(self):
+        self.tempMin = None
+        self.tempMax = None
+        self.popMin = None
+        self.popMax = None
+        self.propertyMin = None
+        self.propertyMax = None
         # self.rainFall = 0   #desert
         # self.snowFall = 0
         # self.hazards = ["some", "hazards", "here"]
@@ -33,14 +32,12 @@ class Database:
 
 
 class CensusDB(Database):
-    def __init__(self, userSearch):
-        super().__init__(userSearch)
-    def buildQuery(self, userSearch):
-        popCenter = (int(userSearch.pop))
+    def buildQuery(self):
+        popCenter = (int(self.userSearch.pop))
         popMin = popCenter - (popCenter * .20)
         popMax = popCenter + (popCenter * .20)
         url = "https://api.census.gov/data/2016/pep/population?get=GEONAME&for=place:*&DATE=9&POP=" + str(int(popMin)) + ":" + str(int(popMax)) + "&key=ec8369606ce877227f10a83d24e5d398a5a8ac5b"
-        
+
         response = urllib.request.urlopen(url)
         #assert response.code == 200
         # Use the json module to load response into a list.
@@ -48,20 +45,18 @@ class CensusDB(Database):
         # Check the contents of the response.
         return response_list
 
-    def askDB(self, userSearch):
-        return self.buildQuery(userSearch)
+    def askDB(self):
+        return self.buildQuery(self.userSearch)
         #execute API request
 
 
 class NcdcDB(Database):
-    def __init__(self, userSearch):
-        super().__init__(userSearch)
-    def buildQuery(self, userSearch):
+    def buildQuery(self):
         now = datetime.datetime.now()
         start = now.date() + datetime.timedelta(-30)
-        temp = (int(userSearch.tempMin) + int(userSearch.tempMax))/2
+        temp = (int(self.userSearch.tempMin) + int(self.userSearch.tempMax))/2
         url = "https://www.ncdc.noaa.gov/cdo-web/api/v2/data?datasetid=GSOM&datatypeid=TEMP:" + str(int(temp)) + "&startdate=" + str(start) + "&enddate=" + str(now)
-        
+
         url = urllib.request.Request(url)
         # this adds the token to the header of the URL, this API does not all the key to be added at the end
         url.add_header("token", "qxfmNuMcWnQcARsCvMDpdLNDmvNpFFug")
@@ -76,8 +71,8 @@ class NcdcDB(Database):
         # Check the contents of the response.
         return response_list
 
-    def askDB(self, userSearch):
-        return self.buildQuery(userSearch)
+    def askDB(self):
+        return self.buildQuery(self.userSearch)
         #execute API request
         # results = bullshitFromAPI  # data will probably need massaging
 
@@ -102,7 +97,7 @@ class BlsDB(Database):
 
 
 def driver():
-    user = UserSearch
+    user = UserSearch()
     #build query
         #object builds query, doesn't bother storing it
     #send query
