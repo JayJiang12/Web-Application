@@ -1,0 +1,23 @@
+# mysql -u cmsc447-user -p -D vesta < cities_backup.sql
+
+CREATE TABLE cities (
+  city varchar(45) NOT NULL,
+  state varchar(45) NOT NULL,
+  county varchar(45) DEFAULT NULL,
+  countyFips int(5) DEFAULT NULL,
+  latitude double DEFAULT NULL,
+  longitude varchar(45) DEFAULT NULL,
+  population double DEFAULT NULL,
+  propertyValue int(11) DEFAULT NULL,
+  minTemp double DEFAULT NULL,
+  maxTemp double DEFAULT NULL,
+  color varchar(4) DEFAULT NULL,
+  PRIMARY KEY (`city`,`state`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+LOAD DATA LOCAL INFILE 'cities_backup.csv'
+INTO TABLE cities
+FIELDS TERMINATED BY ';'
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
