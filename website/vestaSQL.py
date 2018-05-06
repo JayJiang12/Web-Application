@@ -28,6 +28,9 @@ def getCities(request):
     # If user did not submit any parameters, return empty list
     userInput = request.values()
     
+    f = open('log.txt', 'w')
+    f.write(userInput)
+
     if all(value == "" for value in userInput):
         return([])  
 
