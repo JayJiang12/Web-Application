@@ -17,6 +17,8 @@
         http://stackabuse.com/reading-and-writing-json-to-a-file-in-python/
 '''
 
+# api.census.gov 
+
 import MySQLdb
 import urllib.request
 import json 

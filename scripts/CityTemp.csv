@@ -1,0 +1,1420 @@
+State,City,Avg Winter Low,Avg Summer High
+Wyoming,Alta,11,74
+Wyoming,Cody,16,80
+Wyoming,Jackson,7,79
+Wyoming,Moose,2,77
+Wyoming,Moran,2,75
+Wyoming,Yellowstone Lake,2,68
+Wyoming,"Yellowstone Park, Mammoth",12,75
+Wyoming,"Yellowstone Park, Old Faithful",0,71
+Wyoming,Evanston,11,78
+Wyoming,Fontenelle Reservoir Dam,2,79
+Wyoming,Fossil Butte Monument,5,79
+Wyoming,Kemmerer,2,76
+Wyoming,Rock Springs,13,80
+Wyoming,Boysen Reservoir Dam,8,86
+Wyoming,Burgess Junction,7,66
+Wyoming,Lander,11,83
+Wyoming,Riverton,7,84
+Wyoming,South Pass City,5,74
+Wyoming,Ten Sleep,2,83
+Wyoming,Thermopolis,13,89
+Wyoming,Worland,6,85
+Wyoming,Buffalo,14,80
+Wyoming,Devils Tower,7,82
+Wyoming,Gillette,14,83
+Wyoming,Sheridan,12,83
+Wyoming,Sundance,14,81
+Wyoming,Casper,14,84
+Wyoming,Centennial,11,73
+Wyoming,Cheyenne,18,79
+Wyoming,Douglas,11,83
+Wyoming,Laramie,10,77
+Wyoming,Muddy Gap,15,83
+Wyoming,Rawlins,12,80
+Wyoming,Torrington,12,86
+Wisconsin,Appleton,12,79
+Wisconsin,"Crivitz, High Falls Flowage",5,79
+Wisconsin,Fond du Lac,12,78
+Wisconsin,Green Bay,11,77
+Wisconsin,Kenosha,19,76
+Wisconsin,Lake Geneva,17,83
+Wisconsin,Manitowoc,16,75
+Wisconsin,Marinette,12,77
+Wisconsin,Milwaukee,18,78
+Wisconsin,Oshkosh,13,79
+Wisconsin,Racine,18,75
+Wisconsin,Sheboygan,16,79
+Wisconsin,Sturgeon Bay,13,76
+Wisconsin,Washington Island,14,73
+Wisconsin,Beaver Dam,12,80
+Wisconsin,Beloit,15,81
+Wisconsin,La Crosse,12,82
+Wisconsin,Madison,14,79
+Wisconsin,Prairie du Chien,12,82
+Wisconsin,Viroqua,9,77
+Wisconsin,Wisconsin Dells,9,80
+Wisconsin,Wisconsin Rapids,8,81
+Wisconsin,Drummond,4,77
+Wisconsin,Eau Claire,8,80
+Wisconsin,Park Falls,4,75
+Wisconsin,"Rest Lake, Manitowish Waters",3,75
+Wisconsin,Rhinelander,4,77
+Wisconsin,Rice Lake,5,78
+Wisconsin,River Falls,7,80
+Wisconsin,St Croix Falls,6,81
+Wisconsin,Wausau,9,78
+Wisconsin,Willow Reservoir,4,75
+Wisconsin,Ashland,7,76
+Wisconsin,Bayfield,9,74
+Wisconsin,Madeline Island,9,75
+Wisconsin,Superior,8,72
+West Virginia,Bartow,18,76
+West Virginia,Canaan Valley Park,16,74
+West Virginia,Elkins,21,79
+West Virginia,Franklin,22,82
+West Virginia,Marlinton,15,81
+West Virginia,Martinsburg,24,84
+West Virginia,Seneca State Forest,18,78
+West Virginia,Wardensville,21,84
+West Virginia,Beckley,25,78
+West Virginia,Bluefield,28,80
+West Virginia,Charleston,28,83
+West Virginia,Huntington,27,86
+West Virginia,Summersville Lake,22,78
+West Virginia,White Sulphur Springs,21,81
+West Virginia,Clarksburg,23,83
+West Virginia,Fairmont,25,82
+West Virginia,Morgantown,25,81
+West Virginia,Moundsville,23,84
+West Virginia,Parkersburg,25,83
+West Virginia,Sutton Lake,24,83
+West Virginia,Wheeling,24,83
+Washington,Aberdeen,36,67
+Washington,Clearwater,34,70
+Washington,Forks,34,70
+Washington,"Friday Harbor, San Juan Island",35,70
+Washington,Grayland,37,65
+Washington,Long Beach,36,64
+Washington,Port Angeles,37,65
+Washington,Anacortes,36,72
+Washington,Bellingham,32,70
+Washington,Bremerton,35,74
+Washington,Everett,33,73
+Washington,Longview,35,76
+Washington,"Olga, Orcas Island",35,69
+Washington,Olympia,33,75
+Washington,Port Townsend,38,71
+Washington,Seattle,36,74
+Washington,Tacoma,36,75
+Washington,Vancouver,32,76
+Washington,Baker Lake Dam,29,72
+Washington,Baring,32,74
+Washington,Darrington,30,78
+Washington,Mt Adams Ranger Station,25,80
+Washington,Mt Rainier Paradise Ranger Station,22,61
+Washington,Mud Mountain Lake Dam,32,71
+Washington,Ross Dam,30,75
+Washington,Stampede Pass,23,65
+Washington,Boundary Dam,20,79
+Washington,Chelan,25,82
+Washington,Coulee Dam,23,84
+Washington,Kennewick,30,87
+Washington,Leavenworth,20,84
+Washington,Pullman,25,79
+Washington,Spokane,24,80
+Washington,Walla Walla,30,85
+Washington,Wenatchee,24,85
+Washington,Winthrop,15,83
+Washington,Yakima,23,85
+Virginia,Abingdon,25,83
+Virginia,Blacksburg,23,80
+Virginia,Burkes Garden,21,76
+Virginia,Galax,23,80
+Virginia,Hot Springs,21,81
+Virginia,Mount Weather,25,81
+Virginia,Pennington Gap,23,84
+Virginia,Roanoke,29,85
+Virginia,Staunton,25,82
+Virginia,Winchester,25,83
+Virginia,Wise,27,79
+Virginia,Arlington,31,86
+Virginia,Charlottesville,28,86
+Virginia,Danville,28,88
+Virginia,Fredericksburg,25,86
+Virginia,John H Kerr Dam,29,89
+Virginia,Lynchburg,26,85
+Virginia,Philpott Lake Dam,27,85
+Virginia,Richmond,30,88
+Virginia,Back Bay Wildlife Reserve,35,85
+Virginia,Colonial Beach,28,89
+Virginia,Hampton,36,87
+Virginia,Mathews,28,85
+Virginia,Newport News,33,87
+Virginia,Norfolk,34,85
+Virginia,Painter,32,85
+Virginia,Suffolk,32,85
+Virginia,Tangier Island,33,86
+Virginia,Williamsburg,31,85
+Vermont,Ball Mountain Lake,11,77
+Vermont,Bennington,15,77
+Vermont,Cavendish,8,79
+Vermont,Readsboro,14,76
+Vermont,Rutland,11,78
+Vermont,Woodstock,9,79
+Vermont,Montpelier,10,76
+Vermont,Rochester,10,77
+Vermont,South Lincoln,9,74
+Vermont,Burlington,14,78
+Vermont,Essex Junction,11,79
+Vermont,Jay Peak,6,71
+Vermont,Mount Mansfield,5,63
+Vermont,Newport,6,75
+Vermont,St Albans,10,77
+Vermont,St Johnsbury,9,79
+Vermont,South Hero,14,78
+Utah,"Brighton, Silver Lake",10,68
+Utah,Deer Creek Reservoir Dam,12,82
+Utah,Echo Reservoir Dam,13,83
+Utah,Logan,18,84
+Utah,Nephi,21,85
+Utah,Ogden,21,90
+Utah,Pleasant Grove,22,87
+Utah,Provo,24,90
+Utah,Salt Lake City,23,89
+Utah,Timpanogos Cave Monument,22,86
+Utah,"Rockport Reservoir, Wanship Dam",15,85
+Utah,Dinosaur National Monument,10,90
+Utah,Flaming Gorge Reservoir Dam,12,83
+Utah,Roosevelt,7,89
+Utah,Arches National Park,24,96
+Utah,Bryce Canyon Park Headquarters,15,77
+Utah,"Canyonlands Park, The Needles",20,92
+Utah,Capitol Reef National Park,21,88
+Utah,Escalante,19,89
+Utah,"Glen Canyon, Bullfrog Basin",27,96
+Utah,Green River,17,95
+Utah,Hovenweep National Monument,20,90
+Utah,Moab,22,96
+Utah,Natural Bridges Monument,20,85
+Utah,"Blowhard Mountain (10,694 feet)",14,59
+Utah,Cedar City,18,86
+Utah,Delta,14,91
+Utah,Fish Springs Wildlife Refuge,20,90
+Utah,Richfield,17,87
+Utah,St George,32,98
+Utah,Wendover,20,87
+Utah,Zion National Park,31,98
+Texas,College Station,42,94
+Texas,Dallas,39,94
+Texas,Denton,34,94
+Texas,Fort Worth,37,93
+Texas,Killeen,37,94
+Texas,McKinney,32,90
+Texas,Waco,38,95
+Texas,Wichita Falls,31,95
+Texas,Alice,47,96
+Texas,Austin,43,95
+Texas,Choke Canyon Lake Dam,44,95
+Texas,Falcon Lake Dam,48,100
+Texas,Fredericksburg,35,92
+Texas,Kingsville,48,94
+Texas,Laredo,47,99
+Texas,Midland,32,94
+Texas,New Braunfels,39,92
+Texas,San Antonio,42,94
+Texas,Lake Fork,35,91
+Texas,Longview,35,92
+Texas,Lufkin,39,92
+Texas,Sam Rayburn Lake Dam,40,90
+Texas,Texarkana,35,92
+Texas,Toledo Bend Reservoir Dam,38,92
+Texas,Tyler,38,92
+Texas,Aransas Wildlife Refuge,46,89
+Texas,Beaumont,43,91
+Texas,Brownsville,53,93
+Texas,Corpus Christi,49,92
+Texas,Galveston,46,88
+Texas,Houston,45,93
+Texas,McAllen,52,97
+Texas,South Padre Island,55,89
+Texas,Victoria,44,93
+Texas,Abilene,34,93
+Texas,Amarillo,24,89
+Texas,Del Rio,42,96
+Texas,El Paso,34,94
+Texas,Guadalupe Mountains Park,34,85
+Texas,"Lajitas, Big Bend Park",34,100
+Texas,Lubbock,27,91
+Texas,San Angelo,34,94
+Tennessee,Bristol,27,84
+Tennessee,Chattanooga,32,89
+Tennessee,Copperhill,27,86
+Tennessee,Crossville,29,83
+Tennessee,Dayton,29,87
+Tennessee,Gatlinburg,27,84
+Tennessee,Greeneville,26,86
+Tennessee,Kingsport,27,86
+Tennessee,Knoxville,31,87
+Tennessee,Lookout Mountain,29,83
+Tennessee,Mountain City,23,81
+Tennessee,Mousetail Landing Park,28,86
+Tennessee,Oak Ridge,29,87
+Tennessee,Oneida,25,84
+Tennessee,Cheatham Lake Dam,28,87
+Tennessee,Clarksville,29,89
+Tennessee,Columbia,28,88
+Tennessee,Cookeville,27,86
+Tennessee,Dover,29,86
+Tennessee,Monteagle,28,82
+Tennessee,Murfreesboro,27,89
+Tennessee,Nashville,30,88
+Tennessee,Shelbyville,30,88
+Tennessee,Dyersburg,30,89
+Tennessee,Jackson,30,89
+Tennessee,Martin,28,89
+Tennessee,Memphis,34,90
+Tennessee,Savannah,30,90
+South Dakota,Aberdeen,5,81
+South Dakota,Brookings,6,79
+South Dakota,Huron,9,83
+South Dakota,Mitchell,11,84
+South Dakota,Sioux Falls,9,81
+South Dakota,Vermillion,13,84
+South Dakota,Watertown,6,80
+South Dakota,Waubay Wildlife Refuge,6,80
+South Dakota,Yankton,12,85
+South Dakota,Academy,11,84
+South Dakota,Mobridge,8,82
+South Dakota,Pickstown,13,85
+South Dakota,Pierre,12,85
+South Dakota,Custer,15,77
+South Dakota,Deadwood,14,79
+South Dakota,Hot Springs,14,86
+South Dakota,Interior,16,88
+South Dakota,Lead,16,76
+South Dakota,Lemmon,11,83
+South Dakota,Mt. Rushmore National Memorial,18,76
+South Dakota,Pactola Reservoir Dam,11,76
+South Dakota,Porcupine,10,86
+South Dakota,Rapid City,17,81
+South Dakota,Spearfish,19,84
+South Dakota,Wind Cave National Park,14,82
+South Carolina,Beaufort,40,90
+South Carolina,Brookgreen Gardens,40,89
+South Carolina,Charleston,39,89
+South Carolina,Edisto Island,42,88
+South Carolina,Georgetown,37,89
+South Carolina,Hilton Head Island,41,87
+South Carolina,McClellanville,40,87
+South Carolina,Myrtle Beach,35,86
+South Carolina,Lake Moultrie (Pinopolis Dam),36,91
+South Carolina,Sullivan's Island,38,89
+South Carolina,Clarks Hill,36,92
+South Carolina,Columbia,39,93
+South Carolina,Florence,36,89
+South Carolina,Orangeburg,35,89
+South Carolina,Sumter,33,89
+South Carolina,Anderson,33,89
+South Carolina,Caesars Head State Park,27,77
+South Carolina,Calhoun Falls,32,90
+South Carolina,Greer,33,89
+South Carolina,Longcreek,30,84
+South Carolina,Ninety Nine Islands Reservoir,27,87
+South Carolina,Spartanburg,30,89
+Pennsylvania,Allentown,22,82
+Pennsylvania,Beltzville Lake Dam,18,82
+Pennsylvania,Chambersburg,24,83
+Pennsylvania,George B. Stevenson Reservoir,19,81
+Pennsylvania,Harrisburg,25,83
+Pennsylvania,Lancaster,24,83
+Pennsylvania,Matamoras,18,80
+Pennsylvania,Norristown,24,86
+Pennsylvania,Philadelphia,28,85
+Pennsylvania,State College,22,80
+Pennsylvania,Towanda,18,80
+Pennsylvania,Wilkes-Barre & Scranton,21,80
+Pennsylvania,Williamsport,21,82
+Pennsylvania,York,24,85
+Pennsylvania,Altoona,21,79
+Pennsylvania,Bradford,14,77
+Pennsylvania,Butler,20,80
+Pennsylvania,Erie,23,78
+Pennsylvania,Indiana,19,80
+Pennsylvania,Jamestown,18,78
+Pennsylvania,New Castle,20,82
+Pennsylvania,Pittsburgh,23,81
+Pennsylvania,Uniontown,22,82
+Pennsylvania,Warren,19,79
+Pennsylvania,Youghiogheny River Lake,19,81
+Oregon,Astoria,37,66
+Oregon,Brookings,42,67
+Oregon,Gold Beach,41,67
+Oregon,Honeyman State Park,38,65
+Oregon,Newport,40,64
+Oregon,North Bend,40,64
+Oregon,Port Orford,40,66
+Oregon,Seaside,38,63
+Oregon,Tillamook,36,67
+Oregon,Corvallis,34,79
+Oregon,Eugene,34,79
+Oregon,Portland,36,78
+Oregon,Salem,34,79
+Oregon,Crater Lake Park,18,65
+Oregon,Detroit Lake Dam,34,77
+Oregon,Government Camp,25,65
+Oregon,Howard Prairie Lake Dam,23,76
+Oregon,Klamath Falls,23,86
+Oregon,Lakeview,21,81
+Oregon,McKenzie Bridge,31,83
+Oregon,Medford,33,88
+Oregon,Three Lynx,31,75
+Oregon,Toketee Falls,31,81
+Oregon,Wickiup Reservoir Dam,20,78
+Oregon,Bend,23,78
+Oregon,Hood River,30,79
+Oregon,Madras,23,82
+Oregon,The Dalles,29,85
+Oregon,Hart Mountain Antelope Refuge,20,79
+Oregon,Heppner,27,83
+Oregon,La Grande,25,82
+Oregon,Lake Owyhee Dam,21,89
+Oregon,Malheur Wildlife Refuge,19,80
+Oregon,Ontario,21,90
+Oregon,Pendleton,28,84
+Oregon,Seneca,11,77
+Oregon,Summer Lake,25,84
+Oregon,Whitehorse Ranch,21,84
+Oklahoma,Bartlesville,26,91
+Oklahoma,Hugo,30,91
+Oklahoma,Idabel,29,92
+Oklahoma,Lake Eufaula,31,88
+Oklahoma,McAlester,32,91
+Oklahoma,Miami,27,89
+Oklahoma,Muskogee,28,91
+Oklahoma,Tulsa,29,91
+Oklahoma,Webbers Falls,26,92
+Oklahoma,Ada,29,92
+Oklahoma,Ardmore,33,92
+Oklahoma,Chickasha,28,94
+Oklahoma,Enid,26,92
+Oklahoma,Great Salt Plains Lake Dam,24,92
+Oklahoma,Guthrie,26,91
+Oklahoma,Norman,28,90
+Oklahoma,Oklahoma City,31,91
+Oklahoma,Ponca City,26,90
+Oklahoma,Stillwater,26,91
+Oklahoma,Altus,27,94
+Oklahoma,Altus Lake Dam,29,93
+Oklahoma,Beaver,20,91
+Oklahoma,Elk City,26,91
+Oklahoma,Kenton,22,90
+Oklahoma,Lawton,29,93
+Oklahoma,Reydon,24,90
+Oklahoma,Wichita Mountains Wildlife Refuge,30,92
+Ohio,Akron,21,80
+Ohio,Ashtabula,21,78
+Ohio,Chippewa Lake,19,80
+Ohio,Cleveland,24,81
+Ohio,Findlay,22,82
+Ohio,Lima,21,82
+Ohio,Mansfield,20,80
+Ohio,Painesville on the Lake,24,79
+Ohio,Put-in-Bay,22,79
+Ohio,Sandusky,23,79
+Ohio,Steubenville,22,81
+Ohio,Toledo,20,82
+Ohio,Youngstown,21,79
+Ohio,Athens,23,81
+Ohio,Chilo Lock Park,25,84
+Ohio,Cincinnati,24,85
+Ohio,Columbus,25,83
+Ohio,Dayton,24,85
+Ohio,Gallipolis,27,88
+Ohio,Hannibal Lock & Dam,23,82
+Ohio,Hopewell Culture Historical Park,23,84
+Ohio,Marietta,24,83
+Ohio,McConnelsville Lock,22,83
+Ohio,Newark,20,82
+Ohio,Portsmouth,25,85
+Ohio,Wilmington,22,82
+North Dakota,Devils Lake,2,77
+North Dakota,Fargo,4,80
+North Dakota,Grand Forks,2,79
+North Dakota,Jamestown,3,79
+North Dakota,McLeod,3,82
+North Dakota,Valley City,1,79
+North Dakota,Wahpeton,5,82
+North Dakota,Bismarck,5,82
+North Dakota,Bottineau,-1,77
+North Dakota,Garrison,2,79
+North Dakota,Minot,6,79
+North Dakota,Rugby,-1,79
+North Dakota,Dickinson,5,80
+North Dakota,Kenmare,3,78
+North Dakota,Medora,5,83
+North Dakota,Powers Lake,0,77
+North Dakota,Pretty Rock Wildlife Refuge,8,82
+North Dakota,Williston,3,81
+North Carolina,Asheville,29,83
+North Carolina,Banner Elk,21,75
+North Carolina,Blowing Rock,22,74
+North Carolina,Boone,22,77
+North Carolina,Grandfather Mountain,22,69
+North Carolina,Highlands,26,78
+North Carolina,Kerr Scott Reservoir,27,85
+North Carolina,Morganton,28,86
+North Carolina,Oconaluftee,25,83
+North Carolina,Pisgah Forest,25,83
+North Carolina,Tapoco,30,84
+North Carolina,Waterville,30,84
+North Carolina,Cary,30,87
+North Carolina,Chapel Hill,30,87
+North Carolina,Charlotte,31,87
+North Carolina,Concord,30,89
+North Carolina,Durham,28,85
+North Carolina,Gastonia,31,88
+North Carolina,Greensboro,31,86
+North Carolina,Henderson,25,87
+North Carolina,Hickory,30,86
+North Carolina,High Point,32,88
+North Carolina,Mount Airy,25,85
+North Carolina,Raleigh,31,88
+North Carolina,Winston-Salem,32,86
+North Carolina,Atlantic Beach,35,85
+North Carolina,Beaufort,38,84
+North Carolina,Belhaven,34,87
+North Carolina,Cape Hatteras,40,83
+North Carolina,Cedar Island,35,90
+North Carolina,Edenton,35,86
+North Carolina,Elizabeth City,33,87
+North Carolina,Fayetteville,32,88
+North Carolina,Goldsboro,34,88
+North Carolina,Greenville,33,88
+North Carolina,Hofmann Forest,32,86
+North Carolina,Manteo,38,86
+North Carolina,Morehead City,37,86
+North Carolina,New Bern,35,88
+North Carolina,Ocracoke,39,84
+North Carolina,Southport,36,89
+North Carolina,Wilmington,37,88
+New York,"Bridgehampton, Long Island",26,78
+New York,"Brookhaven, Long Island",25,81
+New York,"New York City, Brooklyn",29,82
+New York,"New York City, Central Park",29,82
+New York,New York JFK Airport,28,81
+New York,New York La Guardia Airport,29,83
+New York,White Plains,23,79
+New York,Albany,17,80
+New York,Poughkeepsie,18,82
+New York,Saratoga Springs,16,81
+New York,Slide Mountain (2650 feet),14,70
+New York,Glens Falls,11,79
+New York,Lake Placid,8,76
+New York,Massena,8,78
+New York,Old Forge,7,73
+New York,Tupper Lake,6,75
+New York,Watertown,12,78
+New York,Binghamton,18,76
+New York,Elmira,17,80
+New York,Ithaca,18,78
+New York,Syracuse,18,80
+New York,Utica,16,78
+New York,Allegany State Park,16,76
+New York,Buffalo,20,77
+New York,Jamestown,17,78
+New York,Niagara Falls,18,79
+New York,Rochester,20,79
+New Mexico,Alamogordo,33,92
+New Mexico,Bitter Lake Wildlife Refuge,20,95
+New Mexico,Carlsbad,29,94
+New Mexico,Carlsbad Caverns National Park,36,90
+New Mexico,Cuba,11,84
+New Mexico,Elephant Butte Lake Dam,30,95
+New Mexico,Gila Hot Springs,20,86
+New Mexico,Hobbs,30,94
+New Mexico,Roswell,27,93
+New Mexico,Ruidoso,22,79
+New Mexico,White Sands National Monument,23,95
+New Mexico,Albuquerque,27,88
+New Mexico,Clovis,26,89
+New Mexico,Conchas Lake Dam,26,92
+New Mexico,El Morro National Monument,15,81
+New Mexico,Gallup,14,86
+New Mexico,Gran Quivira National Monument,23,86
+New Mexico,Grants,16,89
+New Mexico,Las Vegas,19,81
+New Mexico,Pecos National Monument,18,84
+New Mexico,Santa Fe,19,84
+New Mexico,Socorro,23,90
+New Mexico,Tucumcari,25,92
+New Mexico,Abiquiu Lake Dam,20,85
+New Mexico,Aztec Ruins National Monument,19,88
+New Mexico,Chaco Canyon National Monument,15,87
+New Mexico,Clayton,22,86
+New Mexico,Eagle Nest,4,76
+New Mexico,El Vado Lake Dam,10,83
+New Mexico,Farmington,22,87
+New Mexico,Lake Maloya (Sugarite Canyon Park),11,75
+New Mexico,Raton,15,82
+New Mexico,Taos,13,84
+New Jersey,High Point State Park,17,76
+New Jersey,Hightstown,24,83
+New Jersey,Lambertville,20,85
+New Jersey,Long Branch,26,80
+New Jersey,Newark,27,84
+New Jersey,New Brunswick,24,83
+New Jersey,Plainfield,25,85
+New Jersey,Sandy Hook,28,81
+New Jersey,Somerville,20,82
+New Jersey,Trenton,25,83
+New Jersey,Wanaque Reservoir Dam,22,81
+New Jersey,Atlantic City Marina,31,79
+New Jersey,"Beach Haven, Brant Beach",28,80
+New Jersey,Belleplain State Forest,24,82
+New Jersey,Cape May,29,82
+New Jersey,Glassboro,24,84
+New Jersey,Millville,25,83
+New Jersey,Moorestown,25,87
+New Jersey,Toms River,24,82
+New Hampshire,Concord,13,80
+New Hampshire,Durham,17,80
+New Hampshire,Franklin Falls Reservoir Dam,10,80
+New Hampshire,Keene,12,80
+New Hampshire,Laconia & Lakeport,14,79
+New Hampshire,Lebanon,12,80
+New Hampshire,Massabesic Lake,16,80
+New Hampshire,Mount Sunapee,15,76
+New Hampshire,Nashua,15,80
+New Hampshire,Portsmouth & Greenland,18,80
+New Hampshire,Surry Mountain Lake,11,78
+New Hampshire,Berlin,8,76
+New Hampshire,Bethlehem,6,77
+New Hampshire,Colebrook,3,74
+New Hampshire,First Connecticut Lake,1,72
+New Hampshire,Mount Washington,-2,52
+New Hampshire,North Conway,11,77
+New Hampshire,Pinkham Notch,8,72
+New Hampshire,Plymouth,9,78
+New Hampshire,Tamworth,9,77
+Nevada,Boulder City,41,98
+Nevada,"Callville Bay, Lake Mead",38,106
+Nevada,Las Vegas,40,101
+Nevada,Laughlin,44,107
+Nevada,North Las Vegas,37,102
+Nevada,Red Rock Canyon State Park,30,94
+Nevada,Valley of Fire State Park,40,102
+Nevada,Carson City,23,86
+Nevada,Hawthorne,26,91
+Nevada,Reno,26,88
+Nevada,Virginia City,25,80
+Nevada,Caliente,21,92
+Nevada,Ely,12,84
+Nevada,Eureka,17,81
+Nevada,Great Basin National Park,19,80
+Nevada,Spring Valley State Park,10,85
+Nevada,Tonopah,21,89
+Nevada,Elko,15,86
+Nevada,Mountain City,10,81
+Nevada,Ruby Lake,14,82
+Nevada,Rye Patch Reservoir Dam,18,91
+Nevada,Winnemucca,19,89
+Nebraska,Columbus,16,85
+Nebraska,Falls City,19,86
+Nebraska,Fremont,15,85
+Nebraska,Lincoln,16,86
+Nebraska,Norfolk,14,84
+Nebraska,Omaha,16,85
+Nebraska,Enders Reservoir,13,87
+Nebraska,Grand Island,16,85
+Nebraska,Harlan County Lake,15,86
+Nebraska,Hastings,16,85
+Nebraska,Kearney,15,84
+Nebraska,"Lake McConaughy, Kingsley Dam",17,85
+Nebraska,McCook,15,87
+Nebraska,North Platte,15,84
+Nebraska,"Swanson Reservoir, Trenton Dam",16,88
+Nebraska,O'Neill,12,84
+Nebraska,Purdum,12,84
+Nebraska,Valentine,12,85
+Nebraska,Valentine National Wildlife Refuge,17,85
+Nebraska,Chadron,11,86
+Nebraska,Crescent Lake Wildlife Refuge,14,85
+Nebraska,Kimball,14,82
+Nebraska,Scottsbluff,14,86
+Montana,Cut Bank,12,76
+Montana,East Glacier Park,13,72
+Montana,"Flathead Lake, Polson",22,80
+Montana,Gibson Reservoir Dam,16,73
+Montana,Kalispell,16,78
+Montana,Libby,21,85
+Montana,Missoula,18,82
+Montana,Polebridge,9,76
+Montana,Rogers Pass,15,77
+Montana,Seeley Lake,12,79
+Montana,West Glacier,18,77
+Montana,Whitefish,16,76
+Montana,Bozeman,14,80
+Montana,Butte,7,77
+Montana,Deer Lodge,11,77
+Montana,Gardiner,17,83
+Montana,Hebgen Lake Dam,4,75
+Montana,Helena,14,82
+Montana,Sula,13,78
+Montana,Virginia City,13,78
+Montana,West Yellowstone,0,74
+Montana,"Bighorn Lake, Yellowtail Dam",19,84
+Montana,Billings,19,83
+Montana,Cooke City,5,71
+Montana,Mystic Lake,18,72
+Montana,Red Lodge,14,76
+Montana,Culbertson,5,84
+Montana,"Elwell Lake, Tiber Dam",10,82
+Montana,Fort Peck Lake Dam,9,86
+Montana,Glasgow,6,82
+Montana,Glendive,11,85
+Montana,Great Falls,15,79
+Montana,Havre City,8,81
+Montana,Lewistown,13,77
+Montana,Miles City,10,84
+Missouri,Cape Girardeau,26,88
+Missouri,Caruthersville,30,88
+Missouri,Cassville,23,86
+Missouri,Clearwater Lake Dam,24,89
+Missouri,Joplin,27,89
+Missouri,Ozark Beach,25,87
+Missouri,Poplar Bluff,27,88
+Missouri,Springfield,24,87
+Missouri,Stockton Lake Dam,24,86
+Missouri,Wappapello Lake Dam,25,90
+Missouri,Willow Springs,26,86
+Missouri,Clinton,21,87
+Missouri,Columbia,24,87
+Missouri,Jefferson City,23,86
+Missouri,Kansas City,24,88
+Missouri,"Lake Ozark, Lakeside",24,86
+Missouri,Lees Summit,22,85
+Missouri,Nevada,25,88
+Missouri,Pomme De Terre Lake Dam,23,87
+Missouri,Rolla,23,87
+Missouri,St Charles,23,86
+Missouri,St Louis,26,87
+Missouri,Hannibal,20,84
+Missouri,Kirksville,17,83
+Missouri,Maryville,16,85
+Missouri,Moberly,21,85
+Missouri,St Joseph,19,85
+Missouri,Trenton,18,86
+Mississippi,Biloxi,44,89
+Mississippi,Gulfport,44,89
+Mississippi,Pascagoula,40,88
+Mississippi,Picayune,39,90
+Mississippi,Hattiesburg,39,90
+Mississippi,Laurel,37,90
+Mississippi,McComb,39,90
+Mississippi,Natchez,38,90
+Mississippi,Greenville,35,90
+Mississippi,Greenwood,35,91
+Mississippi,Jackson,37,91
+Mississippi,Meridian,35,91
+Mississippi,Vicksburg,36,90
+Mississippi,Clarksdale,33,90
+Mississippi,Corinth City,30,89
+Mississippi,Grenada,32,89
+Mississippi,Holly Springs,28,90
+Mississippi,Tunica,35,90
+Mississippi,Tupelo,33,91
+Minnesota,Albert Lea,8,80
+Minnesota,Faribault,7,80
+Minnesota,Mankato,8,81
+Minnesota,Minneapolis,11,81
+Minnesota,Pipestone,6,80
+Minnesota,Redwood Falls,8,81
+Minnesota,Rochester,10,79
+Minnesota,St. Paul,10,80
+Minnesota,Winona,13,82
+Minnesota,Worthington,9,80
+Minnesota,Big Sandy Lake Dam,1,77
+Minnesota,Duluth,5,73
+Minnesota,Grand Marais,9,69
+Minnesota,Grand Portage,2,72
+Minnesota,Grand Rapids,1,78
+Minnesota,Gunflint Lake,-4,73
+Minnesota,Hibbing,-2,75
+Minnesota,International Falls,-3,75
+Minnesota,Two Harbors,10,72
+Minnesota,Wild River State Park,2,80
+Minnesota,Agassiz Wildlife Refuge,-1,79
+Minnesota,Alexandria,5,78
+Minnesota,Bemidji,-1,75
+Minnesota,Brainerd,0,78
+Minnesota,Detroit Lakes,2,80
+Minnesota,Moorhead,3,80
+Minnesota,St. Cloud,5,80
+Minnesota,Warroad,-2,76
+Minnesota,Waskish,-4,77
+Michigan,Ann Arbor,20,81
+Michigan,Dearborn,20,82
+Michigan,Detroit,21,81
+Michigan,Flint,17,80
+Michigan,Harbor Beach,18,73
+Michigan,Monroe,20,81
+Michigan,Port Huron,21,78
+Michigan,Saginaw,17,80
+Michigan,Battle Creek,17,81
+Michigan,Benton Harbor,22,81
+Michigan,Grand Rapids,20,81
+Michigan,Holland,21,81
+Michigan,Lansing,19,80
+Michigan,Mt Pleasant,16,80
+Michigan,Muskegon,22,78
+Michigan,Alpena,13,77
+Michigan,Cadillac,13,77
+Michigan,Cheboygan,12,75
+Michigan,East Tawas,14,78
+Michigan,Frankfort,20,75
+Michigan,Gaylord,12,76
+Michigan,Harrisville,16,73
+Michigan,Houghton Lake,11,79
+Michigan,Ludington,20,77
+Michigan,Petoskey,16,73
+Michigan,"St James, Beaver Island",17,74
+Michigan,Traverse City,17,78
+Michigan,Champion Van Riper Park,4,74
+Michigan,De Tour Village,12,73
+Michigan,Escanaba,8,73
+Michigan,Grand Marais,15,73
+Michigan,Houghton,10,73
+Michigan,Iron Mountain,6,78
+Michigan,Ironwood,5,74
+Michigan,Manistique,12,71
+Michigan,Marquette,15,72
+Michigan,Munising,13,72
+Michigan,Sault Ste Marie,11,74
+Michigan,Seney National Wildlife Refuge,11,78
+Michigan,Tahquamenon Falls Park,9,74
+Michigan,Whitefish Point,14,71
+Massachusetts,"Chatham, Cape Cod",26,72
+Massachusetts,"Edgartown, Martha's Vineyard",26,77
+Massachusetts,"Hyannis, Cape Cod",24,75
+Massachusetts,Nantucket,27,72
+Massachusetts,"Vineyard Haven, Martha's Vineyard",24,76
+Massachusetts,Boston,25,79
+Massachusetts,Brockton,20,80
+Massachusetts,East Wareham,22,77
+Massachusetts,"Great Blue Hill, Milton",20,78
+Massachusetts,Haverhill,16,80
+Massachusetts,Hingham,23,79
+Massachusetts,Marblehead,23,78
+Massachusetts,New Bedford,24,80
+Massachusetts,Plymouth,20,80
+Massachusetts,Taunton,21,81
+Massachusetts,Amherst,16,80
+Massachusetts,Barre Falls Reservoir Dam,14,77
+Massachusetts,Buffumville Lake,15,79
+Massachusetts,East Brimfield Lake,17,78
+Massachusetts,Lowell,17,82
+Massachusetts,Tully Lake,13,80
+Massachusetts,Worcester,19,76
+Massachusetts,Cummington Hill,15,75
+Massachusetts,Great Barrington,17,80
+Massachusetts,Knightville Reservoir Dam,13,79
+Massachusetts,Lanesboro,13,77
+Massachusetts,West Otis,14,75
+Massachusetts,Worthington,13,76
+Maryland,Assateague Island,31,83
+Maryland,Cambridge,30,87
+Maryland,Chestertown,28,85
+Maryland,Ocean City,29,82
+Maryland,Royal Oak,30,86
+Maryland,Salisbury,31,85
+Maryland,Snow Hill,29,86
+Maryland,Aberdeen,27,83
+Maryland,Annapolis,31,88
+Maryland,Baltimore,26,85
+Maryland,Beltsville,26,86
+Maryland,Catoctin Mountain Park,23,81
+Maryland,College Park,28,87
+Maryland,Frederick,28,87
+Maryland,La Plata,30,83
+Maryland,Rockville,29,83
+Maryland,Cumberland,24,87
+Maryland,Hagerstown,25,83
+Maryland,Oakland,18,77
+Maryland,Savage River Reservoir Dam,21,79
+Maine,Acadia National Park,17,77
+Maine,Belfast,13,74
+Maine,Brunswick,14,77
+Maine,Eastport,17,72
+Maine,Ellsworth,14,76
+Maine,Jonesboro,12,73
+Maine,Kennebunkport,15,74
+Maine,Newcastle,17,75
+Maine,Port Clyde,21,69
+Maine,Portland,16,76
+Maine,Augusta,15,77
+Maine,Bangor,11,77
+Maine,Dover-Foxcroft,6,77
+Maine,"Flagstaff Lake, Long Falls Dam",5,72
+Maine,Grand Lake Stream,10,77
+Maine,Lewiston,12,77
+Maine,"Lower Richardson Lake, Middle Dam",4,74
+Maine,Rangeley,2,74
+Maine,Waterville,10,78
+Maine,"Chesuncook Lake, Ripogenus Dam",4,74
+Maine,Fort Kent,-1,73
+Maine,Millinocket,7,76
+Maine,"Moosehead Lake, Brassua Dam",3,73
+Maine,Presque Isle,6,76
+Louisiana,Boothville,48,88
+Louisiana,Crowley,42,90
+Louisiana,Houma,45,90
+Louisiana,Lafayette,44,92
+Louisiana,Lake Charles,44,90
+Louisiana,Morgan City,44,89
+Louisiana,New Iberia,44,91
+Louisiana,New Orleans,46,90
+Louisiana,Rockefeller Wildlife Refuge,44,88
+Louisiana,Baton Rouge,43,92
+Louisiana,Bogalusa,39,91
+Louisiana,Hammond,40,91
+Louisiana,New Roads,41,92
+Louisiana,Slidell,42,90
+Louisiana,Alexandria,39,92
+Louisiana,Leesville,38,92
+Louisiana,Natchitoches,39,93
+Louisiana,Winnfield,36,91
+Louisiana,Lake Providence,36,91
+Louisiana,Monroe,35,92
+Louisiana,Ruston,34,90
+Louisiana,Shreveport,38,92
+Kentucky,Ashland,24,83
+Kentucky,Baxter,27,84
+Kentucky,Farmers,27,86
+Kentucky,Jackson,29,83
+Kentucky,London,28,85
+Kentucky,Mount Sterling,22,84
+Kentucky,Abraham Lincoln Birthplace Park,27,85
+Kentucky,Bernheim Forest,27,87
+Kentucky,Covington,25,84
+Kentucky,Frankfort,25,85
+Kentucky,"Harrington Lake, Dix Dam",25,84
+Kentucky,Lexington,27,85
+Kentucky,Louisville,29,87
+Kentucky,Rough River Lake,24,88
+Kentucky,"Warsaw, Markland Dam",23,85
+Kentucky,Barren River Lake,28,90
+Kentucky,Bowling Green,28,88
+Kentucky,Mammoth Cave,30,87
+Kentucky,Monticello,27,85
+Kentucky,Nolin River Lake,26,89
+Kentucky,Stearns,24,84
+Kentucky,"Golden Pond, Land Between Lakes",27,88
+Kentucky,Henderson,28,86
+Kentucky,Hopkinsville,27,88
+Kentucky,Kentucky Dam Village,30,91
+Kentucky,Paducah,28,88
+Kansas,Chanute,24,88
+Kansas,Fort Scott,24,88
+Kansas,Independence,24,89
+Kansas,John Redmond Lake,21,86
+Kansas,Kansas City,24,88
+Kansas,Lawrence,20,86
+Kansas,Leavenworth,22,87
+Kansas,Olathe,22,86
+Kansas,Perry Lake,19,85
+Kansas,Pomona Lake,21,87
+Kansas,Topeka,22,88
+Kansas,Concordia,20,88
+Kansas,Great Bend,23,91
+Kansas,Hutchinson,21,89
+Kansas,Lovewell Reservoir Dam,16,87
+Kansas,Manhattan,19,89
+Kansas,Marion Lake,21,88
+Kansas,Milford Lake,20,87
+Kansas,Salina,22,90
+Kansas,Tallgrass Prairie Preserve,19,88
+Kansas,Tuttle Creek Lake,18,87
+Kansas,Wichita,24,90
+Kansas,Wilson Lake,20,89
+Kansas,Colby,16,88
+Kansas,Dodge City,21,90
+Kansas,Elkhart,23,90
+Kansas,Garden City,18,89
+Kansas,Goodland,17,87
+Kansas,Keith Sebelius Reservoir,16,88
+Kansas,Kirwin Reservoir Dam,15,89
+Kansas,Liberal,21,91
+Kansas,Webster Reservoir Dam,18,90
+Iowa,Burlington,19,85
+Iowa,Cedar Rapids,16,83
+Iowa,Clinton,17,83
+Iowa,Cresco,8,80
+Iowa,Davenport,16,82
+Iowa,Decorah,11,82
+Iowa,Dubuque,14,82
+Iowa,Iowa City,16,85
+Iowa,Keokuk,19,85
+Iowa,Waterloo,13,82
+Iowa,Ames,14,83
+Iowa,Des Moines,17,84
+Iowa,Fort Dodge,10,82
+Iowa,Marshalltown,12,82
+Iowa,Mason City,10,81
+Iowa,Ottumwa,16,84
+Iowa,Rathbun Lake Dam,16,83
+Iowa,Carroll,12,82
+Iowa,Lake Park,9,83
+Iowa,Milford,8,81
+Iowa,Onawa,11,84
+Iowa,Shenandoah,16,85
+Iowa,Sioux City,12,83
+Iowa,Storm Lake,11,81
+Indiana,Angola,17,80
+Indiana,Fort Wayne,19,82
+Indiana,Hobart,19,81
+Indiana,Indiana Dunes Lakeshore,20,79
+Indiana,Rochester,19,81
+Indiana,South Bend,20,81
+Indiana,Valparaiso,20,81
+Indiana,Anderson,21,82
+Indiana,Indianapolis,23,83
+Indiana,Kokomo,18,82
+Indiana,Lafayette,20,82
+Indiana,Marion,20,82
+Indiana,Muncie,21,83
+Indiana,Richmond,21,83
+Indiana,Terre Haute,22,86
+Indiana,Bloomington,22,84
+Indiana,Brookville,22,85
+Indiana,Charlestown,24,86
+Indiana,Columbus,23,84
+Indiana,Evansville,29,90
+Indiana,Paoli,22,85
+Indiana,Tell City,29,87
+Illinois,Aurora,18,82
+Illinois,Chicago Botanical Garden,18,80
+Illinois,Chicago Midway Airport,21,82
+Illinois,Chicago O'Hare Airport,19,82
+Illinois,Chicago University,23,82
+Illinois,Elgin,16,82
+Illinois,Joliet,19,82
+Illinois,Antioch,16,80
+Illinois,DeKalb,15,81
+Illinois,Dixon,15,81
+Illinois,Freeport,14,81
+Illinois,Moline,17,84
+Illinois,Rockford,16,82
+Illinois,Waukegan,18,78
+Illinois,Alton,25,87
+Illinois,Cahokia,24,86
+Illinois,Danville,21,84
+Illinois,Peoria,19,84
+Illinois,Quincy,21,84
+Illinois,Springfield,21,84
+Illinois,Urbana,19,84
+Illinois,Cairo,27,87
+Illinois,Marion,23,84
+Illinois,Mt Vernon,23,85
+Idaho,Driggs,9,76
+Idaho,Idaho Falls,13,82
+Idaho,Island Park,7,77
+Idaho,Malad City,15,85
+Idaho,Pocatello,19,84
+Idaho,Preston,15,84
+Idaho,Saint Anthony,9,80
+Idaho,Craters of the Moon Monument,12,80
+Idaho,Grouse,4,77
+Idaho,Ketchum,8,77
+Idaho,"Lake Walcott, Minidoka Dam",16,84
+Idaho,Middle Fork Lodge,14,81
+Idaho,Salmon,12,81
+Idaho,"Stanley, Sawtooth Recreation Area",-2,75
+Idaho,Twin Falls,20,82
+Idaho,Boise,25,87
+Idaho,Brownlee Reservoir Dam,28,90
+Idaho,Bruneau,26,91
+Idaho,Idaho City,13,83
+Idaho,"Lake Lowell, Deer Flat Dam",25,86
+Idaho,McCall,13,76
+Idaho,Mountain Home,22,89
+Idaho,Coeur d’Alene,25,79
+Idaho,Elk City,13,78
+Idaho,Kellogg,23,80
+Idaho,Lewiston,29,85
+Idaho,Moscow,25,81
+Idaho,Porthill,21,80
+Idaho,Powell,16,78
+Idaho,Riggins,29,88
+Idaho,Sandpoint,22,79
+Idaho,Wallace,23,76
+Hawaii,Captain Cook,67,80
+Hawaii,Hawaii Volcanoes Park,49,72
+Hawaii,Hilo,64,82
+Hawaii,Kailua Kona,68,86
+Hawaii,Kainaliu,60,77
+Hawaii,Mauna Loa Observatory,35,58
+Hawaii,Naalehu,63,81
+Hawaii,Opihihale,57,78
+Hawaii,Puukohola Heiau,63,83
+Hawaii,Upolu Point,67,86
+Hawaii,Kilauea,64,83
+Hawaii,Lihue,66,84
+Hawaii,Mahaulepu,64,86
+Hawaii,Makaweli,64,86
+Hawaii,Princeville Ranch,62,84
+Hawaii,Waimea,63,87
+Hawaii,Wainiha,61,82
+Hawaii,Lanai Airport,60,83
+Hawaii,Haleakala National Park,43,65
+Hawaii,Hana,65,82
+Hawaii,Kahului,63,87
+Hawaii,Kapalua,66,84
+Hawaii,Kula,53,75
+Hawaii,Lahaina,65,87
+Hawaii,Makena State Park,64,77
+Hawaii,Ohe'o Gulch Pools,67,82
+Hawaii,Puukolii,64,86
+Hawaii,Halawa,64,82
+Hawaii,Molokai Airport,63,85
+Hawaii,Honolulu,66,88
+Hawaii,Kahuku,65,83
+Hawaii,Kaneohe,67,85
+Hawaii,Waikiki,65,87
+Hawaii,Waimanalo,65,84
+Hawaii,Waimea Falls Park,61,86
+Georgia,Athens,34,90
+Georgia,Atlanta,36,87
+Georgia,Blairsville,27,83
+Georgia,Clayton,27,84
+Georgia,Dalton,32,88
+Georgia,Gainesville,33,85
+Georgia,Helen,28,85
+Georgia,Rome,33,88
+Georgia,Toccoa,33,86
+Georgia,Augusta,34,92
+Georgia,Columbus,38,91
+Georgia,Dublin,36,92
+Georgia,La Grange,34,89
+Georgia,Macon,36,91
+Georgia,Milledgeville,33,91
+Georgia,Albany,38,92
+Georgia,Brunswick,44,91
+Georgia,Cumberland Island,43,89
+Georgia,Sapelo Island,44,88
+Georgia,Savannah,40,91
+Georgia,Thomasville,40,91
+Georgia,Valdosta,40,90
+Georgia,Waycross,41,92
+Florida,Arcadia,49,91
+Florida,Avon Park,49,92
+Florida,Big Cypress National Preserve,55,93
+Florida,Bradenton,53,90
+Florida,"Everglades Park, Royal Palm",56,94
+Florida,Ft. Lauderdale,58,89
+Florida,Ft. Myers,55,92
+Florida,Ft. Pierce,53,89
+Florida,Hialeah,61,88
+Florida,Key West,65,88
+Florida,Miami,61,90
+Florida,Miami Beach,62,88
+Florida,Naples,54,92
+Florida,Pompano Beach,61,88
+Florida,Tavernier (Key Largo),63,89
+Florida,Venice,53,90
+Florida,Vero Beach,53,88
+Florida,West Palm Beach,58,89
+Florida,Bartow,52,91
+Florida,Daytona Beach,49,89
+Florida,Lakeland,51,90
+Florida,Melbourne,51,90
+Florida,Orlando,51,91
+Florida,Plant City,51,90
+Florida,St. Petersburg,55,90
+Florida,Tampa,53,90
+Florida,Gainesville,42,91
+Florida,Glen St. Mary,40,90
+Florida,Jacksonville,43,91
+Florida,Jacksonville Beach,48,88
+Florida,Jasper,39,91
+Florida,Lake City,43,90
+Florida,Live Oak,43,93
+Florida,Madison,40,90
+Florida,Ocala,46,92
+Florida,St. Augustine,48,90
+Florida,Apalachicola,44,90
+Florida,Crestview,38,91
+Florida,DeFuniak Springs,40,91
+Florida,Monticello,39,90
+Florida,Niceville,39,89
+Florida,Panama City,44,89
+Florida,Pensacola,44,89
+Florida,Tallahassee,40,91
+Connecticut,Bridgeport,25,80
+Connecticut,Groton,25,79
+Connecticut,New Haven,25,80
+Connecticut,New London,24,76
+Connecticut,Norwich,21,81
+Connecticut,Stamford,22,83
+Connecticut,Burlington,18,80
+Connecticut,Danbury,22,83
+Connecticut,Hartford,20,82
+Connecticut,Mansfield Hollow Lake,16,80
+Connecticut,Middletown,23,82
+Connecticut,Norfolk,16,75
+Connecticut,West Thompson Lake,16,79
+Colorado,Alamosa,1,80
+Colorado,Aspen,10,75
+Colorado,Browns Park Wildlife Refuge,3,86
+Colorado,Colorado National Monument,24,89
+Colorado,Cortez,18,86
+Colorado,Crested Butte,-5,72
+Colorado,Dinosaur National Monument,13,87
+Colorado,Durango,15,82
+Colorado,Glenwood Springs,15,84
+Colorado,Grand Junction,20,90
+Colorado,Gunnison,-3,76
+Colorado,Leadville,4,67
+Colorado,Mesa Verde National Park,21,82
+Colorado,Ouray,16,74
+Colorado,Steamboat Springs,5,78
+Colorado,Taylor Park Reservoir,-5,70
+Colorado,Telluride,4,73
+Colorado,Vail,7,73
+Colorado,Boulder,22,85
+Colorado,Burlington,17,87
+Colorado,Canon City,19,86
+Colorado,Colorado Springs,18,82
+Colorado,Denver,18,85
+Colorado,Estes Park,17,76
+Colorado,Florissant Fossil Beds Monument,4,75
+Colorado,Fort Collins,16,83
+Colorado,Great Sand Dunes Monument,11,78
+Colorado,Greeley,18,90
+Colorado,Lakewood,19,86
+Colorado,Pueblo,15,89
+Colorado,Sterling,15,88
+Colorado,Trinidad,18,86
+California,Antioch,40,89
+California,Berkeley,43,73
+California,Chico,36,92
+California,Concord,42,86
+California,Davis,39,91
+California,Fairfield,40,88
+California,Folsom,40,92
+California,Fremont,43,77
+California,Fresno,39,95
+California,Hayward,43,73
+California,Livermore,40,86
+California,Madera,37,93
+California,Merced,38,94
+California,Modesto,41,93
+California,Napa,40,82
+California,Newark,43,76
+California,Oakland,45,72
+California,Palo Alto,39,79
+California,Petaluma,39,81
+California,Porterville,39,96
+California,Redding,37,95
+California,Redwood City,41,80
+California,Richmond,44,71
+California,Sacramento,39,90
+California,San Francisco,46,67
+California,San Jose,43,81
+California,San Rafael,42,78
+California,Santa Rosa,39,81
+California,Stockton,38,92
+California,Tracy,41,90
+California,Turlock,40,91
+California,Vacaville,40,93
+California,Watsonville,40,71
+California,Woodland,40,93
+California,Anaheim,47,85
+California,Bakersfield,40,94
+California,Burbank,42,85
+California,Chula Vista,46,75
+California,El Centro,44,105
+California,Escondido,43,86
+California,Fullerton,46,82
+California,Irvine,46,87
+California,Lancaster,32,95
+California,Long Beach,46,81
+California,Los Angeles,48,81
+California,Oceanside,45,69
+California,Ontario,44,90
+California,Oxnard,46,72
+California,Palmdale,35,96
+California,Pasadena,48,88
+California,Pomona,43,88
+California,Riverside,43,93
+California,Salinas,41,71
+California,San Bernardino,42,94
+California,San Diego,49,74
+California,San Luis Obispo,44,75
+California,Santa Ana,47,82
+California,Santa Barbara,47,74
+California,Thousand Oaks,44,83
+California,Torrance,46,76
+California,Victorville,32,97
+California,Visalia,39,92
+California,Imperial Beach,48,73
+California,Laguna Beach,44,78
+California,Newport Beach,50,70
+California,Oceanside,45,69
+California,San Diego,49,74
+California,Santa Catalina Island,49,74
+California,Anacapa Island,50,71
+California,Long Beach,46,81
+California,Oxnard,46,72
+California,Santa Monica,51,69
+California,Avila Beach,43,74
+California,Big Sur State Park,42,76
+California,Lompoc,42,71
+California,Monterey,42,66
+California,Morro Bay,45,68
+California,Pismo Beach,45,66
+California,Salinas,41,71
+California,Santa Barbara,47,74
+California,Bodega Bay,43,62
+California,Half Moon Bay,42,65
+California,Pacifica,48,70
+California,"San Francisco, Fort Funston",45,62
+California,San Gregorio,39,69
+California,Santa Cruz,41,75
+California,Crescent City,41,61
+California,Eureka,41,63
+California,Fort Bragg,40,63
+California,Fort Ross State Park,42,67
+California,Klamath,36,64
+California,Shelter Cove,46,68
+Arkansas,Blytheville,31,89
+Arkansas,Eudora,35,94
+Arkansas,Helena,30,94
+Arkansas,Jonesboro,28,89
+Arkansas,Marianna,33,90
+Arkansas,West Memphis,32,89
+Arkansas,El Dorado,35,91
+Arkansas,Magnolia,33,91
+Arkansas,Monticello,36,91
+Arkansas,Pine Bluff,34,90
+Arkansas,Texarkana,36,91
+Arkansas,Benton,32,90
+Arkansas,Blue Mountain Lake Dam,31,91
+Arkansas,Fort Smith,31,91
+Arkansas,Hot Springs,33,92
+Arkansas,Lake Ouachita Dam,29,89
+Arkansas,Little Rock,33,91
+Arkansas,Mena,29,88
+Arkansas,North Little Rock,34,90
+Arkansas,Searcy,29,91
+Arkansas,Bentonville,25,87
+Arkansas,Eureka Springs,28,87
+Arkansas,Fayetteville,28,87
+Arkansas,Greers Ferry Lake Dam,29,89
+Arkansas,Harrison,28,87
+Arkansas,Mountain Home,27,88
+Arkansas,Mountain View,28,89
+Arizona,Bisbee,32,86
+Arizona,Chiricahua National Monument,31,88
+Arizona,Coronado National Monument,33,88
+Arizona,Green Valley,37,98
+Arizona,Nogales,28,94
+Arizona,Organ Pipe Cactus Monument,41,102
+Arizona,Sierra Vista,35,91
+Arizona,Tombstone,36,91
+Arizona,Tucson,42,98
+Arizona,Bullhead City,44,110
+Arizona,Kingman,32,95
+Arizona,Lake Havasu City,44,107
+Arizona,Parker,42,107
+Arizona,Yuma,47,106
+Arizona,Apache Junction,43,103
+Arizona,Phoenix,46,104
+Arizona,South Phoenix,40,100
+Arizona,Tempe,39,103
+Arizona,Casa Grande,38,106
+Arizona,Globe,32,94
+Arizona,Jerome,35,88
+Arizona,Painted Desert National Park,23,90
+Arizona,Payson,26,89
+Arizona,Petrified Forest National Park,22,91
+Arizona,Prescott,24,87
+Arizona,Sedona,33,94
+Arizona,Stewart Mountain,39,102
+Arizona,Wickenburg,33,100
+Arizona,Canyon de Chelly,21,89
+Arizona,Flagstaff,17,79
+Arizona,Grand Canyon Village,19,83
+Arizona,Monument Valley,26,89
+Arizona,Page,28,93
+Arizona,Pipe Springs Monument,23,91
+Arizona,Williams,23,81
+Alaska,Annette Island,32,63
+Alaska,Glacier Bay,25,62
+Alaska,Haines,13,67
+Alaska,Juneau,27,62
+Alaska,Ketchikan,30,63
+Alaska,Sitka,32,60
+Alaska,Wrangell,28,63
+Alaska,Yakutat,23,59
+Alaska,Anchorage,12,64
+Alaska,Gulkana,-8,66
+Alaska,Homer,20,60
+Alaska,Seward,23,60
+Alaska,Talkeetna,7,67
+Alaska,Valdez,20,61
+Alaska,Bethel,3,61
+Alaska,Cold Bay,25,54
+Alaska,King Salmon,10,62
+Alaska,Kodiak,26,58
+Alaska,McGrath,-13,66
+Alaska,Port Alsworth,10,65
+Alaska,St Paul Island,22,50
+Alaska,Shemya Island,29,49
+Alaska,Fairbanks,-15,70
+Alaska,McKinley Park,-3,64
+Alaska,Tanana,-15,69
+Alaska,Tok,-17,71
+Alaska,Barrow,-18,44
+Alaska,Bettles,-16,67
+Alaska,Kotzebue,-8,56
+Alaska,Nome,-1,56
+Alaska,Prudhoe Bay,-21,49
+Alabama,Bay Minette,40,89
+Alabama,Coden,40,87
+Alabama,Dauphin Island,47,88
+Alabama,Fairhope,41,90
+Alabama,Mobile,41,90
+Alabama,Atmore,38,90
+Alabama,Auburn,35,89
+Alabama,Demopolis Dam,33,90
+Alabama,Dothan,39,91
+Alabama,Enterprise,40,91
+Alabama,Eufaula Wildlife Refuge,38,92
+Alabama,Jackson,37,90
+Alabama,Lake Martin Dam,35,89
+Alabama,Montgomery,37,91
+Alabama,Troy,38,89
+Alabama,Anniston,34,89
+Alabama,Bankhead Lake Dam,34,90
+Alabama,Birmingham,35,90
+Alabama,Gadsden,33,89
+Alabama,Tuscaloosa,36,92
+Alabama,Bridgeport,30,87
+Alabama,Decatur,33,89
+Alabama,Guntersville,33,89
+Alabama,Huntsville,34,90
+Alabama,Muscle Shoals,33,90
+Delaware,Dover,29,85
+Delaware,Georgetown,27,84
+Delaware,Lewes,30,84
+Delaware,Milford,26,84
+Delaware,Newark,26,86
+Delaware,Wilmington,27,84
+Rhode Island,Block Island,28,75
+Rhode Island,Kingston,22,81
+Rhode Island,Newport,25,75
+Rhode Island,Providence,23,80
+Rhode Island,Tiverton,24,80
+Rhode Island,Westerly,24,77
+Rhode Island,Woonsocket,19,80

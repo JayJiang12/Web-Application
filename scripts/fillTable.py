@@ -1,3 +1,7 @@
+# https://www.python-course.eu/sql_python.php
+# https://docs.python.org/2/library/csv.html
+# https://simplemaps.com/data/us-cities
+
 import MySQLdb
 import csv
 

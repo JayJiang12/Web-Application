@@ -1,0 +1,236 @@
+State,City,Avg Sunny Days / Year
+Wyoming,Casper,218
+Wyoming,Cheyenne,233
+Wyoming,Lander,236
+Wyoming,Sheridan,208
+Wisconsin,Green Bay,187
+Wisconsin,La Crosse,192
+Wisconsin,Madison,185
+Wisconsin,Milwaukee,190
+West Virginia,Beckley,155
+West Virginia,Charleston,176
+West Virginia,Elkins,151
+West Virginia,Huntington,162
+Washington,Olympia,136
+Washington,Quillayute,126
+Washington,Seattle,164
+Washington,Spokane,174
+Washington,Yakima,201
+Virginia,Lynchburg,219
+Virginia,Norfolk,213
+Virginia,Richmond,206
+Virginia,Roanoke,214
+Texas,Abilene,244
+Texas,Amarillo,261
+Texas,Austin City,229
+Texas,Brownsville,227
+Texas,Corpus Christi,223
+Texas,Dallas-Fort Worth,232
+Texas,Del Rio,227
+Texas,El Paso,293
+Texas,Houston,204
+Texas,Lubbock,262
+Texas,Midland-Odessa,261
+Texas,Port Arthur,212
+Texas,San Angelo,251
+Texas,San Antonio,224
+Texas,Victoria,204
+Texas,Waco,228
+Texas,Wichita Falls,244
+Tennessee,Bristol,200
+Tennessee,Chattanooga,210
+Tennessee,Knoxville,204
+Tennessee,Memphis,214
+Tennessee,Nashville,208
+Tennessee,Oak Ridge,207
+South Dakota,Aberdeen,202
+South Dakota,Huron,211
+South Dakota,Rapid City,226
+South Dakota,Sioux Falls,208
+South Carolina,Charleston,211
+South Carolina,Columbia,218
+South Carolina,Greer,221
+Pennsylvania,Allentown,204
+Pennsylvania,Erie,160
+Pennsylvania,Harrisburg,196
+Pennsylvania,Philadelphia,205
+Pennsylvania,Pittsburgh,162
+Pennsylvania,Wilkes-Barre & Scranton,176
+Pennsylvania,Williamsport,177
+Oregon,Astoria,126
+Oregon,Burns,214
+Oregon,Eugene,157
+Oregon,Medford,196
+Oregon,Pendleton,192
+Oregon,Portland,142
+Oregon,Salem,157
+Oregon,Sexton Summit,194
+Ohio,Akron,167
+Ohio,Cleveland,163
+Ohio,Columbus,175
+Ohio,Dayton,177
+Ohio,Mansfield,174
+Ohio,Toledo,180
+Ohio,Youngstown,160
+North Dakota,Bismarck,200
+North Dakota,Fargo,197
+North Dakota,Williston,205
+North Carolina,Asheville,212
+North Carolina,Cape Hatteras,210
+North Carolina,Charlotte,214
+North Carolina,Greensboro,216
+North Carolina,Raleigh,217
+North Carolina,Wilmington,215
+New York,Albany,180
+New York,Binghamton,154
+New York,Buffalo,157
+New York,New York Central Park,234
+New York,"New York, JFK Airport",214
+New York,"New York, LaGuardia Airport",213
+New York,Rochester,165
+New York,Syracuse,161
+New Mexico,Albuquerque,278
+New Mexico,Clayton,261
+New Mexico,Roswell,281
+Nevada,Elko,229
+Nevada,Ely,240
+Nevada,Las Vegas,292
+Nevada,Reno,251
+Nevada,Winnemucca,227
+Nebraska,Grand Island,225
+Nebraska,Lincoln,216
+Nebraska,Norfolk,220
+Nebraska,North Platte,224
+Nebraska,Omaha,212
+Nebraska,Scottsbluff,227
+Nebraska,Valentine,228
+Montana,Billings,201
+Montana,Glasgow,197
+Montana,Great Falls,185
+Montana,Helena,186
+Montana,Kalispell,151
+Montana,Missoula,158
+Missouri,Columbia,195
+Missouri,Kansas City,216
+Missouri,St Louis,202
+Missouri,Springfield,211
+Mississippi,Jackson,215
+Mississippi,Meridian,218
+Mississippi,Tupelo,216
+Minnesota,Duluth,179
+Minnesota,International Falls,177
+Minnesota,Minneapolis & St. Paul,196
+Minnesota,Rochester,183
+Minnesota,St. Cloud,199
+Michigan,Alpena,171
+Michigan,Detroit,180
+Michigan,Flint,171
+Michigan,Grand Rapids,160
+Michigan,Houghton Lake,165
+Michigan,Lansing,175
+Michigan,Muskegon,163
+Michigan,Sault Ste Marie,156
+Louisiana,Baton Rouge,218
+Louisiana,Lake Charles,213
+Louisiana,New Orleans,219
+Louisiana,Shreveport,214
+Kentucky,Jackson,170
+Kentucky,Lexington,190
+Kentucky,Louisville,195
+Kentucky,Paducah,198
+Kansas,Concordia,226
+Kansas,Dodge City,241
+Kansas,Goodland,260
+Kansas,Kansas City,216
+Kansas,Topeka,211
+Kansas,Wichita,225
+Iowa,Des Moines,202
+Iowa,Dubuque,191
+Iowa,Sioux City,208
+Iowa,Waterloo,191
+Indiana,Evansville,202
+Indiana,Fort Wayne,180
+Indiana,Indianapolis,187
+Indiana,South Bend,173
+Illinois,Cairo,217
+Illinois,Chicago,189
+Illinois,Moline,201
+Illinois,Peoria,192
+Illinois,Rockford,191
+Illinois,Springfield,198
+Idaho,Boise,210
+Idaho,Lewiston,169
+Idaho,Pocatello,204
+Hawaii,"Hilo, Big Island",168
+Hawaii,"Honolulu, Oahu",271
+Hawaii,"Kahului, Maui",276
+Hawaii,"Lihue, Kauai",240
+Georgia,Athens,218
+Georgia,Atlanta,217
+Georgia,Augusta,218
+Georgia,Columbus,214
+Georgia,Macon,219
+Georgia,Savannah,214
+Florida,Apalachicola,241
+Florida,Daytona Beach,229
+Florida,Fort Myers,266
+Florida,Jacksonville,221
+Florida,Key West,259
+Florida,Miami,249
+Florida,Orlando,236
+Florida,Pensacola,228
+Florida,Tallahassee,231
+Florida,Tampa,244
+Florida,West Palm Beach,234
+Colorado,Alamosa,285
+Colorado,Colorado Springs,247
+Colorado,Denver,245
+Colorado,Grand Junction,242
+Colorado,Pueblo,258
+California,Bakersfield,272
+California,Bishop,290
+California,Blue Canyon,238
+California,Eureka,179
+California,Fresno,267
+California,Long Beach,278
+California,Los Angeles Airport,263
+California,Los Angeles Downtown,292
+California,Mount Shasta,247
+California,Redding,249
+California,Sacramento,265
+California,San Diego,263
+California,San Francisco Airport,260
+California,Santa Maria,286
+California,Stockton,261
+Arkansas,Fort Smith,218
+Arkansas,Little Rock,219
+Arizona,Flagstaff,264
+Arizona,Phoenix,296
+Arizona,Tucson,284
+Arizona,Winslow,276
+Arizona,Yuma,313
+Alaska,Annette Island,100
+Alaska,Juneau,85
+Alaska,Yakutat,87
+Alaska,Anchorage,126
+Alaska,Fairbanks,156
+Alaska,Gulkana,156
+Alaska,Homer,140
+Alaska,Talkeetna,134
+Alaska,Valdez,114
+Alaska,Bethel,127
+Alaska,Cold Bay,60
+Alaska,King Salmon,120
+Alaska,Kodiak,133
+Alaska,McGrath,139
+Alaska,St Paul Island,79
+Alaska,Bettles,179
+Alaska,Kotzebue,172
+Alaska,Nome,160
+Alabama,Birmingham,210
+Alabama,Huntsville,201
+Alabama,Mobile,218
+Alabama,Montgomery,214
+Delaware,Wilmington,201
+Rhode Island,Block Island,211
+Rhode Island,Providence,201

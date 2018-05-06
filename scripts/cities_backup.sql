@@ -11,6 +11,10 @@ CREATE TABLE cities (
   propertyValue int(11) DEFAULT NULL,
   minTemp double DEFAULT NULL,
   maxTemp double DEFAULT NULL,
+  sunny int(3) DEFAULT NULL,
+  humidity int(3) DEFAULT NULL,
+  rain double DEFAULT NULL,
+  snow double DEFAULT NULL,
   color varchar(4) DEFAULT NULL,
   PRIMARY KEY (`city`,`state`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -21,3 +25,4 @@ FIELDS TERMINATED BY ';'
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 LINES;
+

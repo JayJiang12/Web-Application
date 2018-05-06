@@ -4,12 +4,22 @@ import MySQLdb
 import json 
 
 PARAM_MAP = {
-    'param_prop_min':'propertyValue>',
-    'param_prop_max':'propertyValue<',
     'param_pop_min':'population>',
     'param_pop_max':'population<',
+    'param_prop_min':'propertyValue>',
+    'param_prop_max':'propertyValue<',
     'param_temp_min':'minTemp>',
-    'param_temp_max':'maxTemp<'
+    'param_temp_max':'maxTemp<', 
+    'param_sun_min':'sunny>',
+    'param_sun_max':'sunny<', 
+    'param_humid_min':'humidity>',
+    'param_humid_max':'humidity<', 
+    'param_rain_min':'rain>',
+    'param_rain_max':'rain<', 
+    'param_snow_min':'snow>',
+    'param_snow_max':'snow<', 
+    'param_color_blue':'color=',
+    'param_color_red':'color='
 }
 
 # need to add other variables and scalable cmd 
@@ -38,11 +48,16 @@ def getCities(request):
         if request[param] != "":
             if moreThan2:
                 cmd = cmd + " AND"
+            
+            # The colors need to be strings
+            if (param == "param_color_blue") or (param == "param_color_red"):
+                cmd = cmd + " " + PARAM_MAP[param] + "\"" + request[param] + "\""
+            else:
+                cmd = cmd + " " + PARAM_MAP[param] + request[param]
 
-            cmd = cmd + " " + PARAM_MAP[param] + request[param]
             moreThan2 = True
 
-    cmd = cmd + " ORDER BY population DESC;"
+    cmd = cmd + " ORDER BY population DESC LIMIT 100;"
 
     # Query mysql database
     print(cmd)
@@ -67,12 +82,22 @@ def getJSON(cities):
 
 if __name__ == "__main__":
     request = {
-        'param_prop_min':'100000',
-        'param_prop_max':'120000',
-        'param_pop_min':'500000',
+        'param_prop_min':'',
+        'param_prop_max':'',
+        'param_pop_min':'100000',
         'param_pop_max':'1000000',
-        'param_temp_min':'',
-        'param_temp_max':''
+        'param_temp_min':'40',
+        'param_temp_max':'',
+        'param_sun_min':'100',
+        'param_sun_max':'', 
+        'param_humid_min':'',
+        'param_humid_max':'60', 
+        'param_rain_min':'',
+        'param_rain_max':'', 
+        'param_snow_min':'',
+        'param_snow_max':'', 
+        'param_color_blue':'',
+        'param_color_red':''
     }
 
     cities = getCities(request)

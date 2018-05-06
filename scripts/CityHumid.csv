@@ -1,0 +1,219 @@
+State,City,Avg Humidity / Year
+Wyoming,Casper,56
+Wyoming,Cheyenne,53
+Wyoming,Lander,53
+Wyoming,Sheridan,60
+Wisconsin,Green Bay,73
+Wisconsin,La Crosse,72
+Wisconsin,Madison,73
+Wisconsin,Milwaukee,72
+West Virginia,Beckley,73
+West Virginia,Charleston,70
+West Virginia,Elkins,76
+West Virginia,Huntington,70
+Washington,Olympia,80
+Washington,Quillayute,84
+Washington,Seattle,73
+Washington,Spokane,65
+Washington,Yakima,60
+Virginia,Arlington,64
+Virginia,Chantilly,70
+Virginia,Lynchburg,67
+Virginia,Norfolk,69
+Virginia,Richmond,70
+Virginia,Roanoke,65
+Texas,Abilene,59
+Texas,Amarillo,56
+Texas,Austin,67
+Texas,Brownsville,76
+Texas,Corpus Christi,76
+Texas,Dallas,65
+Texas,El Paso,41
+Texas,Fort Worth,65
+Texas,Houston,75
+Texas,Lubbock,56
+Texas,Midland,54
+Texas,Port Arthur,78
+Texas,San Angelo,60
+Texas,San Antonio,67
+Texas,Victoria,75
+Texas,Waco,67
+Texas,Wichita Falls,64
+Tennessee,Bristol,71
+Tennessee,Chattanooga,72
+Tennessee,Knoxville,72
+Tennessee,Memphis,67
+Tennessee,Nashville,70
+South Dakota,Aberdeen,69
+South Dakota,Huron,69
+South Dakota,Rapid City,60
+South Dakota,Sioux Falls,69
+South Carolina,Charleston,73
+South Carolina,Columbia,70
+South Carolina,Greer,69
+Pennsylvania,Allentown,68
+Pennsylvania,Erie,72
+Pennsylvania,Harrisburg,67
+Pennsylvania,Philadelphia,67
+Pennsylvania,Pittsburgh,68
+Pennsylvania,Wilkes-Barre & Scranton,69
+Pennsylvania,Williamsport,71
+Oregon,Astoria,81
+Oregon,Eugene,78
+Oregon,Medford,68
+Oregon,Pendleton,58
+Oregon,Portland,73
+Oregon,Salem,75
+Ohio,Akron,70
+Ohio,Cincinnati,70
+Ohio,Cleveland,71
+Ohio,Columbus,70
+Ohio,Dayton,70
+Ohio,Mansfield,72
+Ohio,Toledo,72
+Ohio,Youngstown,73
+North Dakota,Bismarck,66
+North Dakota,Fargo,70
+North Dakota,Williston,66
+North Carolina,Asheville,76
+North Carolina,Cape Hatteras,77
+North Carolina,Charlotte,67
+North Carolina,Greensboro,70
+North Carolina,Raleigh,70
+North Carolina,Wilmington,74
+New York,Albany,70
+New York,Binghamton,73
+New York,Buffalo,72
+New York,"New York City, Central Park",63
+New York,New York JFK Airport,68
+New York,New York La Guardia Airport,63
+New York,Rochester,73
+New York,Syracuse,72
+New Mexico,Albuquerque,44
+New Mexico,Clayton,53
+New Mexico,Roswell,49
+Nevada,Elko,54
+Nevada,Ely,52
+Nevada,Las Vegas,30
+Nevada,Reno,51
+Nevada,Winnemucca,49
+Nebraska,Grand Island,66
+Nebraska,Lincoln,69
+Nebraska,Norfolk,67
+Nebraska,North Platte,65
+Nebraska,Omaha,69
+Nebraska,Scottsbluff,59
+Nebraska,Valentine,59
+Montana,Billings,55
+Montana,Glasgow,62
+Montana,Great Falls,55
+Montana,Helena,57
+Montana,Kalispell,68
+Montana,Miles City,61
+Montana,Missoula,68
+Missouri,Columbia,70
+Missouri,Kansas City,68
+Missouri,Springfield,69
+Missouri,St Louis,70
+Minnesota,Duluth,71
+Minnesota,International Falls,71
+Minnesota,Minneapolis & St. Paul,68
+Minnesota,Rochester,74
+Minnesota,St. Cloud,69
+Michigan,Alpena,74
+Michigan,Detroit,71
+Michigan,Flint,72
+Michigan,Grand Rapids,73
+Michigan,Houghton Lake,75
+Michigan,Lansing,74
+Michigan,Muskegon,73
+Michigan,Sault Ste Marie,77
+Louisiana,Baton Rouge,74
+Louisiana,Lake Charles,78
+Louisiana,New Orleans,76
+Louisiana,Shreveport,72
+Kentucky,Covington,70
+Kentucky,Jackson,68
+Kentucky,Lexington,70
+Kentucky,Louisville,69
+Kansas,Concordia,67
+Kansas,Dodge City,61
+Kansas,Goodland,62
+Kansas,Kansas City,68
+Kansas,Topeka,69
+Kansas,Wichita,66
+Iowa,Des Moines,69
+Iowa,NA,56
+Iowa,Sioux City,69
+Iowa,Waterloo,72
+Indiana,Evansville,70
+Indiana,Fort Wayne,72
+Indiana,Indianapolis,72
+Indiana,South Bend,72
+Illinois,Chicago,70
+Illinois,Moline,69
+Illinois,Peoria,72
+Illinois,Rockford,72
+Illinois,Springfield,71
+Idaho,Boise,55
+Idaho,Pocatello,58
+Georgia,Athens,70
+Georgia,Atlanta,68
+Georgia,Augusta,71
+Georgia,Columbus,71
+Georgia,Macon,71
+Georgia,Savannah,72
+Florida,Daytona Beach,75
+Florida,Fort Myers,75
+Florida,Jacksonville,76
+Florida,Key West,74
+Florida,Miami,73
+Florida,Orlando,74
+Florida,Pensacola,74
+Florida,Tallahassee,75
+Florida,Tampa,74
+Florida,West Palm Beach,73
+Colorado,Colorado Springs,50
+Colorado,Denver,52
+Colorado,Grand Junction,47
+Colorado,Pueblo,50
+California,Bakersfield,53
+California,Long Beach,67
+California,Los Angeles,71
+California,San Diego,69
+California,Santa Barbara,71
+California,Santa Maria,76
+California,Fresno,61
+California,Sacramento,67
+California,San Francisco,74
+California,Stockton,63
+Arizona,Flagstaff,53
+Arizona,Phoenix,37
+Arizona,Tucson,38
+Arizona,Winslow,46
+Arizona,Yuma,37
+Alaska,Annette Island,78
+Alaska,Juneau,82
+Alaska,Yakutat,85
+Alaska,Anchorage,71
+Alaska,Fairbanks,65
+Alaska,Gulkana,71
+Alaska,Homer,78
+Alaska,Talkeetna,74
+Alaska,Valdez,78
+Alaska,Bethel,79
+Alaska,Cold Bay,85
+Alaska,King Salmon,76
+Alaska,Kodiak,77
+Alaska,McGrath,70
+Alaska,St Paul Island,87
+Alaska,Barrow,81
+Alaska,Bettles,69
+Alaska,Kotzebue,77
+Alaska,Nome,74
+Alabama,Birmingham,70
+Alabama,Huntsville,70
+Alabama,Mobile,73
+Alabama,Montgomery,71
+Rhode Island,Providence,68
+Delaware,Wilmington,68

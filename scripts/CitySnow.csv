@@ -1,0 +1,919 @@
+State,City,Avg In Snow / Year
+Wyoming,Alta,109.5
+Wyoming,Cody,47.3
+Wyoming,Jackson,66.1
+Wyoming,Moose,162.8
+Wyoming,Moran,166.2
+Wyoming,Yellowstone Lake,193.7
+Wyoming,"Yellowstone Park, Mammoth",64.4
+Wyoming,"Yellowstone Park, Old Faithful",207.8
+Wyoming,Evanston,47.3
+Wyoming,Fontenelle Reservoir Dam,25.7
+Wyoming,Kemmerer,62
+Wyoming,Rock Springs,46.7
+Wyoming,Boysen Reservoir Dam,11.9
+Wyoming,Lander,91.4
+Wyoming,Riverton,37.1
+Wyoming,Ten Sleep,59.2
+Wyoming,Thermopolis,26.7
+Wyoming,Worland,30
+Wyoming,Buffalo,36.5
+Wyoming,Devils Tower,48.3
+Wyoming,Gillette,58.8
+Wyoming,Sheridan,71.4
+Wyoming,Sundance,79.2
+Wyoming,Casper,74.9
+Wyoming,Centennial,108.4
+Wyoming,Cheyenne,60.3
+Wyoming,Douglas,62.8
+Wyoming,Laramie,49.7
+Wyoming,Muddy Gap,51.1
+Wyoming,Torrington,32.4
+Wisconsin,Appleton,44.2
+Wisconsin,"Crivitz, High Falls Flowage",53.1
+Wisconsin,Fond du Lac,37
+Wisconsin,Green Bay,51.4
+Wisconsin,Kenosha,36.2
+Wisconsin,Lake Geneva,42.1
+Wisconsin,Marinette,43.5
+Wisconsin,Milwaukee,46.9
+Wisconsin,Oshkosh,35.8
+Wisconsin,Racine,42.4
+Wisconsin,Sheboygan,43.8
+Wisconsin,Sturgeon Bay,50.7
+Wisconsin,Washington Island,48.1
+Wisconsin,Beaver Dam,38
+Wisconsin,Beloit,31.9
+Wisconsin,La Crosse,43.3
+Wisconsin,Madison,50.9
+Wisconsin,Prairie du Chien,33.2
+Wisconsin,Viroqua,46.3
+Wisconsin,Wisconsin Dells,39.3
+Wisconsin,Wisconsin Rapids,43.2
+Wisconsin,Drummond,70.2
+Wisconsin,Eau Claire,46.8
+Wisconsin,"Rest Lake, Manitowish Waters",67.2
+Wisconsin,Rice Lake,53.8
+Wisconsin,River Falls,45.8
+Wisconsin,St Croix Falls,44.1
+Wisconsin,Wausau,59.6
+Wisconsin,Willow Reservoir,47.9
+Wisconsin,Bayfield,103.4
+Wisconsin,Madeline Island,72.2
+Wisconsin,Superior,56.2
+West Virginia,Bartow,67.5
+West Virginia,Elkins,83.5
+West Virginia,Franklin,25.4
+West Virginia,Marlinton,40.3
+West Virginia,Martinsburg,26.1
+West Virginia,Seneca State Forest,61.1
+West Virginia,Snowshoe,159
+West Virginia,Wardensville,22
+West Virginia,Beckley,62
+West Virginia,Bluefield,30.7
+West Virginia,Charleston,36.4
+West Virginia,Huntington,11.5
+West Virginia,Summersville Lake,38.7
+West Virginia,White Sulphur Springs,17.5
+West Virginia,Clarksburg,25
+West Virginia,Fairmont,37.8
+West Virginia,Morgantown,27.6
+West Virginia,Moundsville,17.1
+West Virginia,Parkersburg,22.1
+Washington,Aberdeen,0.3
+Washington,Clearwater,0.3
+Washington,Forks,8
+Washington,Grayland,0
+Washington,Long Beach,0.6
+Washington,Anacortes,2.4
+Washington,Bellingham,10.4
+Washington,Bremerton,3.5
+Washington,"Olga, Orcas Island",5.3
+Washington,Olympia,10.8
+Washington,Port Townsend,2.4
+Washington,Seattle,5
+Washington,Vancouver,1.5
+Washington,Baker Lake Dam,42.8
+Washington,Baring,49.3
+Washington,Mt Rainier Paradise Ranger Station,670.8
+Washington,Ross Dam,57.7
+Washington,Boundary Dam,55.9
+Washington,Chelan,21.9
+Washington,Kennewick,1.1
+Washington,Leavenworth,79.8
+Washington,Pullman,35.2
+Washington,Spokane,44.9
+Washington,Walla Walla,11.7
+Washington,Wenatchee,33
+Washington,Winthrop,56.5
+Washington,Yakima,22
+Virginia,Abingdon,12.5
+Virginia,Burkes Garden,52.9
+Virginia,Galax,20.3
+Virginia,Hot Springs,27.6
+Virginia,Pennington Gap,11.8
+Virginia,Roanoke,18.5
+Virginia,Staunton,22.7
+Virginia,Winchester,24.3
+Virginia,Wise,52.6
+Virginia,Arlington,14.5
+Virginia,Charlottesville,16.3
+Virginia,Danville,4.7
+Virginia,John H Kerr Dam,1.1
+Virginia,Lynchburg,16.2
+Virginia,Richmond,10.3
+Virginia,Mathews,1.6
+Virginia,Norfolk,5.8
+Virginia,Painter,7.9
+Virginia,Suffolk,5.1
+Virginia,Williamsburg,5
+Vermont,Cavendish,85.2
+Vermont,Rutland,72.9
+Vermont,Woodstock,80.8
+Vermont,Montpelier,94.2
+Vermont,Rochester,76.9
+Vermont,South Lincoln,124.3
+Vermont,Burlington,81.2
+Vermont,Essex Junction,85.2
+Vermont,Mount Mansfield,243.6
+Vermont,Newport,96.4
+Vermont,St Albans,80.6
+Vermont,St Johnsbury,86.8
+Vermont,South Hero,48
+Utah,"Brighton, Silver Lake",411.1
+Utah,Deer Creek Reservoir Dam,74.4
+Utah,Echo Reservoir Dam,77
+Utah,Logan,63.1
+Utah,Nephi,55.1
+Utah,Ogden,18.3
+Utah,Pleasant Grove,44.6
+Utah,Provo,57.1
+Utah,Salt Lake City,56.2
+Utah,Timpanogos Cave Monument,66.3
+Utah,"Rockport Reservoir, Wanship Dam",76.6
+Utah,Dinosaur National Monument,16.5
+Utah,Flaming Gorge Reservoir Dam,49.1
+Utah,Roosevelt,18.6
+Utah,Arches National Park,6.4
+Utah,Bryce Canyon Park Headquarters,89.6
+Utah,"Canyonlands Park, The Needles",14.3
+Utah,Capitol Reef National Park,12.5
+Utah,Escalante,26
+Utah,"Glen Canyon, Bullfrog Basin",2.8
+Utah,Green River,7.6
+Utah,Hovenweep National Monument,14.2
+Utah,Moab,6.3
+Utah,Natural Bridges Monument,34.4
+Utah,"Blowhard Mountain at 10,694 feet",246.6
+Utah,Cedar City,47.8
+Utah,Delta,27.8
+Utah,Fish Springs Wildlife Refuge,11.6
+Utah,Richfield,18
+Utah,St George,1.4
+Utah,Zion National Park,4.2
+Tennessee,Bristol,13.3
+Tennessee,Chattanooga,3.9
+Tennessee,Crossville,9.7
+Tennessee,Dayton,2.8
+Tennessee,Gatlinburg,8.9
+Tennessee,Greeneville,9
+Tennessee,Kingsport,8.6
+Tennessee,Knoxville,6.5
+Tennessee,Mountain City,13.5
+Tennessee,Oak Ridge,6.6
+Tennessee,Oneida,7
+Tennessee,Cheatham Lake Dam,1.8
+Tennessee,Clarksville,3.2
+Tennessee,Columbia,1.4
+Tennessee,Cookeville,6.4
+Tennessee,Dover,5.3
+Tennessee,Monteagle,3.9
+Tennessee,Murfreesboro,2.7
+Tennessee,Nashville,6.3
+Tennessee,Shelbyville,2.7
+Tennessee,Dyersburg,3.7
+Tennessee,Jackson,3.6
+Tennessee,Martin,3.9
+Tennessee,Memphis,3.8
+Tennessee,Savannah,2.7
+South Dakota,Aberdeen,38.4
+South Dakota,Brookings,31.9
+South Dakota,Huron,43.9
+South Dakota,Sioux Falls,44.5
+South Dakota,Vermillion,32.9
+South Dakota,Watertown,35.9
+South Dakota,Waubay Wildlife Refuge,37.2
+South Dakota,Yankton,34.5
+South Dakota,Academy,45.2
+South Dakota,Mobridge,31.1
+South Dakota,Pickstown,28.5
+South Dakota,Pierre,31.2
+South Dakota,Custer,55.9
+South Dakota,Deadwood,101.2
+South Dakota,Hot Springs,27.5
+South Dakota,Interior,28
+South Dakota,Lead,197.5
+South Dakota,Lemmon,40.6
+South Dakota,Mt. Rushmore National Memorial,52.4
+South Dakota,Pactola Reservoir Dam,51.6
+South Dakota,Porcupine,34.4
+South Dakota,Rapid City,49.3
+South Dakota,Wind Cave National Park,41.7
+South Carolina,Beaufort,0.3
+South Carolina,Brookgreen Gardens,0.7
+South Carolina,Charleston,0.5
+South Carolina,Georgetown,0.1
+South Carolina,Hilton Head Island,0
+South Carolina,Sullivan's Island,0
+South Carolina,Clarks Hill,0.3
+South Carolina,Columbia,0.5
+South Carolina,Florence,1.5
+South Carolina,Orangeburg,0.2
+South Carolina,Sumter,0.4
+South Carolina,Anderson,1.4
+South Carolina,Caesars Head State Park,8.1
+South Carolina,Calhoun Falls,0.8
+South Carolina,Greer,4.7
+South Carolina,Ninety Nine Islands Reservoir,1.4
+South Carolina,Spartanburg,1.4
+Pennsylvania,Allentown,32.9
+Pennsylvania,Chambersburg,31.1
+Pennsylvania,George B. Stevenson Reservoir,36.1
+Pennsylvania,Harrisburg,28.2
+Pennsylvania,Lancaster,18.3
+Pennsylvania,Matamoras,37.8
+Pennsylvania,Norristown,23.8
+Pennsylvania,Philadelphia,22.4
+Pennsylvania,State College,45.6
+Pennsylvania,Towanda,35.7
+Pennsylvania,Wilkes-Barre & Scranton,46.2
+Pennsylvania,Williamsport,36
+Pennsylvania,York,25
+Pennsylvania,Altoona,31.7
+Pennsylvania,Bradford,71.8
+Pennsylvania,Butler,36.3
+Pennsylvania,Erie,101.2
+Pennsylvania,Indiana,46.5
+Pennsylvania,Jamestown,62.2
+Pennsylvania,New Castle,29.3
+Pennsylvania,Pittsburgh,41.9
+Pennsylvania,Uniontown,25.9
+Pennsylvania,Warren,68.9
+Pennsylvania,Youghiogheny River Lake,59.3
+Oregon,Astoria,1.4
+Oregon,Brookings,0.6
+Oregon,Gold Beach,0
+Oregon,Honeyman State Park,0.5
+Oregon,Newport,0.3
+Oregon,North Bend,0.4
+Oregon,Port Orford,0.2
+Oregon,Seaside,0
+Oregon,Tillamook,0.2
+Oregon,Corvallis,3.1
+Oregon,Eugene,4.9
+Oregon,Portland,3
+Oregon,Salem,6.2
+Oregon,Crater Lake Park,482.5
+Oregon,Detroit Lake Dam,9.8
+Oregon,Government Camp,246.3
+Oregon,Howard Prairie Lake Dam,125.2
+Oregon,Lakeview,52.8
+Oregon,Medford,4.1
+Oregon,Three Lynx,8.9
+Oregon,Toketee Falls,25.6
+Oregon,Wickiup Reservoir Dam,80.4
+Oregon,Bend,22.5
+Oregon,Hood River,24.3
+Oregon,Madras,7.5
+Oregon,The Dalles,5.1
+Oregon,Heppner,12.3
+Oregon,La Grande,11.5
+Oregon,Lake Owyhee Dam,6.3
+Oregon,Ontario,10.2
+Oregon,Pendleton,15.2
+Oregon,Seneca,58.3
+Oregon,Summer Lake,12.1
+Oklahoma,Bartlesville,13.8
+Oklahoma,Idabel,1.6
+Oklahoma,Lake Eufaula,2.9
+Oklahoma,McAlester,5.5
+Oklahoma,Miami,5.5
+Oklahoma,Muskogee,5.2
+Oklahoma,Tulsa,9.7
+Oklahoma,Webbers Falls,5.3
+Oklahoma,Ada,4.5
+Oklahoma,Ardmore,3.1
+Oklahoma,Chickasha,3
+Oklahoma,Enid,9.5
+Oklahoma,Great Salt Plains Lake Dam,11.4
+Oklahoma,Guthrie,7.3
+Oklahoma,Norman,4.5
+Oklahoma,Oklahoma City,7.8
+Oklahoma,Ponca City,8.4
+Oklahoma,Stillwater,8.2
+Oklahoma,Altus,3.5
+Oklahoma,Altus Lake Dam,3.3
+Oklahoma,Beaver,10.7
+Oklahoma,Elk City,8.3
+Oklahoma,Kenton,25.9
+Oklahoma,Lawton,2.3
+Oklahoma,Reydon,11.9
+Oklahoma,Wichita Mountains Wildlife Refuge,1.5
+Ohio,Akron,47.4
+Ohio,Chippewa Lake,37.9
+Ohio,Cleveland,68.1
+Ohio,Findlay,24.5
+Ohio,Mansfield,48.8
+Ohio,Ottawa National Wildlife Refuge,13.8
+Ohio,Painesville on the Lake,35.9
+Ohio,Sandusky,16.2
+Ohio,Toledo,37.7
+Ohio,Youngstown,62.8
+Ohio,Athens,19.5
+Ohio,Cincinnati,11.2
+Ohio,Columbus,27.5
+Ohio,Dayton,12.3
+Ohio,Gallipolis,7.2
+Ohio,Marietta,19.4
+Ohio,McConnelsville Lock,20.2
+Ohio,Newark,18.4
+Ohio,Portsmouth,9.5
+Ohio,Wilmington,20.7
+North Dakota,Fargo,50.1
+North Dakota,Grand Forks,42.8
+North Dakota,Jamestown,44.5
+North Dakota,Valley City,35.4
+North Dakota,Wahpeton,27.2
+North Dakota,Bismarck,51.2
+North Dakota,Bottineau,43.2
+North Dakota,Garrison,35
+North Dakota,Minot,46.1
+North Dakota,Rugby,37.3
+North Dakota,Dickinson,34.3
+North Dakota,Kenmare,38.9
+North Dakota,Medora,29.7
+North Dakota,Powers Lake,30.9
+North Dakota,Pretty Rock Wildlife Refuge,50.3
+North Dakota,Williston,45.3
+North Carolina,Asheville,13.2
+North Carolina,Banner Elk,38.7
+North Carolina,Boone,35.3
+North Carolina,Grandfather Mountain,53.5
+North Carolina,Highlands,11.8
+North Carolina,Kerr Scott Reservoir,9.7
+North Carolina,Morganton,3.9
+North Carolina,Oconaluftee,6.5
+North Carolina,Pisgah Forest,7.5
+North Carolina,Waterville,4.1
+North Carolina,Chapel Hill,3.7
+North Carolina,Charlotte,4.3
+North Carolina,Concord,3.7
+North Carolina,Durham,1.9
+North Carolina,Gastonia,0.9
+North Carolina,Greensboro,7.6
+North Carolina,Henderson,2.7
+North Carolina,Hickory,7.7
+North Carolina,High Point,1.8
+North Carolina,Mount Airy,9.3
+North Carolina,Raleigh,3.9
+North Carolina,Belhaven,1.7
+North Carolina,Cape Hatteras,1.7
+North Carolina,Cedar Island,1.9
+North Carolina,Edenton,3.1
+North Carolina,Elizabeth City,0.1
+North Carolina,Fayetteville,1
+North Carolina,Goldsboro,4.3
+North Carolina,Greenville,2.9
+North Carolina,Hofmann Forest,1.4
+North Carolina,Manteo,0.8
+North Carolina,Morehead City,0.4
+North Carolina,New Bern,1.5
+North Carolina,Southport,0.6
+North Carolina,Wilmington,1.7
+New York,"Bridgehampton, Long Island",26.8
+New York,"Brookhaven, Long Island",31.9
+New York,"New York City, Brooklyn",22.7
+New York,"New York City, Central Park",25.1
+New York,New York JFK Airport,23.8
+New York,New York La Guardia Airport,26.9
+New York,White Plains,27.7
+New York,Albany,59.1
+New York,Poughkeepsie,32.8
+New York,Saratoga Springs,63.4
+New York,Slide Mountain (2650 feet),94.5
+New York,Glens Falls,68
+New York,Lake Placid,103
+New York,Massena,69.4
+New York,Old Forge,177.3
+New York,Watertown,112.1
+New York,Binghamton,83.4
+New York,Elmira,37.9
+New York,Ithaca,64.4
+New York,Syracuse,123.8
+New York,Utica,88.3
+New York,Buffalo,94.7
+New York,Jamestown,97.5
+New York,Niagara Falls,76.1
+New York,Rochester,99.5
+New Mexico,Alamogordo,3.9
+New Mexico,Bitter Lake Wildlife Refuge,5.2
+New Mexico,Carlsbad,2.4
+New Mexico,Carlsbad Caverns National Park,3.9
+New Mexico,Cuba,29.8
+New Mexico,Elephant Butte Lake Dam,0.8
+New Mexico,Gila Hot Springs,5.7
+New Mexico,Hobbs,4
+New Mexico,Roswell,11.9
+New Mexico,Ruidoso,29.9
+New Mexico,White Sands National Monument,2.3
+New Mexico,Albuquerque,9.6
+New Mexico,Clovis,13.8
+New Mexico,Conchas Lake Dam,12
+New Mexico,El Morro National Monument,47.2
+New Mexico,Gallup,33.7
+New Mexico,Gran Quivira National Monument,11.1
+New Mexico,Grants,9.3
+New Mexico,Las Vegas,39.9
+New Mexico,Pecos National Monument,23
+New Mexico,Santa Fe,23
+New Mexico,Socorro,5.7
+New Mexico,Tucumcari,19.9
+New Mexico,Abiquiu Lake Dam,9.8
+New Mexico,Aztec Ruins National Monument,14.1
+New Mexico,Chaco Canyon National Monument,12.5
+New Mexico,Clayton,28
+New Mexico,Eagle Nest,67.8
+New Mexico,El Vado Lake Dam,43.1
+New Mexico,Farmington,13
+New Mexico,Lake Maloya (Sugarite Canyon Park),99.9
+New Mexico,Raton,30.1
+New Mexico,Red River,159.5
+New Mexico,Taos,32.3
+New Jersey,Hightstown,22.7
+New Jersey,Lambertville,18.5
+New Jersey,Newark & Elizabeth,28.6
+New Jersey,New Brunswick,28.4
+New Jersey,Plainfield,22.8
+New Jersey,Somerville,27.6
+New Jersey,Wanaque Reservoir Dam,19.4
+New Jersey,Atlantic City,16.5
+New Jersey,"Beach Haven, Brant Beach",8.1
+New Jersey,Belleplain State Forest,9.2
+New Jersey,Cape May,14.9
+New Jersey,Millville,12.6
+New Jersey,Moorestown,1.9
+New Hampshire,Concord,60.8
+New Hampshire,Durham,44.7
+New Hampshire,Keene,54.6
+New Hampshire,Laconia & Lakeport,56.1
+New Hampshire,Nashua,54.9
+New Hampshire,Portsmouth & Greenland,59.9
+New Hampshire,Berlin,78.3
+New Hampshire,Bethlehem,101.1
+New Hampshire,Colebrook,80.3
+New Hampshire,First Connecticut Lake,141
+New Hampshire,Mount Washington,281.2
+New Hampshire,North Conway,80
+New Hampshire,Pinkham Notch,126.1
+New Hampshire,Plymouth,69.7
+New Hampshire,Tamworth,77.6
+Nevada,Boulder City,0
+Nevada,"Callville Bay, Lake Mead",0
+Nevada,Las Vegas,0.3
+Nevada,Laughlin,0
+Nevada,North Las Vegas,0
+Nevada,Red Rock Canyon State Park,2.9
+Nevada,Valley of Fire State Park,0.4
+Nevada,Carson City,10.3
+Nevada,Reno,21.8
+Nevada,Virginia City,51.6
+Nevada,Caliente,8.4
+Nevada,Ely,50.7
+Nevada,Eureka,28.6
+Nevada,Great Basin National Park,70
+Nevada,Spring Valley State Park,26.6
+Nevada,Tonopah,17.3
+Nevada,Elko,41.3
+Nevada,Ruby Lake,54.7
+Nevada,Rye Patch Reservoir Dam,5.5
+Nevada,Winnemucca,20.9
+Nebraska,Columbus,26.2
+Nebraska,Falls City,15.9
+Nebraska,Fremont,31.3
+Nebraska,Lincoln,25.9
+Nebraska,Norfolk,30.5
+Nebraska,Omaha,26.4
+Nebraska,Enders Reservoir,24.1
+Nebraska,Grand Island,29
+Nebraska,Harlan County Lake,16.4
+Nebraska,Hastings,28.8
+Nebraska,Kearney,23.4
+Nebraska,"Lake McConaughy, Kingsley Dam",30.2
+Nebraska,McCook,28.8
+Nebraska,North Platte,28.5
+Nebraska,"Swanson Reservoir, Trenton Dam",24.7
+Nebraska,O'Neill,26.3
+Nebraska,Purdum,31
+Nebraska,Valentine,33.3
+Nebraska,Valentine National Wildlife Refuge,42.5
+Nebraska,Chadron,42.7
+Nebraska,Crescent Lake Wildlife Refuge,29.5
+Nebraska,Kimball,35.4
+Nebraska,Scottsbluff,42.1
+Montana,Cut Bank,33
+Montana,"Flathead Lake, Polson",31.8
+Montana,Gibson Reservoir Dam,56.4
+Montana,Kalispell,55.7
+Montana,Libby,45.4
+Montana,Missoula,37.9
+Montana,Rogers Pass,85
+Montana,Seeley Lake,112.7
+Montana,West Glacier,117
+Montana,Whitefish,65
+Montana,Bozeman,91
+Montana,Butte,62.2
+Montana,Hebgen Lake Dam,182.3
+Montana,Helena,38.1
+Montana,Sula,26.8
+Montana,Virginia City,67.6
+Montana,Billings,55
+Montana,Cooke City,200.7
+Montana,Mystic Lake,174.8
+Montana,Red Lodge,145.2
+Montana,Glasgow,34.8
+Montana,Glendive,19.9
+Montana,Great Falls,63.1
+Montana,Havre City,38.5
+Montana,Lewistown,62.8
+Montana,Miles City,29.5
+Missouri,Cape Girardeau,11.4
+Missouri,Caruthersville,2.3
+Missouri,Cassville,7.3
+Missouri,Joplin,12.5
+Missouri,Ozark Beach,8.2
+Missouri,Poplar Bluff,5.1
+Missouri,Springfield,17
+Missouri,Stockton Lake Dam,7.1
+Missouri,Clinton,12.1
+Missouri,Columbia,14.6
+Missouri,Jefferson City,11.7
+Missouri,Kansas City,13.4
+Missouri,"Lake Ozark, Lakeside",7.9
+Missouri,Lees Summit,13
+Missouri,Nevada,8.7
+Missouri,Rolla,18.9
+Missouri,St Charles,11.2
+Missouri,St Louis,17.7
+Missouri,Kirksville,15.7
+Missouri,Maryville,13.3
+Missouri,Moberly,11.9
+Missouri,Trenton,16.9
+Minnesota,Albert Lea,37.8
+Minnesota,Faribault,42.6
+Minnesota,Mankato,38.6
+Minnesota,Minneapolis,54
+Minnesota,Redwood Falls,35.5
+Minnesota,Rochester,51.9
+Minnesota,St. Paul,50.6
+Minnesota,Winona,31.8
+Minnesota,Worthington,37.8
+Minnesota,Duluth,86.1
+Minnesota,Grand Marais,42.1
+Minnesota,Grand Rapids,55.5
+Minnesota,Gunflint Lake,57.1
+Minnesota,Hibbing,60.3
+Minnesota,International Falls,71
+Minnesota,Two Harbors,56.2
+Minnesota,Agassiz Wildlife Refuge,39.7
+Minnesota,Alexandria,42.3
+Minnesota,Brainerd,46.8
+Minnesota,Detroit Lakes,44.8
+Minnesota,Moorhead,57.9
+Minnesota,St. Cloud,46.1
+Michigan,Ann Arbor,57.3
+Michigan,Dearborn,31.4
+Michigan,Detroit,42.7
+Michigan,Flint,47.4
+Michigan,Port Huron,37.1
+Michigan,Saginaw,41.8
+Michigan,Battle Creek,58.1
+Michigan,Benton Harbor,84.5
+Michigan,Grand Rapids,74.9
+Michigan,Holland,69.9
+Michigan,Lansing,51.1
+Michigan,Muskegon,93.7
+Michigan,Alpena,82.8
+Michigan,Cheboygan,92.6
+Michigan,East Tawas,51.7
+Michigan,Frankfort,103
+Michigan,Gaylord,141.4
+Michigan,Harrisville,52.4
+Michigan,Houghton Lake,62.2
+Michigan,Petoskey,122.8
+Michigan,Traverse City,101.4
+Michigan,Champion Van Riper Park,120.3
+Michigan,De Tour Village,70.6
+Michigan,Escanaba,49.5
+Michigan,Houghton,207.7
+Michigan,Iron Mountain,58.4
+Michigan,Ironwood,188.2
+Michigan,Marquette,117.2
+Michigan,Munising,152.1
+Michigan,Sault Ste Marie,123.4
+Michigan,Whitefish Point,122.3
+Massachusetts,Chatham,28.9
+Massachusetts,"Edgartown, Martha's Vineyard",23.6
+Massachusetts,Hyannis,15.6
+Massachusetts,Boston,43.8
+Massachusetts,East Wareham,36.1
+Massachusetts,"Great Blue Hill, Milton",62.7
+Massachusetts,Haverhill,48.6
+Massachusetts,Hingham,47.1
+Massachusetts,Marblehead,40.8
+Massachusetts,New Bedford,33.2
+Massachusetts,Newburyport,53.7
+Massachusetts,Plymouth,36.2
+Massachusetts,Taunton,28
+Massachusetts,Amherst,36.9
+Massachusetts,Barre Falls Reservoir Dam,54.7
+Massachusetts,Buffumville Lake,40.9
+Massachusetts,East Brimfield Lake,59
+Massachusetts,Lowell,51.9
+Massachusetts,Tully Lake,49.5
+Massachusetts,Worcester,64.1
+Massachusetts,Great Barrington,61
+Massachusetts,Lanesboro,62.1
+Massachusetts,West Otis,53.6
+Massachusetts,Worthington,79.7
+Maryland,Assateague Island,3.9
+Maryland,Chestertown,16.4
+Maryland,Royal Oak,14.7
+Maryland,Salisbury,3.2
+Maryland,Snow Hill,11.4
+Maryland,Baltimore,20.2
+Maryland,Beltsville,15.2
+Maryland,Catoctin Mountain Park,32.6
+Maryland,Frederick,16.5
+Maryland,La Plata,16.1
+Maryland,Rockville,17.1
+Maryland,Cumberland,28.9
+Maryland,Oakland,106.1
+Maine,Acadia National Park,71.8
+Maine,Belfast,63.9
+Maine,Brunswick,57.6
+Maine,Eastport,57.8
+Maine,Jonesboro,62.5
+Maine,Kennebunkport,45.7
+Maine,Newcastle,72.1
+Maine,Port Clyde,51.9
+Maine,Portland,61.8
+Maine,Augusta,71.3
+Maine,Bangor,66.1
+Maine,Dover-Foxcroft,90.4
+Maine,"Flagstaff Lake, Long Falls Dam",106.9
+Maine,Lewiston,65.6
+Maine,Rangeley,121.3
+Maine,Waterville,64.3
+Maine,"Chesuncook Lake, Ripogenus Dam",100.6
+Maine,Fort Kent,97.1
+Maine,Millinocket,84.1
+Maine,"Moosehead Lake, Brassua Dam",103.6
+Maine,Presque Isle,89.6
+Kentucky,Farmers,9.5
+Kentucky,Jackson,23.5
+Kentucky,London,10.3
+Kentucky,Bernheim Forest,4.8
+Kentucky,Covington,22.1
+Kentucky,Lexington,13
+Kentucky,Louisville,12.5
+Kentucky,Rough River Lake,5
+Kentucky,"Warsaw, Markland Dam",7.6
+Kentucky,Barren River Lake,6.4
+Kentucky,Bowling Green,8.9
+Kentucky,Mammoth Cave,5.5
+Kentucky,Monticello,14.8
+Kentucky,Nolin River Lake,4.2
+Kentucky,Stearns,9.2
+Kentucky,Henderson,12.8
+Kentucky,Hopkinsville,7
+Kentucky,Kentucky Dam Village,7
+Kentucky,Paducah,9.1
+Kansas,Fort Scott,10.8
+Kansas,Independence,11.1
+Kansas,John Redmond Lake,9.6
+Kansas,Kansas City,13.4
+Kansas,Lawrence,13.4
+Kansas,Leavenworth,16.6
+Kansas,Olathe,14.9
+Kansas,Perry Lake,14.8
+Kansas,Topeka,17.8
+Kansas,Concordia,20.2
+Kansas,Great Bend,15.5
+Kansas,Hutchinson,12.2
+Kansas,Lovewell Reservoir Dam,17.3
+Kansas,Manhattan,16.7
+Kansas,Salina,16.6
+Kansas,Tuttle Creek Lake,8.8
+Kansas,Wichita,14.7
+Kansas,Wilson Lake,13.9
+Kansas,Colby,29.8
+Kansas,Dodge City,21.1
+Kansas,Elkhart,21.4
+Kansas,Garden City,18.3
+Kansas,Goodland,35.5
+Kansas,Keith Sebelius Reservoir,17.5
+Kansas,Liberal,19.1
+Kansas,Webster Reservoir Dam,15.6
+Iowa,Burlington,23.5
+Iowa,Cedar Rapids,31.5
+Iowa,Clinton,30.3
+Iowa,Cresco,39.5
+Iowa,Decorah,38.8
+Iowa,Dubuque,33.7
+Iowa,Iowa City,27.2
+Iowa,Waterloo,34.5
+Iowa,Ames,31.6
+Iowa,Des Moines,34.9
+Iowa,Fort Dodge,35.8
+Iowa,Marshalltown,25.4
+Iowa,Mason City,41.2
+Iowa,Ottumwa,23.5
+Iowa,Carroll,29.2
+Iowa,Lake Park,39.9
+Iowa,Onawa,30.3
+Iowa,Shenandoah,25.1
+Iowa,Sioux City,34.8
+Iowa,Storm Lake,36.4
+Indiana,Angola,36.7
+Indiana,Fort Wayne,33.5
+Indiana,Indiana Dunes Lakeshore,40.3
+Indiana,Rochester,31.5
+Indiana,South Bend,66.6
+Indiana,Valparaiso,39.5
+Indiana,Anderson,19.6
+Indiana,Indianapolis,25.9
+Indiana,Kokomo,37.8
+Indiana,Lafayette,19.9
+Indiana,Marion,24.6
+Indiana,Muncie,25.4
+Indiana,Richmond,15.6
+Indiana,Bloomington,15.8
+Indiana,Brookville,15.5
+Indiana,Columbus,16.3
+Indiana,Evansville,10.6
+Indiana,Paoli,11.9
+Indiana,Tell City,4.4
+Illinois,Aurora,27.1
+Illinois,Chicago Botanical Garden,33.4
+Illinois,Chicago Midway Airport,37.1
+Illinois,Chicago O'Hare Airport,36.7
+Illinois,Elgin,29
+Illinois,Antioch,42.7
+Illinois,DeKalb,31.9
+Illinois,Dixon,30.2
+Illinois,Freeport,31.3
+Illinois,Moline,31.6
+Illinois,Rockford,36.7
+Illinois,Cahokia,15.1
+Illinois,Danville,17.9
+Illinois,Peoria,24.6
+Illinois,Quincy,22.3
+Illinois,Springfield,20.9
+Illinois,Urbana,23.2
+Illinois,Cairo,4.4
+Illinois,Marion,14.4
+Illinois,Mt Vernon,13.9
+Idaho,Idaho Falls,36.9
+Idaho,Malad City,34
+Idaho,Pocatello,66.4
+Idaho,Preston,53.9
+Idaho,Craters of the Moon Monument,95.7
+Idaho,Ketchum,112.6
+Idaho,"Lake Walcott, Minidoka Dam",23.4
+Idaho,Middle Fork Lodge,40.3
+Idaho,Salmon,24.8
+Idaho,"Stanley, Sawtooth Recreation Area",75.9
+Idaho,Twin Falls,27.2
+Idaho,Boise,19.2
+Idaho,Bruneau,2.5
+Idaho,Idaho City,69.1
+Idaho,"Lake Lowell, Deer Flat Dam",1.9
+Idaho,McCall,135.7
+Idaho,Mountain Home,10.3
+Idaho,Coeur d’Alene,29.6
+Idaho,Elk City,120.3
+Idaho,Kellogg,49
+Idaho,Lewiston,10.5
+Idaho,Moscow,49.2
+Idaho,Riggins,4.7
+Idaho,Sandpoint,57.7
+Idaho,Wallace,78.8
+Connecticut,Bridgeport,28.1
+Connecticut,Groton,23.2
+Connecticut,Norwich,28
+Connecticut,Stamford,31.2
+Connecticut,Burlington,31.3
+Connecticut,Danbury,45.3
+Connecticut,Hartford,40.5
+Connecticut,Mansfield Hollow Lake,30.2
+Connecticut,Middletown,35.6
+Connecticut,Norfolk,78.4
+Connecticut,West Thompson Lake,36.8
+Connecticut,Woodbury,43.3
+Colorado,Alamosa,27.6
+Colorado,Aspen,178.8
+Colorado,Colorado National Monument,25.9
+Colorado,Cortez,31.9
+Colorado,Crested Butte,216.6
+Colorado,Dinosaur National Monument,34.6
+Colorado,Durango,64.4
+Colorado,Glenwood Springs,46.1
+Colorado,Grand Junction,19.1
+Colorado,Gunnison,45.7
+Colorado,Leadville,156.3
+Colorado,Mesa Verde National Park,73.3
+Colorado,Ouray,134.4
+Colorado,Steamboat Springs,179.6
+Colorado,Telluride,175.5
+Colorado,Vail,190
+Colorado,Boulder,88.3
+Colorado,Burlington,37.8
+Colorado,Canon City,40.8
+Colorado,Colorado Springs,37.7
+Colorado,Denver,53.8
+Colorado,Estes Park,75.1
+Colorado,Fort Collins,47.2
+Colorado,Great Sand Dunes Monument,47
+Colorado,Greeley,40.8
+Colorado,Lakewood,55.8
+Colorado,Pueblo,31.8
+Colorado,Sterling,24.9
+Colorado,Trinidad,39.1
+Arkansas,Blytheville,2.5
+Arkansas,Eudora,0
+Arkansas,Helena,0.5
+Arkansas,Jonesboro,4.8
+Arkansas,Marianna,2.4
+Arkansas,West Memphis,2.8
+Arkansas,El Dorado,1.3
+Arkansas,Magnolia,2
+Arkansas,Monticello,0.6
+Arkansas,Pine Bluff,0.9
+Arkansas,Texarkana,2.7
+Arkansas,Blue Mountain Lake Dam,2.8
+Arkansas,Fort Smith,5.2
+Arkansas,Hot Springs,2.8
+Arkansas,Lake Ouachita Dam,0.9
+Arkansas,Little Rock,3.5
+Arkansas,Mena,1.1
+Arkansas,North Little Rock,4.4
+Arkansas,Searcy,2.2
+Arkansas,Bentonville,9.2
+Arkansas,Eureka Springs,13.8
+Arkansas,Fayetteville,4.3
+Arkansas,Greers Ferry Lake Dam,1.7
+Arkansas,Mountain Home,10.5
+Arkansas,Mountain View,4.1
+Alaska,Annette Island,34.9
+Alaska,Haines,262.4
+Alaska,Juneau,69.8
+Alaska,Sitka,32.3
+Alaska,Yakutat,143.4
+Alaska,Anchorage,74.5
+Alaska,Gulkana,58.4
+Alaska,Homer,47.4
+Alaska,Seward,64.4
+Alaska,Talkeetna,137.1
+Alaska,Valdez,326.3
+Alaska,Bethel,61.8
+Alaska,Cold Bay,73.1
+Alaska,King Salmon,46.6
+Alaska,Kodiak,68.9
+Alaska,McGrath,97.3
+Alaska,Port Alsworth,88.7
+Alaska,St Paul Island,59.8
+Alaska,Shemya Island,84.6
+Alaska,Fairbanks,65
+Alaska,McKinley Park,76.7
+Alaska,Tanana,42.4
+Alaska,Tok,35.3
+Alaska,Barrow,37.7
+Alaska,Bettles,91.4
+Alaska,Kotzebue,59.8
+Alaska,Nome,75.7
+Alaska,Prudhoe Bay,33.7
+Rhode Island,Kingston,30.2
+Rhode Island,Newport,25.4
+Rhode Island,North Foster,57.1
+Rhode Island,Providence,33.8
+Rhode Island,Tiverton,36.6
+Rhode Island,Woonsocket,36.2
+Delaware,Dover,15.7
+Delaware,Georgetown,13.2
+Delaware,Lewes,9.6
+Delaware,Newark,7.8
+Delaware,Wilmington,20.2
+California,South Lake Tahoe,190
+California,Big Bear Lake,62
+California,Mammoth Lakes,210
+California,Redding,1

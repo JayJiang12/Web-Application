@@ -1,6 +1,6 @@
 # https://www.python-course.eu/sql_python.php
 # https://docs.python.org/2/library/csv.html
-# https://simplemaps.com/data/us-cities.import MySQLdb
+# https://github.com/tonmcg/County_Level_Election_Results_12-16
 
 import MySQLdb
 import csv
