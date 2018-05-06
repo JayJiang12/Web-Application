@@ -1,5 +1,49 @@
-#foooter {
+body {
+    padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+#query {
+    margin: auto;
+    
+}
+
+#footer {
 	clear:both;
 	height: 20px;
 	text-align: center;
 }
+
+#map {
+    height: 85%;
+    width: 75%;
+    position: absolute;
+
+}
+
+#result_right{
+    height: 85%;
+    width: 25%;
+    position: absolute;
+    left: 75%;
+}
+
+#result_bottom{
+    height: 100%
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    left: 17%;
+}
+
+#about_body {
+    margin: 20px 20px 20px 20px;
+    text-align: justify;
+}
+
+

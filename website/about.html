@@ -1,97 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>CMSC447 Project</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <style>
-      body {
-        padding-top: 54px;
-      }
-      @media (min-width: 992px) {
-        body {
-          padding-top: 56px;
-        }
-      }
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-
-    </style>
-
-  </head>
-
-  <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Page Content -->
- 
-        <div id="map"></div>
-        <script>
-          var map;
-          var umbc = {lat: 39.260261, lng: -76.711508};
-          function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: umbc,
-                zoom: 8
-            });
-            var testMarker = new google.maps.Marker({
-              position: umbc,
-              map: map
-            });
-          }
-          </script>
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOR2E6G3t8nrOqDF6WkgKEueL8YykS0c&callback=initMap"
-          async defer></script>
+    
+    <head>
         
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  </body>
-
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <meta name="description" content="">
+                    <meta name="author" content="">
+                        
+                        <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+                        
+                        
+                        <title>CMSC447 Project</title>
+                        
+                        <!-- Bootstrap core CSS -->
+                        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+                            
+                            
+                            </head>
+    
+    <body>
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <img src="flyingmongoose.png" alt="FinghtingMongooses" width=60px height = 50px>
+                    <a class="navbar-brand" href="#">Fighting Mongooses</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Query
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="results.html">Result</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+        </nav>
+        
+        <!-- Page Content -->
+            <script src="script.js" type="text/javascript"></script>
+        
+        
+        
+        <p></p>
+        <br>
+        <div id="about_body">
+        
+        Vesta is a web based application that will be utilized by an average internet user. This web application is intended to allow users to acquire potential living locations based on abstract specifications regarding the area. To garner said information, the user will specify quality of life attributes desired within a defined radius. These characters may include meteorological data (i.e. average temperature, average weather conditions), geographical information, etc. The application will compare the inputted information to specified open source databases to determine the locations that fit the criteria. Once the locations have been determined by the software on the back-end, they will be displayed to the user.
+        </div>
+        </br>
+        
+        
+        <!-- Copy right section -->
+        <br>
+        <div id = "footer"> &#169; 2018 &bull; Fighting Mongooses &bull; Software Engineering &bull; University of Maryland, Baltimore County USA</div>
+        <br>
+        
+        
+        
+        
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+    </body>
+    
 </html>

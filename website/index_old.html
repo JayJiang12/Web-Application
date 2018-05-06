@@ -2,12 +2,15 @@
 <html lang="en">
 
   <head>
-
+	
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+	  
+	 <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+	
+	
     <title>CMSC447 Project</title>
 
     <!-- Bootstrap core CSS -->
@@ -23,15 +26,8 @@
           padding-top: 56px;
         }
       }
-      #map {
-        height: 100%;
-        width: 75%;
-        position: absolute;
-        
-      }
       #query {
-        position: absolute;
-        right: 0%
+        margin: auto;
 
       }
       /* Optional: Makes the sample page fill the window. */
@@ -50,7 +46,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
+		  <img src="flyingmongoose.png" alt="Finghting Mongeese" width=60px height = 50px>
+        <a class="navbar-brand" href="#">Fighting Mongeese</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -70,37 +67,125 @@
     </nav>
 
     <!-- Page Content -->
- 
-        <table width=100% height=100%>
-        <tbody>
-        <tr>
-          <td width=75% height=100%>
-            
-            <div id="map"></div>      
-            
-        <script>
-          var map;
-          var umbc = {lat: 39.260261, lng: -76.711508};
-          function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: umbc,
-                zoom: 8
-            });
-
-          }
-          </script>
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOR2E6G3t8nrOqDF6WkgKEueL8YykS0c&callback=initMap"
-          async defer></script>
-          </td>
-
-          <td width=25% height=100%>
-            <div id="query" align="right">
+            <div id="query" align="center">
+			<br>
+            <h1> Find your ideal place to live! </h1>
+            <br>
+				
+			
+	<!-- check box with inage -->
+		  <div>	 
+			  <label class="image-checkbox">
+				  <img class="img-responsive" src="buttom_images/democrate.jpeg"/>
+				  <div>
+					  <a>Blue States</a>
+					  <input type="checkbox" name="image[]" value="Demorate" id="Demorate" onClick="toggleCheck('demorate');"/>
+					  <i class="fa fa-check hidden"></i>	 
+				  </div>
+			  </label>	 
+			 
+			  <label class="image-checkbox">
+				  <img class="img-responsive" src="buttom_images/republican.png"/>
+				  <div>
+					  <a>Red States</a>
+					  <input type="checkbox" name="image[]" value="Republican" id="Republican" onClick="toggleCheck('republican');"/>
+					  <i class="fa fa-check hidden"></i>		
+				  </div>
+			 </label>
+			 
+			  <br>
+			  
+			  <label class="image-checkbox">
+				  <img class="img-responsive" src="buttom_images/urban.jpeg" onClick="toggleCheck('urban');"/>
+				  <div>
+					  <a>Population Over 1 Million</a>
+					
+					  <input type="checkbox" name="image[]" value="Urban" id="Urban"/>
+					  <i class="fa fa-check hidden"></i>
+				  </div>
+			  </label>
+			  
+			  <label class="image-checkbox">
+				  <img class="img-responsive" src="buttom_images/suburb.jpeg" onClick="toggleCheck('suburb');"/>
+				  <div>
+					  <a>Population Under 1 Million
+					  </a>
+					  <input type="checkbox" name="image[]" value="Suburb" id="suburb"/>
+					  <i class="fa fa-check hidden"></i>
+				  </div>
+			  </label>
+			  
+			  <br>
+			  
+			  <label class="image-checkbox">
+				  <img class="img-responsive" src="buttom_images/hot.jpeg" onClick="toggleCheck('hot');"/>
+				  <div>
+					  <a>Hot Climate</a>
+					  <input type="checkbox" name="image[]" value="Hot" id="Hot"/>
+					  <i class="fa fa-check hidden"></i>
+				  </div>
+			  </label>
+			  
+			  <label class="image-checkbox">
+				  <img class="img-responsive" src="buttom_images/warm.jpg" onClick="toggleCheck('warm');"/>
+				  <div>
+					  <a>Warm Climate</a>
+					  <input type="checkbox" name="image[]" value="Warm" id="Warm"/>
+					  <i class="fa fa-check hidden"></i>
+				  </div>
+			  </label>
+			  
+			    <label class="image-checkbox">
+				  <img class="img-responsive" src="buttom_images/cold.jpeg" onClick="toggleCheck('cold');"/>
+				  <div>
+					  <a>Cold Climate</a>
+					  <input type="checkbox" name="image[]" value="Cold" id="Cold"/>
+					  <i class="fa fa-check hidden"></i>
+				  </div>
+			  </label>
+			  
+			  <br>
+			  
+			  <label class="image-checkbox">
+				  <img class="img-responsive" src="buttom_images/dollarSign1.jpeg" onClick="toggleCheck('COL3K');"/>
+				  <div>
+					  <a>Cost of Living <br> Less than $3000</a>
+					  <input type="checkbox" name="image[]" value="COL3K" id="COL3K"/>
+					  <i class="fa fa-check hidden"></i>
+				  </div>
+			  </label>
+			  
+			   <label class="image-checkbox">
+				  <img class="img-responsive" src="buttom_images/dollarSign2.jpeg" onClick="toggleCheck('COL35K');"/>
+				  <div>
+					  <a>Cost of Living <br> $3000 to $5000</a>
+					  <input type="checkbox" name="image[]" value="COL35K" id="COL35K"/>
+					  <i class="fa fa-check hidden"></i>
+				  </div>
+			  </label>
+			  
+			   <label class="image-checkbox">
+				  <img class="img-responsive" src="buttom_images/dollarSign3.jpeg" onClick="toggleCheck('COL5K');"/>
+				  <div>
+					  <a>Cost of Living <br> Greater than $5000</a>
+					  <input type="checkbox" name="image[]" value="COL5K" id="COL5K"/>
+					  <i class="fa fa-check hidden"></i>
+				  </div>
+			  </label>
+			  
+		  </div>
+		<!--  <input type="submit" value="Submit"> -->
+	 <!-- checkbox with image end -->
+				
+			<div>
+			<br>
             <form align="middle" width=100% height=100%>
                 Test Query: 
                 <input type="text" name="testQuery" id="testQuery"><br>
                 <br>
                 <button type="button" onclick="handleSubmit()">Submit</button>
-              
+				</div>
+				
                 <script type="text/javascript">
                     function handleSubmit() {
                       var testData = document.getElementById("testQuery").value;
@@ -113,6 +198,64 @@
                         success: callbackFunc
                       });
                     }
+					
+					<!-- checkbox JS begin -->  
+					function toggleCheck(a){
+						
+						if(a == 'demorate'){
+							alert("Democratic is checked");
+							
+							// code goes here if demorate is checked.
+							
+							/*
+							if(document.getElementById("Demorate").checked){
+								alert("Demorate is checked");
+							}
+							*/
+						
+						
+						}
+						if (a == 'republican'){
+							alert("Republican is checked");
+							
+						}
+						
+						if (a == 'urban'){
+							alert("Population over 1 million is checked");
+						}
+						
+						if (a == 'suburb'){
+							alert("Population under 1 million is checked");
+						}
+						
+						if (a == 'hot'){
+							alert("Hot Climate is checked");
+						}
+						
+						if (a == 'warm'){
+							alert("Warm Climate is checked");
+						}
+						
+						if (a == 'cold'){
+							alert("Cold Climate is checked");
+						}
+						
+						if (a == 'COL3K'){
+							alert("Cost of Living 3K is checked");
+						}
+						
+						if (a == 'COL35K'){
+							alert("Cost of Living 3K - 5K is checked");
+						}
+						
+						if (a == 'COL5K'){
+							alert("Cost of Living 5K is checked");
+						}
+						
+						
+						
+					}		
+	<!-- checbox JS END -->
 
                     function callbackFunc(response) {
                       //handle response here
@@ -132,13 +275,13 @@
             </form>
 
             </div>
+	  
+	  <!-- Copy right section -->
+	  <br>
+	 <div id = "foooter"> &#169; 2018 &bull; Fighting Mongooses &bull; Software Engineering &bull; University of Maryland, Baltimore County USA</div>
+	  <br>
       
-          </td>
-          </tr>
-        </tbody>
-        </table>
-        <!-- DivTable.com -->
-
+        
 
 
     <!-- Bootstrap core JavaScript -->

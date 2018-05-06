@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CMSC447 Project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+      #map {
+        height: 100%;
+        width: 75%;
+        position: absolute;
+        
+      }
+      #query {
+        margin: auto;
+        position: absolute;
+        width: 25%;
+
+      }
+      /* Optional: Makes the sample page fill the window. */
+      /*html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+*/
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Query
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+ 
+        <table width=100% height=100%>
+        <tbody>
+        <tr>
+          <td width=75% height=100%>
+            
+            <div id="map"></div>      
+            
+        <script>
+          var map;
+          var usa = {lat: 37.0979817, lng: -98.9600287};
+          function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: usa,
+                zoom: 4
+            });
+
+          }
+          </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOR2E6G3t8nrOqDF6WkgKEueL8YykS0c&callback=initMap"
+          async defer></script>
+          </td>
+
+          <td width=25% height=100%>
+            <div id="query" align="right">
+            <form align="middle" width=100% height=100%>
+                
+                <br>
+                Average Property Value: $<span id="display_property"></span>
+                <br>
+                Min: <input type="text" name="query_prop_min" id="query_prop_min" size=4>                
+                Max: <input type="text" name="query_prop_max" id="query_prop_max" size=4>
+
+                <br>
+                <br>
+                Average temperature range:
+                <br>
+                Min: <input type="text" name="query_temp_min" id="query_temp_min" size=4>                
+                Max: <input type="text" name="query_temp_max" id="query_temp_max" size=4>
+                <br>
+                <br>
+
+
+                City Population:  <br>
+                Min: <input type="text" name="query_pop_min" id="query_pop_min" size=4>                
+                Max: <input type="text" name="query_pop_max" id="query_pop_max" size=4>
+                <br>
+                <br>
+
+                <br>
+                <button type="button" onclick="handleSubmit()">Submit</button>
+              
+                <script type="text/javascript">
+                    function handleSubmit() {
+                      
+                      $.ajax({
+                        url: "/getPoints",
+                        //make an AJAX request to the py script
+                        type: "POST",
+                        //pass query params below
+                        data: { 
+                                param_prop_min : document.getElementById("query_prop_min").value,
+                                param_prop_max : document.getElementById("query_prop_max").value,
+                                param_temp_min : document.getElementById("query_temp_min").value, 
+                                param_temp_max : document.getElementById("query_temp_max").value,
+                                param_pop_min : document.getElementById("query_pop_min").value,
+                                param_pop_max : document.getElementById("query_pop_max").value
+                              },
+                        success: callbackFunc
+                      });
+                    }
+
+
+                    // the smooth zoom function
+                    function smoothZoom (map, max, cnt) {
+                        if (cnt >= max) {
+                            return;
+                        }
+                        else {
+                            z = google.maps.event.addListener(map, 'zoom_changed', function(event){
+                                google.maps.event.removeListener(z);
+                                smoothZoom(map, max, cnt + 1);
+                            });
+                            setTimeout(function(){map.setZoom(cnt)}, 80); // 80ms is what I found to work well on my system -- it might not work well on all systems
+                        }
+                    }  
+
+                    function callbackFunc(response) {
+                      //handle response here
+                      //console.log(response);
+                      var positions = JSON.parse(response);
+
+                      positions.forEach(function(element) {
+                          console.log(element[0]);
+                          console.log(element[1]);
+                          var marker = new google.maps.Marker({
+                            position: {lat: element[1][0], lng: element[1][1]},
+                            map: map
+                          });
+                      });
+                      var firstPos = {lat: positions[0][1][0], lng: positions[0][1][1]};
+                      //var newOptions = {'zoom':13, 'center':firstPos};
+                      //map.setOptions(newOptions);
+                      map.panTo(firstPos);
+                      smoothZoom(map, 9, map.getZoom());
+                      
+                    }
+                </script>
+            </form>
+
+            </div>
+      
+          </td>
+          </tr>
+        </tbody>
+        </table>
+        <!-- DivTable.com -->
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
