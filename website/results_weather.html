@@ -167,8 +167,8 @@
               
                 <script type="text/javascript">
                     function handleSubmit() {
-                      var param_color_red_t = document.getElementById("query_color_red").checked ? "red" : ""
-                        var param_color_blue_t = document.getElementById("query_color_blue").checked ? "blue" : ""
+                        var param_color_red_t = (document.getElementById("query_color_red").checked && !document.getElementById("query_color_blue").checked) ? "red" : ""
+                        var param_color_blue_t = (document.getElementById("query_color_blue").checked && !document.getElementById("query_color_red").checked) ? "blue" : ""
 
                       $.ajax({
                         url: "/getPoints",
