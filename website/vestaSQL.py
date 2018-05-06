@@ -29,7 +29,7 @@ def getCities(request):
     userInput = request.values()
     
     f = open('log.txt', 'w')
-    f.write(userInput)
+    f.write(str(userInput))
 
     if all(value == "" for value in userInput):
         return([])  

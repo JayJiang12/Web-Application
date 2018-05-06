@@ -158,8 +158,8 @@
                 Political Color:
                 <br>
                 <form action="">
-                   <label for="query_color_blue" style="color:blue;"><input type="checkbox" name="query_color_blue" value="blue">Blue</label>
-                   <label for="query_color_red" style="color:red;"><input type="checkbox" name="query_color_red" value="red">Red</label>
+                   <label for="query_color_blue" style="color:blue;"><input type="checkbox" name="query_color_blue" id="query_color_blue" value="blue">Blue</label>
+                   <label for="query_color_red" style="color:red;"><input type="checkbox" name="query_color_red" id="query_color_red" value="red">Red</label>
                 </form>
 
                 <br>
@@ -167,12 +167,15 @@
               
                 <script type="text/javascript">
                     function handleSubmit() {
-                      
+                      var param_color_red_t = document.getElementById("query_color_red").checked ? "red" : ""
+                        var param_color_blue_t = document.getElementById("query_color_blue").checked ? "blue" : ""
+
                       $.ajax({
                         url: "/getPoints",
                         //make an AJAX request to the py script
                         type: "POST",
                         //pass query params below
+                        
                         data: { 
                                 param_pop_min : document.getElementById("query_pop_min").value,
                                 param_pop_max : document.getElementById("query_pop_max").value,
@@ -188,8 +191,8 @@
                                 param_rain_max : document.getElementById("query_rain_max").value,
                                 param_snow_min : document.getElementById("query_snow_min").value,
                                 param_snow_max : document.getElementById("query_snow_max").value,
-                                param_color_red : document.getElementById("query_color_red").value,
-                                param_color_blue : document.getElementById("query_color_blue").value
+                                param_color_red : param_color_red_t,
+                                param_color_blue : param_color_blue_t
                               },
                         success: callbackFunc
                       });
