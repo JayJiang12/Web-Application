@@ -1,6 +1,18 @@
-# https://www.python-course.eu/sql_python.php
-# https://docs.python.org/2/library/csv.html
-# https://github.com/tonmcg/County_Level_Election_Results_12-16
+# Elizabeth Aucott
+# 5/6/18
+# CMSC 447 Group 4 Project
+# updateColors.py
+#
+# updateColors.py takes a csv of U.S. counties and their 2016 presidential 
+# election results and updates the MySQL vesta.cities table so that every
+# city has the color "red" or "blue".
+# 
+# 2016_US_County_Level_Presidential_Results.csv is from https://github.com/tonmcg/County_Level_Election_Results_12-16
+# 
+# Code help from:
+#     https://www.python-course.eu/sql_python.php
+#     https://docs.python.org/2/library/csv.html
+
 
 import MySQLdb
 import csv

@@ -1,6 +1,17 @@
-# https://www.python-course.eu/sql_python.php
-# https://docs.python.org/2/library/csv.html
-# https://simplemaps.com/data/us-cities
+# Elizabeth Aucott
+# 5/6/18
+# CMSC 447 Group 4 Project
+# fillTable.py
+#
+# fillTable.py takes a csv of U.S. city maps and their latitude and longitude
+# and fills the city, county, state, lat, and long parameters into 
+# the MySQL table vesta.cities. 
+# 
+# uscitiesv1.3.csv is from https://simplemaps.com/data/us-cities
+# 
+# Code help from:
+#     https://www.python-course.eu/sql_python.php
+#     https://docs.python.org/2/library/csv.html
 
 import MySQLdb
 import csv

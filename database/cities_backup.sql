@@ -1,4 +1,15 @@
-# mysql -u cmsc447-user -p -D vesta < cities_backup.sql
+# Elizabeth Aucott
+# 5/6/18
+# CMSC 447 Group 4 Project
+# cities_backup.sql
+#
+# Creates and loads data into cities MySQL database. 
+# Before running this script, you must install MySQL, 
+# create the cmsc447-user, and create the database vesta. 
+# Have all of your data in the cities_back.csv file. 
+#
+# Use this code by running:
+#     mysql -u cmsc447-user -p -D vesta < cities_backup.sql
 
 CREATE TABLE cities (
   city varchar(45) NOT NULL,

@@ -1,6 +1,19 @@
-# https://www.python-course.eu/sql_python.php
-# https://docs.python.org/2/library/csv.html
-# api.census.gov 
+# Elizabeth Aucott
+# 5/6/18
+# CMSC 447 Group 4 Project
+# updatePropVal.py
+#
+# updatePropVal.py takes a csv of U.S. city property values and updates the
+# MySQL table vesta.cities with these values. It then polls the U.S. 
+# Census Bureau's API to get more updated propery values and updates
+# the cities in the database accordingly. 
+# 
+# PropertyValue.csv is from http://files.zillowstatic.com/research/public/City/City_Zhvi_AllHomes.csv
+# Census Community Survey API: https://www.census.gov/data/developers/data-sets/acs-1year.html
+# 
+# Code help from:
+#     https://www.python-course.eu/sql_python.php
+#     https://docs.python.org/2/library/csv.html
 
 import MySQLdb
 import csv

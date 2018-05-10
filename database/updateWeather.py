@@ -1,6 +1,17 @@
-# https://www.python-course.eu/sql_python.php
-# https://docs.python.org/2/library/csv.html
-# https://www.currentresults.com/Weather/US/
+# Elizabeth Aucott
+# 5/6/18
+# CMSC 447 Group 4 Project
+# updateWeather.py
+#
+# updateWeather.py takes several csv's of U.S. states and cities 
+# and updates the weather columns (temp, sun, rain, snow, humidity) of the
+# MySQL table vesta.cities. 
+# 
+# All weather csv's from:https://www.currentresults.com/Weather/US/
+# 
+# Code help from:
+#     https://www.python-course.eu/sql_python.php
+#     https://docs.python.org/2/library/csv.html
 
 import MySQLdb
 import csv

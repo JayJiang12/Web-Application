@@ -1,23 +1,18 @@
-'''
-    Elizabeth Aucott
-    5/3/18
-    CMSC 447 Group 4 Project
-    get_population.py
-
-    get_population.py queries the US Census API for the population of all cities and saves it as a json file. The query asks for all cities (population between 0 and 10,000,000). 
-
-    This code uses python3.6. All of these libraries come installed with python3. 
-    Below are some very helpful links for using the API and about the dataset being queried. 
-
-    https://www.census.gov/data/developers/guidance/api-user-guide.Overview.html
-    https://www.census.gov/data/developers/data-sets/popest-popproj/popest.html
-
-    Sources:
-        https://stackoverflow.com/questions/32795460/loading-json-object-in-python-using-urllib-request-and-json-modules
-        http://stackabuse.com/reading-and-writing-json-to-a-file-in-python/
-'''
-
-# api.census.gov 
+# Elizabeth Aucott
+# 5/6/18
+# CMSC 447 Group 4 Project
+# updatePop.py
+#
+# updatePop.py polls the U.S. Census Bureau's API's population dataset in order
+# to get population information for all available cities in the Census's dataset. 
+# It then updates the MySQL table vesta.cities with these populations. 
+# 
+# Census Population API: https://www.census.gov/data/developers/data-sets/popest-popproj/popest.html
+# 
+# Code help from:
+#     https://stackoverflow.com/questions/32795460/loading-json-object-in-python-using-urllib-request-and-json-modules
+#     http://stackabuse.com/reading-and-writing-json-to-a-file-in-python/
+#     https://www.python-course.eu/sql_python.php
 
 import MySQLdb
 import urllib.request
