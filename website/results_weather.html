@@ -35,6 +35,12 @@
         width: 25%;
 
       }
+      /* Get rid of arrows for number input boxes */
+      input[type=number]::-webkit-inner-spin-button, 
+      input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+      }
       /* Optional: Makes the sample page fill the window. */
       /*html, body {
         height: 100%;
@@ -101,56 +107,56 @@
                 <br>
                 City Population:
                 <br>
-                <input type="text" name="query_pop_min" id="query_pop_min" placeholder="Min" size=4> −
-                <input type="text" name="query_pop_max" id="query_pop_max" placeholder="Max" size=4>
+                <input type="number" name="query_pop_min" id="query_pop_min" placeholder="Min" min="0" max="10000000" oninput="this.value = Math.abs(this.value)"> −
+                <input type="number" name="query_pop_max" id="query_pop_max" placeholder="Max" min="0" max="10000000" oninput="this.value = Math.abs(this.value)">
                 
                 <br>
                 <br>
 
                 Average Property Values: ($)<span id="display_property">
                 <br>
-                <input type="text" name="query_prop_min" id="query_prop_min" placeholder="Min" size=4> −
-                <input type="text" name="query_prop_max" id="query_prop_max" placeholder="Max" size=4>
+                <input type="number" name="query_prop_min" id="query_prop_min" placeholder="Min" min="0" max="1000000" oninput="this.value = Math.abs(this.value)"> −
+                <input type="number" name="query_prop_max" id="query_prop_max" placeholder="Max" min="0" max="1000000" oninput="this.value = Math.abs(this.value)">
                 
                 <br>
                 <br>
                 
                 Average temperature range: (°F)
                 <br>
-                <input type="text" name="query_temp_min" id="query_temp_min" placeholder="Min" size=4> −
-                <input type="text" name="query_temp_max" id="query_temp_max" placeholder="Max" size=4>
+                <input type="number" name="query_temp_min" id="query_temp_min" placeholder="Min" min="0" max="120" oninput="this.value = Math.abs(this.value)"> −
+                <input type="number" name="query_temp_max" id="query_temp_max" placeholder="Max" min="0" max="120" oninput="this.value = Math.abs(this.value)">
                 
                 <br>
                 <br>
 
                 Average number of sunny days:
                 <br>
-                <input type="text" name="query_sun_min" id="query_sun_min" placeholder="Min" size=4> −
-                <input type="text" name="query_sun_max" id="query_sun_max" placeholder="Max" size=4>
+                <input type="number" name="query_sun_min" id="query_sun_min" placeholder="Min" min="0" max="364" oninput="this.value = Math.abs(this.value)"> −
+                <input type="number" name="query_sun_max" id="query_sun_max" placeholder="Max" min="0" max="364" oninput="this.value = Math.abs(this.value)">
                 
                 <br>
                 <br>
 
                 Average humidity: (%)
                 <br>
-                <input type="text" name="query_humid_min" id="query_humid_min" placeholder="Min" size=4> −
-                <input type="text" name="query_humid_max" id="query_humid_max" placeholder="Max" size=4>
+                <input type="number" name="query_humid_min" id="query_humid_min" placeholder="Min" min="0" max="100" oninput="this.value = Math.abs(this.value)"> −
+                <input type="number" name="query_humid_max" id="query_humid_max" placeholder="Max" min="0" max="100" oninput="this.value = Math.abs(this.value)">
                 
                 <br>
                 <br>
 
                 Average rainfall: (in)
                 <br>
-                <input type="text" name="query_rain_min" id="query_rain_min" placeholder="Min" size=4> −
-                <input type="text" name="query_rain_max" id="query_rain_max" placeholder="Max" size=4>
+                <input type="number" name="query_rain_min" id="query_rain_min" placeholder="Min" min="0" max="200" oninput="this.value = Math.abs(this.value)"> −
+                <input type="number" name="query_rain_max" id="query_rain_max" placeholder="Max" min="0" max="200" oninput="this.value = Math.abs(this.value)">
                 
                 <br>
                 <br>
                 
                 Average snowfall: (in)
                 <br>
-                <input type="text" name="query_snow_min" id="query_snow_min" placeholder="Min" size=4> −
-                <input type="text" name="query_snow_max" id="query_snow_max" placeholder="Max" size=4>
+                <input type="number" name="query_snow_min" id="query_snow_min" placeholder="Min" min="0" max="220" oninput="this.value = Math.abs(this.value)"> −
+                <input type="number" name="query_snow_max" id="query_snow_max" placeholder="Max" min="0" max="220" oninput="this.value = Math.abs(this.value)">
                 
                 <br>
                 <br>
@@ -163,12 +169,43 @@
                 </form>
 
                 <br>
+                <br>
+
+                Sort By: 
+                <br>
+                <select name="query_sort_param" id="query_sort_param">
+                  <option value="population">Population</option>
+                  <option value="propertyValue">Property Value</option>
+                  <option value="temp">Temperature</option>
+                  <option value="sunny">Sunny Days</option>
+                  <option value="humidity">Humidity</option>
+                  <option value="rain">Rain</option>
+                  <option value="snow">Snow</option>
+                  <option value="color">Political Color</option>
+                </select>
+
+                <br>
+
+                <select name="query_sort_dir" id="query_sort_dir">
+                  <option value="ASC">Low to High</option>
+                  <option value="DESC">High to Low</option>
+                </select>
+
+                <br>
+                <br>
+
+                Number of results to return:
+                <br>
+                <input type="number" name="query_num_results" id="query_num_results" value="20" min="0" max="1000" oninput="this.value = Math.abs(this.value)">
+
+                <br>
                 <button type="button" onclick="handleSubmit()">Submit</button>
               
                 <script type="text/javascript">
                     function handleSubmit() {
-                        var param_color_red_t = (document.getElementById("query_color_red").checked && !document.getElementById("query_color_blue").checked) ? "red" : ""
-                        var param_color_blue_t = (document.getElementById("query_color_blue").checked && !document.getElementById("query_color_red").checked) ? "blue" : ""
+                        // Pass right political color
+                        var query_color = (document.getElementById("query_color_red").checked && !document.getElementById("query_color_blue").checked) ? "red" : ""
+                        query_color = (document.getElementById("query_color_blue").checked && !document.getElementById("query_color_red").checked) ? "blue" : ""
 
                       $.ajax({
                         url: "/getPoints",
@@ -191,8 +228,11 @@
                                 param_rain_max : document.getElementById("query_rain_max").value,
                                 param_snow_min : document.getElementById("query_snow_min").value,
                                 param_snow_max : document.getElementById("query_snow_max").value,
-                                param_color_red : param_color_red_t,
-                                param_color_blue : param_color_blue_t
+                                param_color : query_color,
+                                order_sort_by : document.getElementById("query_sort_param").value,
+                                order_sort_dir : document.getElementById("query_sort_dir").value,
+                                limit_num : document.getElementById("query_num_results").value
+                                
                               },
                         success: callbackFunc
                       });
@@ -213,20 +253,31 @@
                         }
                     }  
 
+                    /* JAY!!!
+                       This is how the new json return is formatted
+                       values are:
+                            city.name, city.state
+                            city.lat, city.lng
+                            city.pop, city.prop
+                            city.minTemp, city.maxTemp
+                            city.sunny, city.humid, city.rain, city.snow
+                            city.color */
                     function callbackFunc(response) {
                       //handle response here
                       //console.log(response);
-                      var positions = JSON.parse(response);
+                      var cities = JSON.parse(response);
 
-                      positions.forEach(function(element) {
-                          console.log(element[0]);
-                          console.log(element[1]);
+                      cities.forEach(function(city) {
+                          console.log(city.name);
+                          console.log(city.lat, city.lng);
+
                           var marker = new google.maps.Marker({
-                            position: {lat: element[1][0], lng: element[1][1]},
+                            position: {lat: city.lat, lng: city.lng},
                             map: map
                           });
                       });
-                      var firstPos = {lat: positions[0][1][0], lng: positions[0][1][1]};
+
+                      var firstPos = {lat: cities[0].lat, lng: cities[0].lng};
                       //var newOptions = {'zoom':13, 'center':firstPos};
                       //map.setOptions(newOptions);
                       map.panTo(firstPos);
