@@ -4,34 +4,8 @@ function IndexSubmit() {
     window.location = "results.html"
 }
 
-function handleSubmit() {
-    
-    alert("Submit is checked");
-    
-    var testData = document.getElementById("testQuery").value;
-    $.ajax({
-           url: "/getPoints",
-           //make an AJAX request to the py script
-           type: "POST",
-           //pass query params below
-           data: { param: testData },
-           success: callbackFunc
-           });
-}
-
-function callbackFunc(response) {
-    //handle response here
-    console.log(response);
-    /**
-     var positions = JSON.parse(response);
-     positions.forEach(function(element) {
-     console.log(element);
-     var marker = new google.maps.Marker({
-     position: {lat: element[0], lng: element[1]},
-     map: map
-     });
-     });
-     **/
+function result_table(){
+    alert("item selected");
 }
 
 /**
@@ -43,7 +17,7 @@ var urbanValue;
 var PValue300k;
 
 function toggleCheck(a){
-
+    
     if(a == 'demorate'){
         
         if(document.getElementById('Demorate').checked){
@@ -64,7 +38,7 @@ function toggleCheck(a){
     if (a == 'urban'){
         if(document.getElementById('Urban').checked){
             alert("urban is checked");
-         //   urbanValue = document.getElementById('urban')
+            //   urbanValue = document.getElementById('urban')
         }
         else{
             alert("urban is not checked");
@@ -72,53 +46,84 @@ function toggleCheck(a){
     }
     
     if (a == 'suburb'){
-        alert("Population under 1 million is checked");
+        if(document.getElementById('Suburb').checked){
+            alert("Suburb is checked");
+        }
+        else{
+            alert("Suburb is not checked");
+        }
     }
     
     if (a == 'hot'){
-        alert("Hot Climate is checked");
+        if(document.getElementById('Hot').checked){
+            alert("hot is checked");
+        }
+        else{
+            alert("hot is not checked");
+        }
     }
     
     if (a == 'warm'){
-        alert("Warm Climate is checked");
+        if(document.getElementById('Warm').checked){
+            alert("warm is checked");
+        }
+        else{
+            alert("warm is not checked");
+        }
     }
     
     if (a == 'cold'){
-        alert("Cold Climate is checked");
+        if(document.getElementById('Cold').checked){
+            alert("cold is checked");
+        }
+        else{
+            alert("Cold is not checked");
+        }
     }
     
     if (a == 'pv300k'){
         if(document.getElementById('pv300k').checked){
-            alert("PV is checked");
+            alert("PV300 is checked");
             PValue300k = 300;
         }
         else{
-            alert("PV is not checked");
+            alert("PV300 is not checked");
         }
         
     }
     
-    if (a == 'COL35K'){
-        alert("Cost of Living 3K - 5K is checked");
+    if (a == 'PV999'){
+        if(document.getElementById('PV999').checked){
+            alert("PV999 is checked");
+        }
+        else{
+            alert("PV999 is not checked");
+        }
+        
     }
     
-    if (a == 'COL5K'){
-        alert("Cost of Living 5K is checked");
+    if (a == 'PV1M'){
+        if(document.getElementById('PV1M').checked){
+            alert("PV1M is checked");
+        }
+        else{
+            alert("PV1M is not checked");
+        }
     }
 }
 
 
 function getValue(){
-  //  if(value == 'urban'){
+    //  if(value == 'urban'){
     //    return urbanValue;
-   // }
-   // else if(value == 'pv300k')
-   // {
-        return 300;
-   // }
-   // else{
+    // }
+    // else if(value == 'pv300k')
+    // {
+    return 300;
+    // }
+    // else{
     //    alert("wrong value" +  urban);
-   // }
+    // }
 }
 
 

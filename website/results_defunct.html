@@ -8,123 +8,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
 
-    
     <title>CMSC447 Project</title>
 
+ <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        
-        <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="http://code.jquery.com/jquery.min.js"></script>
-        
-
-
-
 
   </head>
-<script type="text/javascript">
-    
-    function smoothZoom (map, max, cnt) {
-        if (cnt >= max) {
-            return;
-        }
-        else {
-            z = google.maps.event.addListener(map, 'zoom_changed', function(event){
-                                              
-            google.maps.event.removeListener(z);
-            smoothZoom(map, max, cnt + 1);
-            });
-                                              
-            // 80ms is what I found to work well on my system -- it might not work well on all systems
-            setTimeout(function(){map.setZoom(cnt)}, 80);
-        }
-    }
-
-    function callbackFunc(response){
-        var cities=JSON.parse(response);
-        cities.forEach(function(city){
-            console.log(city.name);
-            console.log(city.lat,city.lng);
-                       
-            var marker=new google.maps.Marker({
-                position:{lat:city.lat,lng:city.lng},
-                map:map
-            });
-
-        });
-        var firstPos={lat:cities[0].lat,lng:cities[0].lng};
-        map.panTo(firstPos);
-        smoothZoom(map,9,map.getZoom());
-    }
-
-
-    
- //    $(document).ready(function(){
-    
-  
-    function qs(){
-        var qsparam;
-        qsparam = new Array(10);
-        var query = window.location.search.substring(1);
-        var params = query.split("&");
-        
-        for(var i = 0; i < params.length; i++){
-            var pos = params[i].indexOf("=");
-            if(pos > 0){
-                var key = params[i].substring(0, pos);
-                var val = params[i].substring(pos + 1);
-                qsparam[i] = val;
-            }
-        }
-
-        // document.addEventListener('DOMContentLoaded', function(qsparam) {
-        //     document.getElementById("query_color_blue").checked = (qsparam[0] == "blue") ? true : false;
-        //     document.getElementById("query_color_red").checked = (qsparam[0] == "red") ? true : false; 
-                
-        // }, false);       
-
-        /**param_color = qsparam[0];
-         var _param_color = qsparam[0];
-         document.getElementById("query_pop_min").innerHTML = qsparam[1];
-         document.getElementById("query_pop_max").value = qsparam[2];
-         var _param_temp_min = qsparam[3];
-         var _param_temp_max = qsparam[4];
-         var _param_pv_min = qsparam[5];
-         var _param_pv_max = qsparam[6];
-         **/
-        console.log(qsparam[0]);
-
-        $.ajax({
-               url: "/getPoints",
-               //make an AJAX request to the py script
-               type: "POST",
-               //pass query params below
-               
-               data: {
-               
-               param_color : qsparam[0],
-               param_pop_min : qsparam[1],
-               param_pop_max : qsparam[2],
-               param_temp_min : qsparam[3],
-               param_temp_max : qsparam[4],
-               param_prop_min : qsparam[5],
-               param_prop_max : qsparam[6]
-               
-               },
-               
-               success: callbackFunc
-               });
-               
-    }
- //   });
-
-qs();
-    </script>
-
 
   <body>
 
@@ -180,27 +71,7 @@ qs();
             
             <td id="result_right">
             <form align="left" width=100% height=100%>
-            <table id="result_body">
-                <select size=35% style="width:100%" "height:70%" style='overflow:hidden'>
-                    <option value="1">City, State
-                        Population: 13
-                            Templution: 76
-                        roperty value:
-                    </option>
-                    <option value="2">City, State, Pop Temp pop</option>
-                    <option value="3">City, State, Pop Temp pop</option>
-                    <option value="4">City, State, Pop Temp pop</option>
-                    <option value="1">City, State, Pop Temp pop</option>
-                    <option value="2">City, State, Pop Temp pop</option>
-                    <option value="3">City, State, Pop Temp pop</option>
-                    <option value="4">City, State, Pop Temp pop</option>
-                    <option value="1">City, State, Pop Temp pop</option>
-                    <option value="2">City, State, Pop Temp pop</option>
-                    <option value="3">City, State, Pop Temp pop</option>
-                    <option value="4">City, State, Pop Temp pop</option>
-                    <option value="1">City, State, Pop Temp pop</option>
-                    <option value="2">City, State, Pop Temp pop</option>
-                    <option value="3">City, State, Pop Temp pop</option>
+                <select size="34" style="width:100%" "height:100%">
                     <option value="1">City, State, Pop Temp pop</option>
                     <option value="2">City, State, Pop Temp pop</option>
                     <option value="3">City, State, Pop Temp pop</option>
@@ -216,6 +87,15 @@ qs();
                     <option value="1">City, State, Pop Temp pop</option>
                     <option value="2">City, State, Pop Temp pop</option>
                     <option value="3">City, State, Pop Temp pop</option>
+                    <option value="4">City, State, Pop Temp pop</option>
+                    <option value="1">City, State, Pop Temp pop</option>
+                    <option value="2">City, State, Pop Temp pop</option>
+                    <option value="3">City, State, Pop Temp pop</option>
+                    <option value="4">City, State, Pop Temp pop</option>
+                    <option value="1">City, State, Pop Temp pop</option>
+                    <option value="2">City, State, Pop Temp pop</option>
+                    <option value="3">City, State, Pop Temp pop</option>
+                    <option value="4">City, State, Pop Temp pop</option>
                     <option value="1">City, State, Pop Temp pop</option>
                     <option value="2">City, State, Pop Temp pop</option>
                     <option value="3">City, State, Pop Temp pop</option>
@@ -231,11 +111,50 @@ qs();
                     <option value="1">City, State, Pop Temp pop</option>
                     <option value="2">City, State, Pop Temp pop</option>
                     <option value="3">City, State, Pop Temp pop</option>
+                    <option value="4">City, State, Pop Temp pop</option>
+                    <option value="1">City, State, Pop Temp pop</option>
+                    <option value="2">City, State, Pop Temp pop</option>
+                    <option value="3">City, State, Pop Temp pop</option>
+                    <option value="4">City, State, Pop Temp pop</option>
+                    <option value="1">City, State, Pop Temp pop</option>
+                    <option value="2">City, State, Pop Temp pop</option>
+                    <option value="3">City, State, Pop Temp pop</option>
+                    <option value="4">City, State, Pop Temp pop</option>
+                    <option value="1">City, State, Pop Temp pop</option>
+                    <option value="2">City, State, Pop Temp pop</option>
+                    <option value="3">City, State, Pop Temp pop</option>
+                    <option value="4">City, State, Pop Temp pop</option>
+                    <option value="1">City, State, Pop Temp pop</option>
+                    <option value="2">City, State, Pop Temp pop</option>
+                    <option value="3">City, State, Pop Temp pop</option>
+                    <option value="4">City, State, Pop Temp pop</option>
+                    <option value="1">City, State, Pop Temp pop</option>
+                    <option value="2">City, State, Pop Temp pop</option>
+                    <option value="3">City, State, Pop Temp pop</option>
+                    <option value="4">City, State, Pop Temp pop</option>
+                    <option value="1">City, State, Pop Temp pop</option>
+                    <option value="2">City, State, Pop Temp pop</option>
+                    <option value="3">City, State, Pop Temp pop</option>
+                    <option value="4">City, State, Pop Temp pop</option>
+                    <option value="1">City, State, Pop Temp pop</option>
+                    <option value="2">City, State, Pop Temp pop</option>
+                    <option value="3">City, State, Pop Temp pop</option>
+                    <option value="4">City, State, Pop Temp pop</option>
+                    <option value="1">City, State, Pop Temp pop</option>
+                    <option value="2">City, State, Pop Temp pop</option>
+                    <option value="3">City, State, Pop Temp pop</option>
+                    <option value="4">City, State, Pop Temp pop</option>
+                    <option value="1">City, State, Pop Temp pop</option>
+                    <option value="2">City, State, Pop Temp pop</option>
+                    <option value="3">City, State, Pop Temp pop</option>
+                    <option value="4">City, State, Pop Temp pop</option>
+                    <option value="1">City, State, Pop Temp pop</option>
+                    <option value="2">City, State, Pop Temp pop</option>
+                    <option value="3">City, State, Pop Temp pop</option>
+                    <option value="4">City, State, Pop Temp pop</option>
+                    
+                    
                 </select>
-                
-                    
-                    
-            </table>
             </form>
             </td>
             
@@ -245,57 +164,57 @@ qs();
                 
                 City Population:
                 <br>
-                <input type="text" name="query_pop_min" id="query_pop_min" placeholder="Min" size=5> −
+                <input type="text" name="query_pop_min" id="query_pop_min" placeholder="Min" size=4> −
                   
-                <input type="text" name="query_pop_max" id="query_pop_max" placeholder="Max" size=5>
+                <input type="text" name="query_pop_max" id="query_pop_max" placeholder="Max" size=4>
                         
                 <br>
                 <br>
                         
                 Average Property Values: ($)<span id="display_property">
                 <br>
-                <input type="text" name="query_prop_min" id="query_prop_min" placeholder="Min" size=5> −
-                <input type="text" name="query_prop_max" id="query_prop_max" placeholder="Max" size=5>
+                <input type="text" name="query_prop_min" id="query_prop_min" placeholder="Min" size=4> −
+                <input type="text" name="query_prop_max" id="query_prop_max" placeholder="Max" size=4>
                                     
                 <br>
                 <br>
                                     
                 Average temperature range: (°F)
                 <br>
-                <input type="text" name="query_temp_min" id="query_temp_min" placeholder="Min" size=5> −
-                <input type="text" name="query_temp_max" id="query_temp_max" placeholder="Max" size=5>
+                <input type="text" name="query_temp_min" id="query_temp_min" placeholder="Min" size=4> −
+                <input type="text" name="query_temp_max" id="query_temp_max" placeholder="Max" size=4>
                                             
                 <br>
                 <br>
                                             
                 Average number of sunny days:
                 <br>
-                <input type="text" name="query_sun_min" id="query_sun_min" placeholder="Min" size=5> −
-                <input type="text" name="query_sun_max" id="query_sun_max" placeholder="Max" size=5>
+                <input type="text" name="query_sun_min" id="query_sun_min" placeholder="Min" size=4> −
+                <input type="text" name="query_sun_max" id="query_sun_max" placeholder="Max" size=4>
                                                     
                 <br>
                 <br>
                 
                 Average humidity: (%)
                 <br>
-                <input type="text" name="query_humid_min" id="query_humid_min" placeholder="Min" size=5> −
-                <input type="text" name="query_humid_max" id="query_humid_max" placeholder="Max" size=5>
+                <input type="text" name="query_humid_min" id="query_humid_min" placeholder="Min" size=4> −
+                <input type="text" name="query_humid_max" id="query_humid_max" placeholder="Max" size=4>
                     
                 <br>
                 <br>
                                                             
                 Average rainfall: (in)
                 <br>
-                <input type="text" name="query_rain_min" id="query_rain_min" placeholder="Min" size=5> −
-                <input type="text" name="query_rain_max" id="query_rain_max" placeholder="Max" size=5>
+                <input type="text" name="query_rain_min" id="query_rain_min" placeholder="Min" size=4> −
+                <input type="text" name="query_rain_max" id="query_rain_max" placeholder="Max" size=4>
                                                                     
                 <br>
                 <br>
                                                                     
                 Average snowfall: (in)
                 <br>
-                <input type="text" name="query_snow_min" id="query_snow_min" placeholder="Min" size=5> −
-                <input type="text" name="query_snow_max" id="query_snow_max" placeholder="Max" size=5>
+                <input type="text" name="query_snow_min" id="query_snow_min" placeholder="Min" size=4> −
+                <input type="text" name="query_snow_max" id="query_snow_max" placeholder="Max" size=4>
                                                                             
                 <br>
                 <br>
@@ -310,23 +229,12 @@ qs();
                 <br>
                 <br>
                 <button type="button" onclick="handleSubmit()">Submit</button>
-                
-                
+                                                                            
                 <script type="text/javascript">
-                    
                     function handleSubmit() {
-                        
-                   //     window.location = "results_copy.html";
-                        
-                    // var param_color_red_t = (document.getElementById("query_color_red").checked && !document.getElementById("query_color_blue").checked) ? "red" : ""
-                    // var param_color_blue_t = (document.getElementById("query_color_blue").checked && !document.getElementById("query_color_red").checked) ? "blue" : ""
-                var param_color_t = "";
-                if (document.getElementById("query_color_blue").checked) 
-                { param_color_t = "blue"}
-                else if (document.getElementbyId("query_color_red").checked)
-                { param_color_t = "red"} 
-
-
+                    var param_color_red_t = (document.getElementById("query_color_red").checked && !document.getElementById("query_color_blue").checked) ? "red" : ""
+                    var param_color_blue_t = (document.getElementById("query_color_blue").checked && !document.getElementById("query_color_red").checked) ? "blue" : ""
+                                                                                    
                     $.ajax({
                         url: "/getPoints",
                         //make an AJAX request to the py script
@@ -349,9 +257,8 @@ qs();
                            param_snow_min : document.getElementById("query_snow_min").value,
                            param_snow_max : document.getElementById("query_snow_max").value,
                            
-                           // param_color_red : param_color_red_t,
-                           // param_color_blue : param_color_blue_t
-                           // param_color : param_color_t,
+                           param_color_red : param_color_red_t,
+                           param_color_blue : param_color_blue_t
                            },
                            
                            success: callbackFunc
@@ -359,7 +266,45 @@ qs();
                     }
                                                                             
                     // the smooth zoom function
-                                    </script>
+                    
+                    function smoothZoom (map, max, cnt) {
+                    if (cnt >= max) {
+                        return;
+                    }
+                    else {
+                        z = google.maps.event.addListener(map, 'zoom_changed', function(event){
+                                                          
+                        google.maps.event.removeListener(z);
+                        smoothZoom(map, max, cnt + 1);
+                        });
+                    
+                        // 80ms is what I found to work well on my system -- it might not work well on all systems
+                        setTimeout(function(){map.setZoom(cnt)}, 80);
+                    }
+                }
+                                                                            
+                function callbackFunc(response) {
+                    //handle response here
+                    //console.log(response);
+                    var positions = JSON.parse(response);
+                                                                                
+                    positions.forEach(function(element) {
+                        console.log(element[0]);
+                        console.log(element[1]);
+                        var marker = new google.maps.Marker({
+                        
+                            position: {lat: element[1][0], lng: element[1][1]},
+                            map: map
+                        });
+                    });
+                var firstPos = {lat: positions[0][1][0], lng: positions[0][1][1]};
+                //var newOptions = {'zoom':13, 'center':firstPos};
+                //map.setOptions(newOptions);
+                map.panTo(firstPos);
+                smoothZoom(map, 9, map.getZoom());
+                                                                                                  
+                }
+                </script>
                 </form>
             </div>
         </td>
@@ -373,7 +318,16 @@ qs();
           
         </table>
         
+      
+        <!-- DivTable.com -->
 
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js" type="text/javascript"></script>
   </body>
 
 </html>
