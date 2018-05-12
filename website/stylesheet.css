@@ -21,16 +21,25 @@ body {
 
 #map {
     height: 85%;
-    width: 75%;
+    width: 60%;
     position: absolute;
+    left:20%;
 
+}
+
+#result_left{
+    height: 85%;
+    width: 20%;
+    position: absolute;
+    left: 0%;
 }
 
 #result_right{
     height: 85%;
-    width: 25%;
+    width: 20%;
     position: absolute;
-    left: 75%;
+    left: 80%;
+    background-color: clear;
 }
 
 #result_bottom{
@@ -46,4 +55,17 @@ body {
     text-align: justify;
 }
 
+#result_table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
 
+#result_td_th{
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+#result_tr:nth-child(even) {
+    background-color: #dddddd;
+}
