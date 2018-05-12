@@ -16,366 +16,379 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         
-        <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="http://code.jquery.com/jquery.min.js"></script>
-        
-
-
-
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
 
   </head>
-<script type="text/javascript">
-    
-    function smoothZoom (map, max, cnt) {
-        if (cnt >= max) {
-            return;
-        }
-        else {
-            z = google.maps.event.addListener(map, 'zoom_changed', function(event){
-                                              
-            google.maps.event.removeListener(z);
-            smoothZoom(map, max, cnt + 1);
-            });
-                                              
-            // 80ms is what I found to work well on my system -- it might not work well on all systems
-            setTimeout(function(){map.setZoom(cnt)}, 80);
-        }
-    }
-
-    function callbackFunc(response){
-        var cities=JSON.parse(response);
-        cities.forEach(function(city){
-            console.log(city.name);
-            console.log(city.lat,city.lng);
-                       
-            var marker=new google.maps.Marker({
-                position:{lat:city.lat,lng:city.lng},
-
-                map:map
-            });
-
-        });
-        var firstPos={lat:cities[0].lat,lng:cities[0].lng};
-        map.panTo(firstPos);
-        smoothZoom(map,9,map.getZoom());
-    }
-
-
-    
- //    $(document).ready(function(){
-    
-  
-    function qs(){
-        var qsparam;
-        qsparam = new Array(10);
-        var query = window.location.search.substring(1);
-        var params = query.split("&");
-        
-        for(var i = 0; i < params.length; i++){
-            var pos = params[i].indexOf("=");
-            if(pos > 0){
-                var key = params[i].substring(0, pos);
-                var val = params[i].substring(pos + 1);
-                qsparam[i] = val;
-            }
-        }
-
-        // document.addEventListener('DOMContentLoaded', function(qsparam) {
-        //     document.getElementById("query_color_blue").checked = (qsparam[0] == "blue") ? true : false;
-        //     document.getElementById("query_color_red").checked = (qsparam[0] == "red") ? true : false; 
-                
-        // }, false);       
-
-        /**param_color = qsparam[0];
-         var _param_color = qsparam[0];
-         document.getElementById("query_pop_min").innerHTML = qsparam[1];
-         document.getElementById("query_pop_max").value = qsparam[2];
-         var _param_temp_min = qsparam[3];
-         var _param_temp_max = qsparam[4];
-         var _param_pv_min = qsparam[5];
-         var _param_pv_max = qsparam[6];
-         **/
-        console.log(qsparam[0]);
-
-        $.ajax({
-               url: "/getPoints",
-               //make an AJAX request to the py script
-               type: "POST",
-               //pass query params below
-               
-               data: {
-               
-               param_color : qsparam[0],
-               param_pop_min : qsparam[1],
-               param_pop_max : qsparam[2],
-               param_temp_min : qsparam[3],
-               param_temp_max : qsparam[4],
-               param_prop_min : qsparam[5],
-               param_prop_max : qsparam[6]
-               },
-               
-               success: callbackFunc
-               });
-               
-    }
- //   });
-
-qs();
-    </script>
-
 
   <body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
+      <div class="container">
             
-            <img src="flyingmongoose.png" alt="FinghtingMongooses" width=60px height = 50px>
-            </img>
+        <img src="flyingmongoose.png" alt="FinghtingMongooses" width=60px height = 50px></img>
             
-            <a class="navbar-brand" href="#">Fighting Mongooses</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Query
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
+        <a class="navbar-brand" href="#">Fighting Mongooses</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Query
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
                         
-                    <li class="nav-item">
-                        <a class="nav-link" href="results.html">Result</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                </ul>
-            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="results.html">Result</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Page Content -->
- 
-        <table width=100% height=100%>
-            <br>
-            <td id="map"></td>
+    <table width=100% height=100%>
+      <br>
+
+      <!-- Map -->
+      <td id="map"></td>
             
-            <script>
-            var map;
-            var usa = {lat: 37.0979817, lng: -98.9600287};
-            function initMap() {
-                map = new google.maps.Map(document.getElementById('map'), {
-                    center: usa,
-                    zoom: 4
-                });
-            }
-            </script>
-          
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOR2E6G3t8nrOqDF6WkgKEueL8YykS0c&callback=initMap"
-              async defer></script>
-            
-            <td id="result_right">
-            <form align="left" width=100% height=100%>
-            <table id="result_body">
-                <select size=35% style="width:100%" "height:70%" style='overflow:hidden'>
-                    <option value="1">City, State
-                        Population: 13
-                            Templution: 76
-                        roperty value:
-                    </option>
-                    <option value="2">City, State, Pop Temp pop</option>
-                    <option value="3">City, State, Pop Temp pop</option>
-                    <option value="4">City, State, Pop Temp pop</option>
-                    <option value="1">City, State, Pop Temp pop</option>
-                    <option value="2">City, State, Pop Temp pop</option>
-                    <option value="3">City, State, Pop Temp pop</option>
-                    <option value="4">City, State, Pop Temp pop</option>
-                    <option value="1">City, State, Pop Temp pop</option>
-                    <option value="2">City, State, Pop Temp pop</option>
-                    <option value="3">City, State, Pop Temp pop</option>
-                    <option value="4">City, State, Pop Temp pop</option>
-                    <option value="1">City, State, Pop Temp pop</option>
-                    <option value="2">City, State, Pop Temp pop</option>
-                    <option value="3">City, State, Pop Temp pop</option>
-                    <option value="1">City, State, Pop Temp pop</option>
-                    <option value="2">City, State, Pop Temp pop</option>
-                    <option value="3">City, State, Pop Temp pop</option>
-                    <option value="4">City, State, Pop Temp pop</option>
-                    <option value="1">City, State, Pop Temp pop</option>
-                    <option value="2">City, State, Pop Temp pop</option>
-                    <option value="3">City, State, Pop Temp pop</option>
-                    <option value="4">City, State, Pop Temp pop</option>
-                    <option value="1">City, State, Pop Temp pop</option>
-                    <option value="2">City, State, Pop Temp pop</option>
-                    <option value="3">City, State, Pop Temp pop</option>
-                    <option value="4">City, State, Pop Temp pop</option>
-                    <option value="1">City, State, Pop Temp pop</option>
-                    <option value="2">City, State, Pop Temp pop</option>
-                    <option value="3">City, State, Pop Temp pop</option>
-                    <option value="1">City, State, Pop Temp pop</option>
-                    <option value="2">City, State, Pop Temp pop</option>
-                    <option value="3">City, State, Pop Temp pop</option>
-                    <option value="4">City, State, Pop Temp pop</option>
-                    <option value="1">City, State, Pop Temp pop</option>
-                    <option value="2">City, State, Pop Temp pop</option>
-                    <option value="3">City, State, Pop Temp pop</option>
-                    <option value="4">City, State, Pop Temp pop</option>
-                    <option value="1">City, State, Pop Temp pop</option>
-                    <option value="2">City, State, Pop Temp pop</option>
-                    <option value="3">City, State, Pop Temp pop</option>
-                    <option value="4">City, State, Pop Temp pop</option>
-                    <option value="1">City, State, Pop Temp pop</option>
-                    <option value="2">City, State, Pop Temp pop</option>
-                    <option value="3">City, State, Pop Temp pop</option>
-                </select>
-     
-                    
-                    
-            </table>
-            </form>
-            </td>
-            
-            <td id="result_left">
-            <div id="query" align="right">
-            <form align="middle" width=100% height=100%>
-                
-                City Population:
-                <br>
-                <input type="text" name="query_pop_min" id="query_pop_min" placeholder="Min" size=5> −
-                  
-                <input type="text" name="query_pop_max" id="query_pop_max" placeholder="Max" size=5>
-                        
-                <br>
-                <br>
-                        
-                Average Property Values: ($)<span id="display_property">
-                <br>
-                <input type="text" name="query_prop_min" id="query_prop_min" placeholder="Min" size=5> −
-                <input type="text" name="query_prop_max" id="query_prop_max" placeholder="Max" size=5>
-                                    
-                <br>
-                <br>
-                                    
-                Average temperature range: (°F)
-                <br>
-                <input type="text" name="query_temp_min" id="query_temp_min" placeholder="Min" size=5> −
-                <input type="text" name="query_temp_max" id="query_temp_max" placeholder="Max" size=5>
-                                            
-                <br>
-                <br>
-                                            
-                Average number of sunny days:
-                <br>
-                <input type="text" name="query_sun_min" id="query_sun_min" placeholder="Min" size=5> −
-                <input type="text" name="query_sun_max" id="query_sun_max" placeholder="Max" size=5>
-                                                    
-                <br>
-                <br>
-                
-                Average humidity: (%)
-                <br>
-                <input type="text" name="query_humid_min" id="query_humid_min" placeholder="Min" size=5> −
-                <input type="text" name="query_humid_max" id="query_humid_max" placeholder="Max" size=5>
-                    
-                <br>
-                <br>
-                                                            
-                Average rainfall: (in)
-                <br>
-                <input type="text" name="query_rain_min" id="query_rain_min" placeholder="Min" size=5> −
-                <input type="text" name="query_rain_max" id="query_rain_max" placeholder="Max" size=5>
-                                                                    
-                <br>
-                <br>
-                                                                    
-                Average snowfall: (in)
-                <br>
-                <input type="text" name="query_snow_min" id="query_snow_min" placeholder="Min" size=5> −
-                <input type="text" name="query_snow_max" id="query_snow_max" placeholder="Max" size=5>
-                                                                            
-                <br>
-                <br>
-                                                                            
-                Political Color:
-                <br>
-                <form action="">
-                <label for="query_color_blue" style="color:blue;"><input type="checkbox" name="query_color_blue" id="query_color_blue" value="blue">Blue</label>
-                <label for="query_color_red" style="color:red;"><input type="checkbox" name="query_color_red" id="query_color_red" value="red">Red</label>
-                </form>
-                                                                            
-                <br>
-                <br>
-                <button type="button" onclick="handleSubmit()">Submit</button>
-                
-                
-                <script type="text/javascript">
-                    
-                    function handleSubmit() {
-                        
-                   //     window.location = "results_copy.html";
-                        
+      <script>
+        var map;
+        var usa = {lat: 37.0979817, lng: -98.9600287};
 
-                    // var param_color_red_t = (document.getElementById("query_color_red").checked && !document.getElementById("query_color_blue").checked) ? "red" : ""
-                    // var param_color_blue_t = (document.getElementById("query_color_blue").checked && !document.getElementById("query_color_red").checked) ? "blue" : ""
-                var param_color_t = "";
-                if (document.getElementById("query_color_blue").checked) 
-                { param_color_t = "blue"}
-                else if (document.getElementbyId("query_color_red").checked)
-                { param_color_t = "red"} 
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: usa,
+            zoom: 4
+          });
+        }
+      </script>
 
-
-                    $.ajax({
-                        url: "/getPoints",
-                        //make an AJAX request to the py script
-                        type: "POST",
-                        //pass query params below
-                                                                                           
-                        data: {
-                           param_pop_min : document.getElementById("query_pop_min").value,
-                           param_pop_max : document.getElementById("query_pop_max").value,
-                           param_prop_min : document.getElementById("query_prop_min").value,
-                           param_prop_max : document.getElementById("query_prop_max").value,
-                           param_temp_min : document.getElementById("query_temp_min").value,
-                           param_temp_max : document.getElementById("query_temp_max").value,
-                           param_sun_min : document.getElementById("query_sun_min").value,
-                           param_sun_max : document.getElementById("query_sun_max").value,
-                           param_humid_min : document.getElementById("query_humid_min").value,
-                           param_humid_max : document.getElementById("query_humid_max").value,
-                           param_rain_min : document.getElementById("query_rain_min").value,
-                           param_rain_max : document.getElementById("query_rain_max").value,
-                           param_snow_min : document.getElementById("query_snow_min").value,
-                           param_snow_max : document.getElementById("query_snow_max").value,
-                           
-
-                           // param_color_red : param_color_red_t,
-                           // param_color_blue : param_color_blue_t
-                           param_color : param_color_t,
-                           },
-                           
-                           success: callbackFunc
-                        });
-                    }
-                                                                            
-                    // the smooth zoom function
-                                    </script>
-                </form>
-            </div>
-        </td>
-
-        <td id="result_bottom">
-              <br>
-              &#169; 2018 &bull; Fighting Mongooses &bull; Software Engineering &bull; University of Maryland, Baltimore County USA
-               
-          </td>
-          
-          
-        </table>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOR2E6G3t8nrOqDF6WkgKEueL8YykS0c&callback=initMap" async defer></script>
         
+      <!-- Results -->    
+      <td id="result_right">
+        <form align="left" width=100% height=100%>
+          <table id="result_body">
+            <select size=35% style="width:100%" "height:70%" style='overflow:hidden'>
 
+              <option value="1">City, State
+                Population: 13
+                Templution: 76
+                Property value:
+              </option>
+              <option value="2">City, State, Pop Temp pop</option>
+              <option value="3">City, State, Pop Temp pop</option>
+              <option value="4">City, State, Pop Temp pop</option>
+              <option value="1">City, State, Pop Temp pop</option>
+              <option value="2">City, State, Pop Temp pop</option>
+              <option value="3">City, State, Pop Temp pop</option>
+              <option value="4">City, State, Pop Temp pop</option>
+              <option value="1">City, State, Pop Temp pop</option>
+              <option value="2">City, State, Pop Temp pop</option>
+              <option value="3">City, State, Pop Temp pop</option>
+              <option value="4">City, State, Pop Temp pop</option>
+              <option value="1">City, State, Pop Temp pop</option>
+              <option value="2">City, State, Pop Temp pop</option>
+              <option value="3">City, State, Pop Temp pop</option>
+              <option value="1">City, State, Pop Temp pop</option>
+              <option value="2">City, State, Pop Temp pop</option>
+              <option value="3">City, State, Pop Temp pop</option>
+              <option value="4">City, State, Pop Temp pop</option>
+              <option value="1">City, State, Pop Temp pop</option>
+              <option value="2">City, State, Pop Temp pop</option>
+              <option value="3">City, State, Pop Temp pop</option>
+              <option value="4">City, State, Pop Temp pop</option>
+              <option value="1">City, State, Pop Temp pop</option>
+              <option value="2">City, State, Pop Temp pop</option>
+              <option value="3">City, State, Pop Temp pop</option>
+              <option value="4">City, State, Pop Temp pop</option>
+              <option value="1">City, State, Pop Temp pop</option>
+              <option value="2">City, State, Pop Temp pop</option>
+              <option value="3">City, State, Pop Temp pop</option>
+              <option value="1">City, State, Pop Temp pop</option>
+              <option value="2">City, State, Pop Temp pop</option>
+              <option value="3">City, State, Pop Temp pop</option>
+              <option value="4">City, State, Pop Temp pop</option>
+              <option value="1">City, State, Pop Temp pop</option>
+              <option value="2">City, State, Pop Temp pop</option>
+              <option value="3">City, State, Pop Temp pop</option>
+              <option value="4">City, State, Pop Temp pop</option>
+              <option value="1">City, State, Pop Temp pop</option>
+              <option value="2">City, State, Pop Temp pop</option>
+              <option value="3">City, State, Pop Temp pop</option>
+              <option value="4">City, State, Pop Temp pop</option>
+              <option value="1">City, State, Pop Temp pop</option>
+              <option value="2">City, State, Pop Temp pop</option>
+              <option value="3">City, State, Pop Temp pop</option>
+
+            </select>
+          </table>
+        </form>
+      </td>
+           
+      <!-- User Input --> 
+      <td id="result_left">
+        <div id="query" align="right">
+          <form align="middle" width=100% height=100%>
+
+            City Population:
+            <br>
+            <input type="number" name="query_pop_min" id="query_pop_min" placeholder="Min" min="0" max="10000000" oninput="this.value = Math.abs(this.value)"> −
+            <input type="number" name="query_pop_max" id="query_pop_max" placeholder="Max" min="0" max="10000000" oninput="this.value = Math.abs(this.value)">
+            
+            <br>
+            <br>
+
+            Average Property Values: ($)<span id="display_property">
+            <br>
+            <input type="number" name="query_prop_min" id="query_prop_min" placeholder="Min" min="0" max="1000000" oninput="this.value = Math.abs(this.value)"> −
+            <input type="number" name="query_prop_max" id="query_prop_max" placeholder="Max" min="0" max="1000000" oninput="this.value = Math.abs(this.value)">
+            
+            <br>
+            <br>
+            
+            Average temperature range: (°F)
+            <br>
+            <input type="number" name="query_temp_min" id="query_temp_min" placeholder="Min" min="0" max="120" oninput="this.value = Math.abs(this.value)"> −
+            <input type="number" name="query_temp_max" id="query_temp_max" placeholder="Max" min="0" max="120" oninput="this.value = Math.abs(this.value)">
+            
+            <br>
+            <br>
+
+            Average number of sunny days:
+            <br>
+            <input type="number" name="query_sun_min" id="query_sun_min" placeholder="Min" min="0" max="364" oninput="this.value = Math.abs(this.value)"> −
+            <input type="number" name="query_sun_max" id="query_sun_max" placeholder="Max" min="0" max="364" oninput="this.value = Math.abs(this.value)">
+            
+            <br>
+            <br>
+
+            Average humidity: (%)
+            <br>
+            <input type="number" name="query_humid_min" id="query_humid_min" placeholder="Min" min="0" max="100" oninput="this.value = Math.abs(this.value)"> −
+            <input type="number" name="query_humid_max" id="query_humid_max" placeholder="Max" min="0" max="100" oninput="this.value = Math.abs(this.value)">
+            
+            <br>
+            <br>
+
+            Average rainfall: (in)
+            <br>
+            <input type="number" name="query_rain_min" id="query_rain_min" placeholder="Min" min="0" max="200" oninput="this.value = Math.abs(this.value)"> −
+            <input type="number" name="query_rain_max" id="query_rain_max" placeholder="Max" min="0" max="200" oninput="this.value = Math.abs(this.value)">
+            
+            <br>
+            <br>
+            
+            Average snowfall: (in)
+            <br>
+            <input type="number" name="query_snow_min" id="query_snow_min" placeholder="Min" min="0" max="220" oninput="this.value = Math.abs(this.value)"> −
+            <input type="number" name="query_snow_max" id="query_snow_max" placeholder="Max" min="0" max="220" oninput="this.value = Math.abs(this.value)">
+            
+            <br>
+            <br>
+
+            Political Color:
+            <br>
+            <form action="">
+               <label for="query_color_blue" style="color:blue;"><input type="checkbox" name="query_color_blue" id="query_color_blue" value="blue">Blue</label>
+               <label for="query_color_red" style="color:red;"><input type="checkbox" name="query_color_red" id="query_color_red" value="red">Red</label>
+            </form>
+
+            <br>
+            <br>
+
+            Sort By: 
+            <br>
+            <select name="query_sort_param" id="query_sort_param">
+              <option value="population">Population</option>
+              <option value="propertyValue">Property Value</option>
+              <option value="temp">Temperature</option>
+              <option value="sunny">Sunny Days</option>
+              <option value="humidity">Humidity</option>
+              <option value="rain">Rain</option>
+              <option value="snow">Snow</option>
+              <option value="color">Political Color</option>
+            </select>
+
+            <br>
+
+            <select name="query_sort_dir" id="query_sort_dir">
+              <option value="ASC">Low to High</option>
+              <option value="DESC">High to Low</option>
+            </select>
+
+            <br>
+            <br>
+
+            Number of results to return:
+            <br>
+            <input type="number" name="query_num_results" id="query_num_results" value="20" min="0" max="1000" oninput="this.value = Math.abs(this.value)">
+
+            <br>
+            <button type="button" onclick="handleSubmit()">Submit</button>
+                
+                
+            <script type="text/javascript">
+
+              function smoothZoom (map, max, cnt) {
+                if (cnt >= max) {
+                  return;
+                }
+                else {
+                  z = google.maps.event.addListener(map, 'zoom_changed', function(event){                             
+                    google.maps.event.removeListener(z);
+                    smoothZoom(map, max, cnt + 1);
+                  });
+                                                  
+                  // 80ms is what I found to work well on my system -- it might not work well on all systems
+                  setTimeout(function(){map.setZoom(cnt)}, 80);
+                }
+              }
+
+              function callbackFunc(response){
+                var cities=JSON.parse(response);
+
+                cities.forEach(function(city){
+                  console.log(city.name);
+                  console.log(city.lat,city.lng);
+                                   
+                  var marker = new google.maps.Marker({
+                    position:{lat:city.lat,lng:city.lng}, 
+                    map:map
+                  });
+
+                });
+
+                var firstPos={lat:cities[0].lat,lng:cities[0].lng};
+                map.panTo(firstPos);
+                smoothZoom(map,9,map.getZoom());
+              }
+              
+              function qs(){
+                var qsparam;
+                qsparam = new Array(10);
+                var query = window.location.search.substring(1);
+                var params = query.split("&");
+                    
+                for(var i = 0; i < params.length; i++){
+                  var pos = params[i].indexOf("=");
+
+                  if(pos > 0){
+                    var key = params[i].substring(0, pos);
+                    var val = params[i].substring(pos + 1);
+                    qsparam[i] = val;
+                  }
+                }
+
+                // document.addEventListener('DOMContentLoaded', function(qsparam) {
+                //     document.getElementById("query_color_blue").checked = (qsparam[0] == "blue") ? true : false;
+                //     document.getElementById("query_color_red").checked = (qsparam[0] == "red") ? true : false; 
+                        
+                // }, false);       
+
+                /**param_color = qsparam[0];
+                var _param_color = qsparam[0];
+                document.getElementById("query_pop_min").innerHTML = qsparam[1];
+                document.getElementById("query_pop_max").value = qsparam[2];
+                var _param_temp_min = qsparam[3];
+                var _param_temp_max = qsparam[4];
+                var _param_pv_min = qsparam[5];
+                var _param_pv_max = qsparam[6];
+                **/
+                console.log(qsparam[0]);
+
+                $.ajax({
+                  url: "/getPoints",
+                  //make an AJAX request to the py script
+                  type: "POST",
+                  //pass query params below
+                    
+                  data: { 
+                    param_pop_min : qsparam[1],
+                    param_pop_max : qsparam[2],
+                    param_prop_min : qsparam[5],
+                    param_prop_max : qsparam[6],
+                    param_temp_min : qsparam[3], 
+                    param_temp_max : qsparam[4],
+                    param_color : qsparam[0],
+                    order_sort_by : "population",
+                    order_sort_dir : "DESC",
+                    limit_num : "20"    
+                  },
+                  
+                  success: callbackFunc
+                });
+                           
+              }
+
+              function handleSubmit() {
+                // Pass right political color
+                var query_color = (document.getElementById("query_color_red").checked && !document.getElementById("query_color_blue").checked) ? "red" : ""
+                query_color = (document.getElementById("query_color_blue").checked && !document.getElementById("query_color_red").checked) ? "blue" : ""
+
+                $.ajax({
+                  url: "/getPoints",
+                  //make an AJAX request to the py script
+                  type: "POST",
+                  //pass query params below
+                    
+                  data: { 
+                    param_pop_min : document.getElementById("query_pop_min").value,
+                    param_pop_max : document.getElementById("query_pop_max").value,
+                    param_prop_min : document.getElementById("query_prop_min").value,
+                    param_prop_max : document.getElementById("query_prop_max").value,
+                    param_temp_min : document.getElementById("query_temp_min").value, 
+                    param_temp_max : document.getElementById("query_temp_max").value,
+                    param_sun_min : document.getElementById("query_sun_min").value,
+                    param_sun_max : document.getElementById("query_sun_max").value,
+                    param_humid_min : document.getElementById("query_humid_min").value,
+                    param_humid_max : document.getElementById("query_humid_max").value,
+                    param_rain_min : document.getElementById("query_rain_min").value,
+                    param_rain_max : document.getElementById("query_rain_max").value,
+                    param_snow_min : document.getElementById("query_snow_min").value,
+                    param_snow_max : document.getElementById("query_snow_max").value,
+                    param_color : query_color,
+                    order_sort_by : document.getElementById("query_sort_param").value,
+                    order_sort_dir : document.getElementById("query_sort_dir").value,
+                    limit_num : document.getElementById("query_num_results").value      
+                  },
+                  
+                  success: callbackFunc
+                });
+              }
+
+              // Call qs as soon as the page loads 
+              qs();
+            </script>
+          </form>
+        </div>
+      </td>
+
+      <!-- Copyright -->
+      <td id="result_bottom">
+        <br>
+        &#169; 2018 &bull; Fighting Mongooses &bull; Software Engineering &bull; University of Maryland, Baltimore County USA
+               
+      </td>
+          
+          
+    </table>
+        
   </body>
 
 </html>

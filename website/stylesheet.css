@@ -10,7 +10,6 @@ body {
 
 #query {
     margin: auto;
-    
 }
 
 #footer {
@@ -68,4 +67,11 @@ body {
 
 #result_tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+ /* Get rid of arrows for number input boxes */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
 }

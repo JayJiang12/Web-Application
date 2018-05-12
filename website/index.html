@@ -178,8 +178,8 @@
             var param_pop_max = "";
             var param_temp_min = "";
             var param_temp_max = "";
-            var param_pv_min ="";
-            var param_pv_max ="";
+            var param_prop_min = "";
+            var param_prop_max = "";
         
             if(document.getElementById('Demorate').checked){
                 param_color = "blue";
@@ -192,58 +192,52 @@
             }
             
             if(document.getElementById('Urban').checked){
-                param_pop_min = 500000;
-                param_pop_max = 5000000;
+                param_pop_min = "500000";
                 alert("urban is checked");
                     //   urbanValue = document.getElementById('urban')
             }
          
             if(document.getElementById('Suburb').checked){
-                param_pop_min = 0;
-                param_pop_max = 500000;
+                param_pop_max = "500000";
                 alert("Suburb is checked");
             }
             
             if(document.getElementById('Hot').checked){
-                param_temp_min = 70;
-                param_temp_max = 110;
+                param_temp_min = "70";
                 alert("hot is checked");
             }
 
             if(document.getElementById('Warm').checked){
-                param_temp_min = 40;
-                param_temp_max = 79;
+                param_temp_min = "40";
+                param_temp_max = "79";
                 alert("warm is checked");
             }
         
             if(document.getElementById('Cold').checked){
-                param_temp_min = -20;
-                param_temp_max = 40;
+                param_temp_max = "40";
                 alert("cold is checked");
             }
             
             if(document.getElementById('pv300k').checked){
-                param_pv_min = 0;
-                param_pv_max = 300000;
+                param_prop_max = "300000";
                 alert("PV300 is checked");
             }
         
             if(document.getElementById('pv999k').checked){
-                param_pv_min = 300000;
-                param_pv_max = 999999;
+                param_prop_min = "300000";
+                param_prop_max = "999999";
                 alert("PV999 is checked");
             }
             
             if(document.getElementById('pv1M').checked){
-                param_pv_min = 1000000;
-                param_pv_max = 90000000;
+                param_prop_min = "1000000";
                 alert("PV1M is checked");
             }
           
             window.location.href = "results.html?param_color=" + param_color
             + "&param_pop_min="+ param_pop_min + "&param_pop_max=" + param_pop_max
             + "&param_temp_min="+ param_temp_min + "&param_temp_max=" + param_temp_max
-            + "&param_pv_min="+ param_pv_min + "&param_pv_max=" + param_pv_max;
+            + "&param_prop_min="+ param_prop_min + "&param_prop_max=" + param_prop_max;
           
           }
 
