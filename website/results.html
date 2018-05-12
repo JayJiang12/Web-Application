@@ -84,57 +84,9 @@
       <td id="result_right">
         <form align="left" width=100% height=100%>
           <table id="result_body">
-            <select size=35% style="width:100%" "height:70%" style='overflow:hidden'>
-
-              <option value="1">City, State
-                Population: 13
-                Templution: 76
-                Property value:
-              </option>
-              <option value="2">City, State, Pop Temp pop</option>
-              <option value="3">City, State, Pop Temp pop</option>
-              <option value="4">City, State, Pop Temp pop</option>
-              <option value="1">City, State, Pop Temp pop</option>
-              <option value="2">City, State, Pop Temp pop</option>
-              <option value="3">City, State, Pop Temp pop</option>
-              <option value="4">City, State, Pop Temp pop</option>
-              <option value="1">City, State, Pop Temp pop</option>
-              <option value="2">City, State, Pop Temp pop</option>
-              <option value="3">City, State, Pop Temp pop</option>
-              <option value="4">City, State, Pop Temp pop</option>
-              <option value="1">City, State, Pop Temp pop</option>
-              <option value="2">City, State, Pop Temp pop</option>
-              <option value="3">City, State, Pop Temp pop</option>
-              <option value="1">City, State, Pop Temp pop</option>
-              <option value="2">City, State, Pop Temp pop</option>
-              <option value="3">City, State, Pop Temp pop</option>
-              <option value="4">City, State, Pop Temp pop</option>
-              <option value="1">City, State, Pop Temp pop</option>
-              <option value="2">City, State, Pop Temp pop</option>
-              <option value="3">City, State, Pop Temp pop</option>
-              <option value="4">City, State, Pop Temp pop</option>
-              <option value="1">City, State, Pop Temp pop</option>
-              <option value="2">City, State, Pop Temp pop</option>
-              <option value="3">City, State, Pop Temp pop</option>
-              <option value="4">City, State, Pop Temp pop</option>
-              <option value="1">City, State, Pop Temp pop</option>
-              <option value="2">City, State, Pop Temp pop</option>
-              <option value="3">City, State, Pop Temp pop</option>
-              <option value="1">City, State, Pop Temp pop</option>
-              <option value="2">City, State, Pop Temp pop</option>
-              <option value="3">City, State, Pop Temp pop</option>
-              <option value="4">City, State, Pop Temp pop</option>
-              <option value="1">City, State, Pop Temp pop</option>
-              <option value="2">City, State, Pop Temp pop</option>
-              <option value="3">City, State, Pop Temp pop</option>
-              <option value="4">City, State, Pop Temp pop</option>
-              <option value="1">City, State, Pop Temp pop</option>
-              <option value="2">City, State, Pop Temp pop</option>
-              <option value="3">City, State, Pop Temp pop</option>
-              <option value="4">City, State, Pop Temp pop</option>
-              <option value="1">City, State, Pop Temp pop</option>
-              <option value="2">City, State, Pop Temp pop</option>
-              <option value="3">City, State, Pop Temp pop</option>
+            <select id="select_table" size=35% style="width:100%" "height:70%" style='overflow:hidden'>
+                
+                // information will be input from json
 
             </select>
           </table>
@@ -244,6 +196,13 @@
                 
                 
             <script type="text/javascript">
+                
+                function add_to_table(){
+                    var x = document.getElementById("select_table");
+                    var option = document.createElement("option");
+                    option.text = "name";
+                    x.add(option);
+                }
 
               function smoothZoom (map, max, cnt) {
                 if (cnt >= max) {
@@ -264,14 +223,24 @@
                 var cities=JSON.parse(response);
 
                 cities.forEach(function(city){
-                  console.log(city.name);
-                  console.log(city.lat,city.lng);
-                                   
+                    console.log(city.name);
+                    console.log(city.lat,city.lng);
+                    
                   var marker = new google.maps.Marker({
                     position:{lat:city.lat,lng:city.lng}, 
                     map:map
                   });
 
+                var x = document.getElementById("select_table");
+                var option = document.createElement("option");
+                option.text = city.name + ", " + city.state + " PV: " + city.prop +" Temp: " + city.minTemp + " - " + city.maxTemp;
+            
+                    option.onclick = function() {
+                               var Pos={lat:city.lat,lng:city.lng};
+                               map.panTo(Pos);
+                               smoothZoom(map,9,map.getZoom());
+};
+                    x.add(option);
                 });
 
                 var firstPos={lat:cities[0].lat,lng:cities[0].lng};
@@ -337,6 +306,9 @@
               }
 
               function handleSubmit() {
+                  
+                  alert("Submit");
+                  
                 // Pass right political color
                 var query_color = (document.getElementById("query_color_red").checked && !document.getElementById("query_color_blue").checked) ? "red" : ""
                 query_color = (document.getElementById("query_color_blue").checked && !document.getElementById("query_color_red").checked) ? "blue" : ""
@@ -371,7 +343,7 @@
                   success: callbackFunc
                 });
               }
-
+   
               // Call qs as soon as the page loads 
               qs();
             </script>
