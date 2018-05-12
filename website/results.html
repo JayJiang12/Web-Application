@@ -52,6 +52,7 @@
                        
             var marker=new google.maps.Marker({
                 position:{lat:city.lat,lng:city.lng},
+
                 map:map
             });
 
@@ -113,7 +114,6 @@
                param_temp_max : qsparam[4],
                param_prop_min : qsparam[5],
                param_prop_max : qsparam[6]
-               
                },
                
                success: callbackFunc
@@ -232,7 +232,7 @@ qs();
                     <option value="2">City, State, Pop Temp pop</option>
                     <option value="3">City, State, Pop Temp pop</option>
                 </select>
-                
+     
                     
                     
             </table>
@@ -318,6 +318,7 @@ qs();
                         
                    //     window.location = "results_copy.html";
                         
+
                     // var param_color_red_t = (document.getElementById("query_color_red").checked && !document.getElementById("query_color_blue").checked) ? "red" : ""
                     // var param_color_blue_t = (document.getElementById("query_color_blue").checked && !document.getElementById("query_color_red").checked) ? "blue" : ""
                 var param_color_t = "";
@@ -349,9 +350,10 @@ qs();
                            param_snow_min : document.getElementById("query_snow_min").value,
                            param_snow_max : document.getElementById("query_snow_max").value,
                            
+
                            // param_color_red : param_color_red_t,
                            // param_color_blue : param_color_blue_t
-                           // param_color : param_color_t,
+                           param_color : param_color_t,
                            },
                            
                            success: callbackFunc
