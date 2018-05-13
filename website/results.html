@@ -96,7 +96,7 @@
       <!-- User Input --> 
       <td id="result_left">
         <div id="query" align="right">
-          <form align="middle" width=100% height=100%>
+          <form align="middle" width=100% height=100% id="query_form">
 
             City Population:
             <br>
@@ -264,11 +264,11 @@
                   }
                 }
 
-                // document.addEventListener('DOMContentLoaded', function(qsparam) {
-                //     document.getElementById("query_color_blue").checked = (qsparam[0] == "blue") ? true : false;
-                //     document.getElementById("query_color_red").checked = (qsparam[0] == "red") ? true : false; 
-                        
-                // }, false);       
+                document.addEventListener('DOMContentLoaded', function(qsparam) {
+                    document.getElementById("query_color_blue").checked = (qsparam[0] == "blue") ? true : false;
+                    document.getElementById("query_color_red").checked = (qsparam[0] == "red") ? true : false; 
+                      console.log("populated fields");
+                }, false);       
 
                 /**param_color = qsparam[0];
                 var _param_color = qsparam[0];
