@@ -223,6 +223,11 @@
 
               function callbackFunc(response){
                 var cities=JSON.parse(response);
+                
+                if (cities.length == 0) {
+                    alert("No cities found!");
+                    return;
+                }
 
                 cities.forEach(function(city){
                     console.log(city.name);
@@ -276,9 +281,9 @@
                     x.add(option);
                 });
 
-                var firstPos={lat:cities[0].lat,lng:cities[0].lng};
-                map.panTo(firstPos);
-                smoothZoom(map,9,map.getZoom());
+                //var firstPos={lat:cities[0].lat,lng:cities[0].lng};
+                //map.panTo(firstPos);
+                //smoothZoom(map,9,map.getZoom());
               }
               
               function qs(){
