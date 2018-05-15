@@ -60,7 +60,7 @@
                 <label class="image-checkbox">
                     <img class="img-responsive" src="buttom_images/democrate.jpeg"/>
                     <div>
-                        <a>Democrat States</a>
+                        <a>Demorate States</a>
                         <input type="checkbox" name="image[]" value="blue" id="Demorate" onchange="toggleCheck('demorate')"/>
                         <i class="fa fa-check hidden"></i>
                     </div>
@@ -80,7 +80,7 @@
                 <label class="image-checkbox">
                     <img class="img-responsive" src="buttom_images/urban.jpeg" onClick="toggleCheck('urban');"/>
                     <div>
-                        <a>Population Over <br> 500 Thousands</a>
+                        <a>Population Over <br> 10 Thousands</a>
                         
                         <input type="checkbox" name="image[]" value="Urban" id="Urban"/>
                         <i class="fa fa-check hidden"></i>
@@ -90,7 +90,7 @@
                 <label class="image-checkbox">
                     <img class="img-responsive" src="buttom_images/suburb.jpeg" onClick="toggleCheck('suburb');"/>
                     <div>
-                        <a>Population Under <br> 500 Thousands
+                        <a>Population Under <br> 10 Thousands
                         </a>
                         <input type="checkbox" name="image[]" value="Suburb" id="Suburb"/>
                         <i class="fa fa-check hidden"></i>
@@ -131,7 +131,7 @@
                 <label class="image-checkbox">
                     <img class="img-responsive" src="buttom_images/dollarSign1.jpeg"/>
                     <div>
-                        <a>Property Values <br> Under 300 Thousands</a>
+                        <a>Property Values <br> Under 50k</a>
                         <input type="checkbox" name="image[]" value="pv300k" id="pv300k" onchange="toggleCheck('pv300k')";/>
                         <i class="fa fa-check hidden"></i>
                     </div>
@@ -140,7 +140,7 @@
                 <label class="image-checkbox">
                     <img class="img-responsive" src="buttom_images/dollarSign2.jpeg" onClick="toggleCheck('pv999k');"/>
                     <div>
-                        <a>Property Values <br> between 300 - 999 Thousands</a>
+                        <a>Property Values <br> between 50k - 100k</a>
                         <input type="checkbox" name="image[]" value="pv999k" id="pv999k"/>
                         <i class="fa fa-check hidden"></i>
                     </div>
@@ -149,7 +149,7 @@
                 <label class="image-checkbox">
                     <img class="img-responsive" src="buttom_images/dollarSign3.jpeg" onClick="toggleCheck('pv1M');"/>
                     <div>
-                        <a>Property Values <br> Over 1 Million</a>
+                        <a>Property Values <br> Over 100k</a>
                         <input type="checkbox" name="image[]" value="pv1M" id="pv1M"/>
                         <i class="fa fa-check hidden"></i>
                     </div>
@@ -168,10 +168,6 @@
           <script type="text/javascript">
           
           function IndexSubmit() {
-          
-          alert("Submit is checked");
-          
-         //   window.location = "results.html"
         
             var param_color = "";
             var param_pop_min = "";
@@ -192,46 +188,41 @@
             }
             
             if(document.getElementById('Urban').checked){
-                param_pop_min = "500000";
-                alert("urban is checked");
-                    //   urbanValue = document.getElementById('urban')
+                param_pop_min = "100000";
+                param_pop_max = "10000000";
             }
          
             if(document.getElementById('Suburb').checked){
-                param_pop_max = "500000";
-                alert("Suburb is checked");
+                param_pop_min = "0";
+                param_pop_max = "100000";
             }
             
             if(document.getElementById('Hot').checked){
-                param_temp_min = "70";
-                alert("hot is checked");
+                param_temp_min = "50";
             }
 
             if(document.getElementById('Warm').checked){
-                param_temp_min = "40";
-                param_temp_max = "79";
-                alert("warm is checked");
+                param_temp_min = "30";
+                param_temp_max = "90";
             }
         
             if(document.getElementById('Cold').checked){
-                param_temp_max = "40";
-                alert("cold is checked");
+                param_temp_max = "70";
             }
             
             if(document.getElementById('pv300k').checked){
-                param_prop_max = "300000";
-                alert("PV300 is checked");
+                param_prop_min = "0";
+                param_prop_max = "50000";
             }
         
             if(document.getElementById('pv999k').checked){
-                param_prop_min = "300000";
-                param_prop_max = "999999";
-                alert("PV999 is checked");
+                param_prop_min = "50000";
+                param_prop_max = "100000";
             }
             
             if(document.getElementById('pv1M').checked){
-                param_prop_min = "1000000";
-                alert("PV1M is checked");
+                param_prop_min = "100000";
+                param_prop_max = "10000000";
             }
           
             window.location.href = "results.html?param_color=" + param_color
