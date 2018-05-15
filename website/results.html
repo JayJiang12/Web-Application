@@ -222,14 +222,21 @@
               function callbackFunc(response){
                 var cities=JSON.parse(response);
 
+
                 cities.forEach(function(city){
                     console.log(city.name);
                     console.log(city.lat,city.lng);
                     
-                  var marker = new google.maps.Marker({
-                    position:{lat:city.lat,lng:city.lng}, 
-                    map:map
-                  });
+                  try {
+                      var marker = new google.maps.Marker({
+                      position:{lat:city.lat,lng:city.lng}, 
+                      map:map
+                    });
+                    } catch (error) {
+                      alert("No results found.");
+                      return;
+                    }
+                  
 
                 var x = document.getElementById("select_table");
                 var option = document.createElement("option");
@@ -243,9 +250,16 @@
                     x.add(option);
                 });
 
-                var firstPos={lat:cities[0].lat,lng:cities[0].lng};
-                map.panTo(firstPos);
-                smoothZoom(map,9,map.getZoom());
+                try {
+                  var firstPos={lat:cities[0].lat,lng:cities[0].lng};
+                  map.panTo(firstPos);
+                  smoothZoom(map,9,map.getZoom());
+                } catch (error) {
+                      alert("No results found.");
+                      return;
+                }
+
+
               }
               
               function qs(){
@@ -307,7 +321,7 @@
 
               function handleSubmit() {
                   
-                  alert("Submit");
+               
                   
                 // Pass right political color
                 var query_color = (document.getElementById("query_color_red").checked && !document.getElementById("query_color_blue").checked) ? "red" : ""
