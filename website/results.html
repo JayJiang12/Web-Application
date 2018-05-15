@@ -181,8 +181,8 @@
             <br>
 
             <select name="query_sort_dir" id="query_sort_dir">
-              <option value="ASC">Low to High</option>
               <option value="DESC">High to Low</option>
+              <option value="ASC">Low to High</option>
             </select>
 
             <br>
@@ -313,6 +313,23 @@
                 var _param_pv_max = qsparam[6];
                 **/
                 console.log(qsparam[0]);
+                
+                document.getElementById("query_pop_min").value = qsparam[1];
+                document.getElementById("query_pop_max").value = qsparam[2];
+                document.getElementById("query_prop_min").value = qsparam[5];
+                document.getElementById("query_prop_max").value = qsparam[6];
+                document.getElementById("query_temp_min").value = qsparam[3];
+                document.getElementById("query_temp_max").value = qsparam[4];
+                document.getElementById("query_sun_min").value = qsparam[7];
+                document.getElementById("query_rain_min").value = qsparam[8];
+                document.getElementById("query_snow_min").value = qsparam[9];
+                
+                if (qsparam[0] == "blue") {
+                    document.getElementById("query_color_blue").checked = true;
+                }
+                else if (qsparam[0] == "red") {
+                    document.getElementById("query_color_red").checked = true;
+                }
 
                 $.ajax({
                   url: "/getPoints",
@@ -328,6 +345,9 @@
                     param_prop_min : qsparam[5],
                     param_prop_max : qsparam[6],
                     param_color : qsparam[0],
+                    param_sun_min : qsparam[7],
+                    param_rain_min : qsparam[8],
+                    param_snow_min : qsparam[9],
                     order_sort_by : "population",
                     order_sort_dir : "DESC",
                     limit_num : "50"

@@ -57,70 +57,115 @@
             
             <!-- check box with inage -->
             <div>
+                <h4> Politics </h4>
+            
                 <label class="image-checkbox">
-                    <img class="img-responsive" src="buttom_images/democrate.jpeg"/>
+                    <img class="img-responsive" src="buttom_images/democrate.jpeg" style="width:128px;height:128px;"/>
                     <div>
-                        <a>Demorate States</a>
+                        <a>Blue County</a>
                         <input type="checkbox" name="image[]" value="blue" id="Demorate" onchange="toggleCheck('demorate')"/>
                         <i class="fa fa-check hidden"></i>
                     </div>
                 </label>
                 
                 <label class="image-checkbox">
-                    <img class="img-responsive" src="buttom_images/republican.png"/>
+                    <img class="img-responsive" src="buttom_images/republican.png" style="width:128px;height:128px;"/>
                     <div>
-                        <a>Republican States</a>
+                        <a>Red County</a>
                         <input type="checkbox" name="image[]" value="red" id="Republican" onClick="toggleCheck('republican');"/>
                         <i class="fa fa-check hidden"></i>
                     </div>
                 </label>
                 
-                <br>
+                <br><br>
+                
+                <h4> Population </h4>
                 
                 <label class="image-checkbox">
-                    <img class="img-responsive" src="buttom_images/urban.jpeg" onClick="toggleCheck('urban');"/>
+                    <img class="img-responsive" src="buttom_images/rural.jpg" style="width:128px;height:128px;" onClick="toggleCheck('suburb');"/>
                     <div>
-                        <a>Population Over <br> 10 Thousands</a>
+                        <a>Rural</a>
+                        <input type="checkbox" name="image[]" value="Rural" id="Rural"/>
+                        <i class="fa fa-check hidden"></i>
+                    </div>
+                </label>
+                
+                <label class="image-checkbox">
+                    <img class="img-responsive" src="buttom_images/suburb.jpeg" style="width:128px;height:128px;" onClick="toggleCheck('suburb');"/>
+                    <div>
+                        <a>Town</a>
+                        <input type="checkbox" name="image[]" value="Suburb" id="Suburb"/>
+                        <i class="fa fa-check hidden"></i>
+                    </div>
+                </label>
+                
+                <label class="image-checkbox">
+                    <img class="img-responsive" src="buttom_images/urban.jpeg" style="width:128px;height:128px;" onClick="toggleCheck('urban');"/>
+                    <div>
+                        <a>City</a>
                         
                         <input type="checkbox" name="image[]" value="Urban" id="Urban"/>
                         <i class="fa fa-check hidden"></i>
                     </div>
                 </label>
                 
+                <br><br>
+                
+                <h4> Property Values </h4>
+                
                 <label class="image-checkbox">
-                    <img class="img-responsive" src="buttom_images/suburb.jpeg" onClick="toggleCheck('suburb');"/>
+                    <img class="img-responsive" src="buttom_images/dollarSign1.jpeg" style="width:128px;height:128px;"/>
                     <div>
-                        <a>Population Under <br> 10 Thousands
-                        </a>
-                        <input type="checkbox" name="image[]" value="Suburb" id="Suburb"/>
+                        <a>Affordable</a>
+                        <input type="checkbox" name="image[]" value="pv300k" id="pv300k" onchange="toggleCheck('pv300k')";/>
                         <i class="fa fa-check hidden"></i>
                     </div>
                 </label>
                 
-                <br>
+                <label class="image-checkbox">
+                    <img class="img-responsive" src="buttom_images/dollarSign2.jpeg" style="width:128px;height:128px;" onClick="toggleCheck('pv999k');"/>
+                    <div>
+                        <a>Comfortable</a>
+                        <input type="checkbox" name="image[]" value="pv999k" id="pv999k"/>
+                        <i class="fa fa-check hidden"></i>
+                    </div>
+                </label>
                 
                 <label class="image-checkbox">
-                    <img class="img-responsive" src="buttom_images/hot.jpeg" onClick="toggleCheck('hot');"/>
+                    <img class="img-responsive" src="buttom_images/dollarSign3.jpeg" style="width:128px;height:128px;" onClick="toggleCheck('pv1M');"/>
                     <div>
-                        <a>Hot Climate</a>
+                        <a>Upscale</a>
+                        <input type="checkbox" name="image[]" value="pv1M" id="pv1M"/>
+                        <i class="fa fa-check hidden"></i>
+                    </div>
+                </label>
+                
+                <br><br>
+                
+                <h4> Climate </h4>
+                
+                <label class="image-checkbox">
+                    <img class="img-responsive" src="buttom_images/hot.jpeg" style="width:128px;height:128px;" onClick="toggleCheck('hot');"/>
+                    <div>
+                        <a>Hot</a>
                         <input type="checkbox" name="image[]" value="Hot" id="Hot"/>
                         <i class="fa fa-check hidden"></i>
                     </div>
                 </label>
                 
                 <label class="image-checkbox">
-                    <img class="img-responsive" src="buttom_images/warm.jpg" onClick="toggleCheck('warm');"/>
+                    <img class="img-responsive" src="buttom_images/warm.jpg" style="width:128px;height:128px;" onClick="toggleCheck('warm');"/>
                     <div>
-                        <a>Warm Climate</a>
+                        <a>Warm</a>
                         <input type="checkbox" name="image[]" value="Warm" id="Warm"/>
                         <i class="fa fa-check hidden"></i>
                     </div>
                 </label>
                 
                 <label class="image-checkbox">
-                    <img class="img-responsive" src="buttom_images/cold.jpeg" onClick="toggleCheck('cold');"/>
+                    <img class="img-responsive" src="buttom_images/cold.jpeg" style="width:128px;height:128px;"onClick="toggleCheck('cold');"/>
                     <div>
-                        <a>Cold Climate</a>
+                        <a>Cold</a>
                         <input type="checkbox" name="image[]" value="Cold" id="Cold"/>
                         <i class="fa fa-check hidden"></i>
                     </div>
@@ -129,28 +174,28 @@
                 <br>
                 
                 <label class="image-checkbox">
-                    <img class="img-responsive" src="buttom_images/dollarSign1.jpeg"/>
+                    <img class="img-responsive" src="buttom_images/sunny.png" style="width:128px;height:128px;"/>
                     <div>
-                        <a>Property Values <br> Under 50k</a>
-                        <input type="checkbox" name="image[]" value="pv300k" id="pv300k" onchange="toggleCheck('pv300k')";/>
+                        <a>Sunny</a>
+                        <input type="checkbox" name="image[]" value="Sunny" id="Sunny" onchange="toggleCheck('sunny')";/>
                         <i class="fa fa-check hidden"></i>
                     </div>
                 </label>
                 
                 <label class="image-checkbox">
-                    <img class="img-responsive" src="buttom_images/dollarSign2.jpeg" onClick="toggleCheck('pv999k');"/>
+                    <img class="img-responsive" src="buttom_images/rainy.jpg" style="width:128px;height:128px;"/>
                     <div>
-                        <a>Property Values <br> between 50k - 100k</a>
-                        <input type="checkbox" name="image[]" value="pv999k" id="pv999k"/>
+                        <a>Rainy</a>
+                        <input type="checkbox" name="image[]" value="Rainy" id="Rainy" onchange="toggleCheck('rainy')";/>
                         <i class="fa fa-check hidden"></i>
                     </div>
                 </label>
                 
                 <label class="image-checkbox">
-                    <img class="img-responsive" src="buttom_images/dollarSign3.jpeg" onClick="toggleCheck('pv1M');"/>
+                    <img class="img-responsive" src="buttom_images/snowy.jpg" style="width:128px;height:128px;"/>
                     <div>
-                        <a>Property Values <br> Over 100k</a>
-                        <input type="checkbox" name="image[]" value="pv1M" id="pv1M"/>
+                        <a>Snowy</a>
+                        <input type="checkbox" name="image[]" value="Snowy" id="Snowy" onchange="toggleCheck('snowy')";/>
                         <i class="fa fa-check hidden"></i>
                     </div>
                 </label>
@@ -176,34 +221,42 @@
             var param_temp_max = "";
             var param_prop_min = "";
             var param_prop_max = "";
+            var param_sun_min = "";
+            var param_rain_min = "";
+            var param_snow_min = "";
         
-            if(document.getElementById('Demorate').checked){
+            if (document.getElementById('Demorate').checked && document.getElementById('Republican').checked)  {
+                // Do Nothing 
+            }
+            else if(document.getElementById('Demorate').checked){
                 param_color = "blue";
                 
             }
-         
-            if(document.getElementById('Republican').checked){
+            else if(document.getElementById('Republican').checked){
                 param_color = "red";
                 
             }
             
+            if(document.getElementById('Rural').checked){
+                param_pop_max = "1000";
+            }
+            
             if(document.getElementById('Urban').checked){
-                param_pop_min = "100000";
-                param_pop_max = "10000000";
+                param_pop_min = "500000";
             }
          
             if(document.getElementById('Suburb').checked){
-                param_pop_min = "0";
+                param_pop_min = "1000";
                 param_pop_max = "100000";
             }
             
             if(document.getElementById('Hot').checked){
-                param_temp_min = "50";
+                param_temp_min = "32";
             }
 
             if(document.getElementById('Warm').checked){
-                param_temp_min = "30";
-                param_temp_max = "90";
+                param_temp_min = "20";
+                param_temp_max = "80";
             }
         
             if(document.getElementById('Cold').checked){
@@ -211,30 +264,37 @@
             }
             
             if(document.getElementById('pv300k').checked){
-                param_prop_min = "0";
-                param_prop_max = "50000";
+                param_prop_max = "300000";
             }
         
             if(document.getElementById('pv999k').checked){
-                param_prop_min = "50000";
-                param_prop_max = "100000";
+                param_prop_min = "300000";
+                param_prop_max = "1000000";
             }
             
             if(document.getElementById('pv1M').checked){
-                param_prop_min = "100000";
-                param_prop_max = "10000000";
+                param_prop_min = "1000000";
+            }
+            
+            if(document.getElementById('Sunny').checked){
+                param_sun_min = "180";
+            }
+            
+            if(document.getElementById('Rainy').checked){
+                param_rain_min = "50";
+            }
+            
+            if(document.getElementById('Snowy').checked){
+                param_snow_min = "80";
             }
           
-            window.location.href = "results.html?param_color=" + param_color
+            window.location.href = "results_weather.html?param_color=" + param_color
             + "&param_pop_min="+ param_pop_min + "&param_pop_max=" + param_pop_max
             + "&param_temp_min="+ param_temp_min + "&param_temp_max=" + param_temp_max
-            + "&param_prop_min="+ param_prop_min + "&param_prop_max=" + param_prop_max;
+            + "&param_prop_min="+ param_prop_min + "&param_prop_max=" + param_prop_max 
+            + "&param_sun_min=" + param_sun_min + "&param_rain_min=" + param_rain_min 
+            + "&param_snow_min=" + param_snow_min;
           
-          }
-
-          function toggleCheck(a)
-          {
-
           }
      
           </script>
