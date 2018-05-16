@@ -189,7 +189,7 @@
             <br>
 
             Number of results:
-            <input type="number" name="query_num_results" id="query_num_results" value="50" min="0" max="1000" oninput="this.value = Math.abs(this.value)">
+            <input type="number" name="query_num_results" id="query_num_results" value="20" min="0" max="1000" oninput="this.value = Math.abs(this.value)">
 
             <br><br>
             <button type="button" onclick="handleSubmit()">Submit</button>
@@ -354,7 +354,7 @@
                     param_snow_min : qsparam[9],
                     order_sort_by : "population",
                     order_sort_dir : "DESC",
-                    limit_num : "50"
+                    limit_num : "20"
                   },
                   
                   success: callbackFunc
